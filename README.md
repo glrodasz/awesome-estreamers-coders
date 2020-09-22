@@ -5,7 +5,7 @@
 
 ## Colombia
 - [Ana Belisa Martínez](https://www.twitch.tv/anabelisam) — Master Coach at @platzi - Systems Engineer - Web Developer - Mom Bebeloper - Lead at DevC Bogotá - Founder @wcfcolombia - Speaker - Head of #ElCodigoRosa.
-- [Guillermo Rodas](https://twitch.tv/glrodasz) — Made in Colombia 🇨🇴 living in Sweden 🇸🇪 — Google Developer Expert en Tecnologías Web.
+- [Guillermo Rodas](https://twitch.tv/glrodasz) — Made in 🇨🇴 Colombia living in Sweden 🇸🇪 — Google Developer Expert en Tecnologías Web.
 - [Julián Duque](https://www.twitch.tv/julianduque) — Developer and Educator at MNTD, Community Leader, NodeConf and JSConf Colombia organizer, Sr. Developer Advocate at Salesforce Heroku.
 - [Lina Castro](https://www.twitch.tv/lirrums) — Software Developer | Linux Enthusiastic | Developer Ubuntu Touch #OpenSource #FreeSoftware.
 
