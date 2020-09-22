@@ -1,4 +1,4 @@
-# awesome-estreamers-coders
+# Awesome EStreamers Coders
 
 ## Argentina
 - [Jorge Cano](https://www.youtube.com/JorgeCano) — #Angular #GDE - Owner de @ngbaires - @ngconf organizer - principal architect @HeroDevs @scullyIO - @angulareando - #EStreamerCoders.
