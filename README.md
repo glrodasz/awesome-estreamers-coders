@@ -1,4 +1,5 @@
 # Awesome EStreamers Coders
+ℹ️ Si estas haciendo streaming en Twitch o YouTube sobre contenido relacionado a la tecnología o programación eres bienvenida o bienvenido de hacer un PR agregando tu información en esta lista.
 
 ## Argentina
 - [Jorge Cano](https://www.youtube.com/JorgeCano) — #Angular #GDE - Owner de @ngbaires - @ngconf organizer - principal architect @HeroDevs @scullyIO - @angulareando - #EStreamerCoders.
