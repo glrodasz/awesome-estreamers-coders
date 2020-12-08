@@ -16,6 +16,7 @@
 - [Brais Moure](https://www.youtube.com/MouredevApps) — Desarrollador de software profesional desde hace más de 10 años. Actualmente trabaja como freelance creando apps para iOS y Android.
 - [Miguel Ángel Durán](https://www.youtube.com/midudev) — Javascript ☕️, React ⚛️, CSS🎨, HTML, Node.js, Firebase y mucho más. Vídeos explicativos y tutoriales sobre desarrollo web.
 - [Pablo Sirera](https://www.youtube.com/PabloSirera) — Desarrollador Frontend enfocado con Javascript, Vue 💚, Nuxt, Firebase y más 🔥
+- [Santiago Martín](https://www.twitch.tv/santima10) — Software Engineer 🚀 TypeScript, React, NEXT.js, Node, Deno, Google Cloud (+ Firebase)... todo lo necesario para hacer un proyecto desde 0.
 
 ## Mexico
 - [Oscar Barajas](https://twitch.tv/gndxdev) — Frontend & Foundation Layer at @platzi #education - Lead at Developer Circles from Facebook, ReactJS, Speaker & Blogger. I teach ReactJS in @platzi - 🇲🇽🇨🇴
