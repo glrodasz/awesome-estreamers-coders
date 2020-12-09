@@ -17,6 +17,7 @@
 - [Miguel Ángel Durán](https://www.youtube.com/midudev) — Javascript ☕️, React ⚛️, CSS🎨, HTML, Node.js, Firebase y mucho más. Vídeos explicativos y tutoriales sobre desarrollo web.
 - [Pablo Sirera](https://www.youtube.com/PabloSirera) — Desarrollador Frontend enfocado con Javascript, Vue 💚, Nuxt, Firebase y más 🔥
 - [Santiago Martín](https://www.twitch.tv/santima10) — Software Engineer 🚀 TypeScript, React, NEXT.js, Node, Deno, Google Cloud (+ Firebase)... todo lo necesario para hacer un proyecto desde 0.
+- [Jorge Baumann](https://www.twitch.tv/baumannzone) — Open Source Developer at #RambitoJS 🐶 · JavaScript · Vue.js · Testing · Firebase · CSS · Node.js
 
 ## Mexico
 - [Oscar Barajas](https://twitch.tv/gndxdev) — Frontend & Foundation Layer at @platzi #education - Lead at Developer Circles from Facebook, ReactJS, Speaker & Blogger. I teach ReactJS in @platzi - 🇲🇽🇨🇴
