@@ -9,7 +9,7 @@
 - [Guillermo Rodas](https://twitch.tv/glrodasz) — Made in 🇨🇴 Colombia living in Sweden 🇸🇪 — Google Developer Expert en Tecnologías Web.
 - [Julián Duque](https://www.twitch.tv/julianduque) — Developer and Educator at MNTD, Community Leader, NodeConf and JSConf Colombia organizer, Sr. Developer Advocate at Salesforce Heroku.
 - [Lina Castro](https://www.twitch.tv/lirrums) — Software Developer | Linux Enthusiastic | Developer Ubuntu Touch #OpenSource #FreeSoftware.
-
+- [Daniel Suarez Dev](https://www.youtube.com/channel/UC_zzfLSjrYNKrOIGK_js_AA?view_as=subscriber) — Frontend Developer and Educator| Freelancer | JavaScript , HTML, CSS, Figma y todo tema que aporte a la comunidad frontend.
 
 ## España
 - [Carlos Azaustre](https://www.youtube.com/CarlosAzaustre) — Desarrollador web desde hace más de 8 años. Google Developer Expert (GDE) en Tecnologías Web. Ha trabajado para empresas como Google, IBM Research y Eventbrite, además de tener su propia Startup y trabajar como freelance.
