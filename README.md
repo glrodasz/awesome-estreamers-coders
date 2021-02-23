@@ -22,7 +22,7 @@
 ## Mexico
 - [Oscar Barajas](https://twitch.tv/gndxdev) — Frontend & Foundation Layer at @platzi #education - Lead at Developer Circles from Facebook, ReactJS, Speaker & Blogger. I teach ReactJS in @platzi - 🇲🇽🇨🇴
 - [Ricardo Celis](https://twitch.tv/celismx) — Streams Science & Technology, Among Us and Apex Legends.
-- [Pablo Trinidad](https://twitch.tv/pablotrinidad) - Ñoño que escribe código pa'l back-end mientras se rasca la cabeza en vivo resolviendo problemas que se inventa él mismo. He escrito código para Google, Microsoft y algunas startups de LATAM. Estudiante de la Facultad de Ciencias de la UNAM [Go/Python/C++/Punch Cards].
+- [Pablo Trinidad](https://twitch.tv/pablotrinidad) - Soy un ñoño que escribe código pa'l back-end mientras se rasca la cabeza resolviendo problemas que se inventa él mismo. He escrito código para Google, Microsoft y algunas startups de LATAM como Sofware Engineer. Estudiante de la Facultad de Ciencias de la UNAM [Go/Python/C++/Punch Cards].
 
 ## Venezuela
 - [Erifranck Nuñez](https://www.twitch.tv/erifranck) — Desarrollador frontend en Globant, amante de la ilustracion y la animacion y como en mis tiempos libres suelo ser entrenador pokemon.
