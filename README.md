@@ -4,6 +4,9 @@
 ## Argentina
 - [Jorge Cano](https://www.youtube.com/JorgeCano) — #Angular #GDE - Owner de @ngbaires - @ngconf organizer - principal architect @HeroDevs @scullyIO - @angulareando - #EStreamerCoders.
 
+## Chile
+- [Sebastián Carroza](https://www.twitch.tv/razor7w_w) — Desarrollador Frontend enfocado a Javascript, Vue, Typescript, Vuetify, 🐦@Razor7w_
+
 ## Colombia
 - [Ana Belisa Martínez](https://www.twitch.tv/anabelisam) — Master Coach at @platzi - Systems Engineer - Web Developer - Mom Bebeloper - Lead at DevC Bogotá - Founder @wcfcolombia - Speaker - Head of #ElCodigoRosa.
 - [Guillermo Rodas](https://twitch.tv/glrodasz) — Made in 🇨🇴 Colombia living in Sweden 🇸🇪 — Google Developer Expert en Tecnologías Web.
