@@ -15,6 +15,7 @@
 - [Daniel Suarez Dev](https://www.youtube.com/channel/UC_zzfLSjrYNKrOIGK_js_AA) — Frontend Developer and Educator| Freelancer | JavaScript , HTML, CSS, Figma y todo tema que aporte a la comunidad frontend.
 
 ## España
+- [Desiré Carmona](https://www.youtube.com/channel/UCjKXiQauEZBw-oLPiw--vgg) — Unity programmer from Spain. She used to be a web developer/designer and UX-UI designer. Now she create games!
 - [Carlos Azaustre](https://www.youtube.com/CarlosAzaustre) — Desarrollador web desde hace más de 8 años. Google Developer Expert (GDE) en Tecnologías Web. Ha trabajado para empresas como Google, IBM Research y Eventbrite, además de tener su propia Startup y trabajar como freelance.
 - [Brais Moure](https://www.youtube.com/MouredevApps) — Desarrollador de software profesional desde hace más de 10 años. Actualmente trabaja como freelance creando apps para iOS y Android.
 - [Miguel Ángel Durán](https://www.youtube.com/midudev) — Javascript ☕️, React ⚛️, CSS🎨, HTML, Node.js, Firebase y mucho más. Vídeos explicativos y tutoriales sobre desarrollo web.
