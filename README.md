@@ -13,6 +13,7 @@
 - [Julián Duque](https://www.twitch.tv/julianduque) — Developer and Educator at MNTD, Community Leader, NodeConf and JSConf Colombia organizer, Sr. Developer Advocate at Salesforce Heroku.
 - [Lina Castro](https://www.twitch.tv/lirrums) — Software Developer | Linux Enthusiastic | Developer Ubuntu Touch #OpenSource #FreeSoftware.
 - [Daniel Suarez Dev](https://www.youtube.com/channel/UC_zzfLSjrYNKrOIGK_js_AA) — Frontend Developer and Educator| Freelancer | JavaScript , HTML, CSS, Figma y todo tema que aporte a la comunidad frontend.
+- [Nicolas Molina](https://www.youtube.com/c/nicobytes) — GDE in Web Technologies and Angular. Senior Front-end developer and teacher at Platzi.
 
 ## España
 - [Desiré Carmona](https://www.youtube.com/channel/UCjKXiQauEZBw-oLPiw--vgg) — Unity programmer from Spain. She used to be a web developer/designer and UX-UI designer. Now she create games!
