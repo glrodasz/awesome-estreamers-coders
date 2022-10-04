@@ -3,6 +3,9 @@
 
 ## Argentina
 - [Jorge Cano](https://www.youtube.com/JorgeCano) — #Angular #GDE - Owner de @ngbaires - @ngconf organizer - principal architect @HeroDevs @scullyIO - @angulareando - #EStreamerCoders.
+- [Gonzalo Pozzo](https://www.twitch.tv/goncypozzo) — Solutions architect @ Vercel, Frontend / React ❤ [@gonzy](https://twitter.com/goncy)
+
+
 
 ## Chile
 - [Sebastián Carroza](https://www.twitch.tv/razor7w_w) — Desarrollador Frontend enfocado a Javascript, Vue, Typescript, Vuetify, 🐦@Razor7w_
