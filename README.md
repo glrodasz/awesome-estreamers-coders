@@ -31,6 +31,7 @@
 - [Oscar Barajas](https://twitch.tv/gndxdev) — Frontend & Foundation Layer at @platzi #education - Lead at Developer Circles from Facebook, ReactJS, Speaker & Blogger. I teach ReactJS in @platzi - 🇲🇽🇨🇴
 - [Ricardo Celis](https://twitch.tv/celismx) — Streams Science & Technology, Among Us and Apex Legends.
 - [Pablo Trinidad](https://twitch.tv/pablotrinidad) - Soy un ñoño que escribe código pa'l back-end mientras me rasco la cabeza resolviendo problemas yo mismo me invento. He escrito código para Google, Microsoft y algunas startups de LATAM como Sofware Engineer. Estudiante de la Facultad de Ciencias de la UNAM [Go/Python/C++/Punch Cards].
+- [Héctor De León](https://www.twitch.tv/hdeleonnet) - Ingeniero en computación, aficionado a la inteligencia artificial, y el desarrollo de sistemas que optimicen los procesos de las empresas. Creador de contenido para Youtube y Udemy. Microsoft Most Valuable Professional 2022 🏆
 
 ## Venezuela
 - [Erifranck Nuñez](https://www.twitch.tv/erifranck) — Desarrollador frontend en Globant, amante de la ilustracion y la animacion y como en mis tiempos libres suelo ser entrenador pokemon.
