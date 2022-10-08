@@ -4,6 +4,7 @@
 ## Argentina
 - [Jorge Cano](https://www.youtube.com/JorgeCano) — #Angular #GDE - Owner de @ngbaires - @ngconf organizer - principal architect @HeroDevs @scullyIO - @angulareando - #EStreamerCoders.
 - [Gonzalo Pozzo](https://www.twitch.tv/goncypozzo) — Solutions architect @ Vercel, Frontend / React ❤ [@gonzy](https://twitter.com/goncy)
+- [Noe VamoaCodear](https://www.twitch.tv/vamoacodear) — Desarrolladora Frontend 🟣 • Aprendemos tecnologías en Twitch.
 
 
 
