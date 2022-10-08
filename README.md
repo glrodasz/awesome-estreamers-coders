@@ -38,3 +38,4 @@
 
 ## Perú
 - [Leonidas Esteban](https://www.youtube.com/LeonidasEsteban) — Google Developer Expert, programming teacher, speaker and Frontend professional.
+- [Fazttech](https://www.twitch.tv/fazttech/) — Soy un Programador y Desarrollador Web que en sus ratos libres comparte tutoriales y juega online :).
