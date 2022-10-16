@@ -32,6 +32,8 @@
 - [Pablo Sirera](https://www.youtube.com/PabloSirera) — Desarrollador Frontend enfocado con Javascript, Vue 💚, Nuxt, Firebase y más 🔥
 - [Santiago Martín](https://www.twitch.tv/santima10) — Software Engineer 🚀 TypeScript, React, NEXT.js, Node, Deno, Google Cloud (+ Firebase)... todo lo necesario para hacer un proyecto desde 0.
 - [Jorge Baumann](https://www.twitch.tv/baumannzone) — Open Source Developer at #RambitoJS 🐶 · JavaScript · Vue.js · Testing · Firebase · CSS · Node.js
+- [Dorian Designs](https://www.twitch.tv/doriandesings) -
+  Apasionado de las nuevas tecnologías y en especial del ecosistema de javascript. [@DorianDesigns](https://twitter.com/DorianDesings) [Youtube](https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A)
 
 ## Mexico
 
