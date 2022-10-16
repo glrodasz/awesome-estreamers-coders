@@ -11,6 +11,8 @@
 ## Chile
 
 - [Sebastián Carroza](https://www.twitch.tv/razor7w_w) — Desarrollador Frontend enfocado a Javascript, Vue, Typescript, Vuetify, 🐦@Razor7w\_
+- [Ignacio Gutiérrez](https://www.twitch.tv/bluuweb/) - Desarrollador Frontend,
+  transmite y comparte contenido sobre varias tecnolo´gias de front, como React, NextJS, Vue y más, [Youtube](https://www.youtube.com/bluuweb)
 
 ## Colombia
 
