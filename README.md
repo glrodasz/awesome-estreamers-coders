@@ -4,10 +4,11 @@
 
 ## Argentina
 
-- [Jorge Cano](https://www.youtube.com/JorgeCano) — #Angular #GDE - Owner de @ngbaires - @ngconf organizer - principal architect @HeroDevs @scullyIO - @angulareando - #EStreamerCoders.
-- [Gonzalo Pozzo](https://www.twitch.tv/goncypozzo) — Solutions architect @ Vercel, Frontend / React ❤ [@gonzy](https://twitter.com/goncy)
-- [Noe VamoaCodear](https://www.twitch.tv/vamoacodear) — Desarrolladora Frontend 🟣 • Aprendemos tecnologías en Twitch.
-
+| Streamer        | Descripción                                                                                                                          | Sitio Web                   | Comunidad                             | Twitch                            | Twitter                         | Facebook | Youtube                                 |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|---------------------------------------|-----------------------------------|---------------------------------|----------|-----------------------------------------|
+| Jorge Cano      | #Angular #GDE - Owner de @ngbaires - @ngconf organizer - principal architect @HeroDevs @scullyIO - @angulareando - #EStreamerCoders. |                             |                                       |                                   | https://twitter.com/jorgeucano  |          | https://www.youtube.com/JorgeCano       |
+| Gonzalo Pozzo   | Solutions architect @ Vercel, Frontend / React ❤                                                                                     | https://goncy.dev           | https://discord.com/invite/rAmPWU6eHg | https://www.twitch.tv/goncypozzo  | https://twitter.com/goncy       |          | https://www.youtube.com/c/GonzaloPozzo/ |
+| Noe VamoaCodear | Desarrolladora Frontend 🟣 • Aprendemos tecnologías en Twitch.                                                                        | https://vamoacodear.com.ar/ | https://discord.io/vamoacodear        | https://www.twitch.tv/vamoacodear | https://twitter.com/vamoacodear |          | https://www.youtube.com/c/vamoacodear   |
 ## Chile
 
 - [Sebastián Carroza](https://www.twitch.tv/razor7w_w) — Desarrollador Frontend enfocado a Javascript, Vue, Typescript, Vuetify, 🐦@Razor7w\_
