@@ -1,0 +1,11 @@
+{
+  "name": "awesome-estreamers-coders",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:glrodasz/awesome-estreamers-coders.git",
+  "author": "Guillermo Rodas <me@guillermorodas.com>",
+  "license": "MIT",
+  "dependencies": {
+    "markdown-table": "^3.0.2"
+  }
+}
