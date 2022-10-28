@@ -11,9 +11,10 @@
 | Noe VamoaCodear | Desarrolladora Frontend 🟣 • Aprendemos tecnologías en Twitch.                                                                        | https://vamoacodear.com.ar/ | https://discord.io/vamoacodear        | https://www.twitch.tv/vamoacodear | https://twitter.com/vamoacodear |          | https://www.youtube.com/c/vamoacodear   |
 ## Chile
 
-- [Sebastián Carroza](https://www.twitch.tv/razor7w_w) — Desarrollador Frontend enfocado a Javascript, Vue, Typescript, Vuetify, 🐦@Razor7w\_
-- [Ignacio Gutiérrez](https://www.twitch.tv/bluuweb/) - Desarrollador Frontend,
-  transmite y comparte contenido sobre varias tecnolo´gias de front, como React, NextJS, Vue y más, [Youtube](https://www.youtube.com/bluuweb)
+| Streamer          | Descripción                                                                                                              | Sitio Web                 | Comunidad                             | Twitch                           | Twitter                     | Facebook                         | Youtube                         |
+|-------------------|--------------------------------------------------------------------------------------------------------------------------|---------------------------|---------------------------------------|----------------------------------|-----------------------------|----------------------------------|---------------------------------|
+| Sebastián Carroza | Desarrollador Frontend enfocado a Javascript, Vue, Typescript, Vuetify                                    |                           | https://discord.com/invite/HDCJk44WtG | https://www.twitch.tv/razor7w_w/ |                             |                                  |                                 |
+| Ignacio Gutiérrez | Desarrollador Frontend, transmite y comparte contenido sobre varias tecnolo´gias de front, como React, NextJS, Vue y más | https://linkr.bio/bluuweb | https://discord.com/invite/SKKPdttHmT | https://www.twitch.tv/bluuweb/   | https://twitter.com/bluuweb | https://www.facebook.com/bluuweb | https://www.youtube.com/bluuweb |
 
 ## Colombia
 
