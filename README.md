@@ -51,7 +51,9 @@
 
 ## Venezuela
 
-- [Erifranck Nuñez](https://www.twitch.tv/erifranck) — Desarrollador frontend en Globant, amante de la ilustracion y la animacion y como en mis tiempos libres suelo ser entrenador pokemon.
+| Streamer        | Descripción                                                                                                                           | Sitio Web                  | Comunidad | Twitch                          | Twitter                        | Facebook | Youtube                                  |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------|-----------|---------------------------------|--------------------------------|----------|------------------------------------------|
+| Erifranck Nuñez | Desarrollador frontend en Globant, amante de la ilustracion y la animacion y como en mis tiempos libres suelo ser entrenador pokemon. | https://www.erifranck.art/ |           | https://www.twitch.tv/erifranck | https://twitter.com/erifranckn |          | https://www.youtube.com/c/erifrancknunez |
 
 ## Perú
 
