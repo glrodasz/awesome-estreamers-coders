@@ -1,0 +1,227 @@
+{
+  "generatedAt": "2025-12-14T18:20:37.687Z",
+  "entries": [
+    {
+      "name": "Jorge Cano",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      }
+    },
+    {
+      "name": "Gonzalo Pozzo",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Noe VamoaCodear",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Sebastián Carroza",
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Ignacio Gutiérrez",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Ana Belisa Martínez",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Guillermo Rodas",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Julián Duque",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Lina Castro",
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Daniel Suarez Dev",
+      "youtube": {
+        "error": "fetch failed"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Nicolas Molina",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      }
+    },
+    {
+      "name": "Desiré Carmona",
+      "youtube": {
+        "error": "fetch failed"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Carlos Azaustre",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Brais Moure",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Miguel Ángel Durán",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Pablo Sirera",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Santiago Martín",
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Jorge Baumann",
+      "youtube": {
+        "error": "fetch failed"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Dorian Designs",
+      "youtube": {
+        "error": "fetch failed"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Oscar Barajas",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Ricardo Celis",
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Pablo Trinidad",
+      "youtube": {
+        "error": "fetch failed"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Héctor De León",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Jose Jesus Guzman Eusebio",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Erifranck Nuñez",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    },
+    {
+      "name": "Leonidas Esteban",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      }
+    },
+    {
+      "name": "Fazttech",
+      "youtube": {
+        "error": "Unable to resolve channel id"
+      },
+      "twitch": {
+        "error": "TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET must be set"
+      }
+    }
+  ]
+}
