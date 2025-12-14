@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+node index.mjs
+git add README.md

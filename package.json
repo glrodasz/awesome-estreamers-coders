@@ -5,7 +5,8 @@
   "repository": "git@github.com:glrodasz/awesome-estreamers-coders.git",
   "author": "Guillermo Rodas <me@guillermorodas.com>",
   "license": "MIT",
-  "dependencies": {
-    "markdown-table": "^3.0.2"
+  "scripts": {
+    "generate": "node index.mjs",
+    "prepare": "git config core.hooksPath .husky"
   }
 }
