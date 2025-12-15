@@ -1,5 +1,8 @@
 import fs from 'fs/promises'
 import path from 'path'
+import { config } from 'dotenv'
+
+config()
 
 const dataPath = path.resolve('data.json')
 const data = JSON.parse(await fs.readFile(dataPath, 'utf-8'))
@@ -15,7 +18,17 @@ function sleep(ms) {
 
 function buildYouTubeUrl(identifier) {
   if (/^https?:\/\//i.test(identifier)) return identifier
-  return `https://www.youtube.com/${identifier}`
+  
+  // Handle different YouTube URL formats
+  if (identifier.startsWith('@')) {
+    return `https://www.youtube.com/${identifier}`
+  }
+  if (identifier.startsWith('c/') || identifier.startsWith('user/') || identifier.startsWith('channel/')) {
+    return `https://www.youtube.com/${identifier}`
+  }
+  
+  // Try handle format first for simple identifiers
+  return `https://www.youtube.com/@${identifier}`
 }
 
 async function resolveYouTubeChannelId(identifier) {
@@ -25,24 +38,123 @@ async function resolveYouTubeChannelId(identifier) {
   const slug = identifier.replace(/^channel\//i, '')
   if (/^UC[A-Za-z0-9_-]{22}$/i.test(slug)) return slug
 
-  const url = buildYouTubeUrl(identifier)
-  const cached = youtubeCache.get(url)
-  if (cached) return cached
-
-  try {
-    const oembedUrl = `https://www.youtube.com/oembed?url=${encodeURIComponent(url)}&format=json`
-    const response = await fetch(oembedUrl)
-    if (!response.ok) throw new Error(`oEmbed request failed with status ${response.status}`)
-    const payload = await response.json()
-    const channelFromAuthor = payload?.author_url?.match(/youtube\.com\/channel\/([^/?]+)/i)
-    if (channelFromAuthor) {
-      youtubeCache.set(url, channelFromAuthor[1])
-      return channelFromAuthor[1]
-    }
-  } catch (error) {
-    console.warn(`[YouTube] Could not resolve channel for ${identifier}: ${error.message}`)
+  // Build channel page URLs to try
+  const channelUrls = []
+  
+  if (/^https?:\/\//i.test(identifier)) {
+    channelUrls.push(identifier)
+  } else if (identifier.startsWith('@')) {
+    channelUrls.push(`https://www.youtube.com/${identifier}`)
+  } else if (identifier.startsWith('c/')) {
+    channelUrls.push(`https://www.youtube.com/${identifier}`)
+  } else if (identifier.startsWith('user/')) {
+    channelUrls.push(`https://www.youtube.com/${identifier}`)
+  } else {
+    // Try handle format first, then fallback formats
+    channelUrls.push(`https://www.youtube.com/@${identifier}`)
+    channelUrls.push(`https://www.youtube.com/c/${identifier}`)
+    channelUrls.push(`https://www.youtube.com/user/${identifier}`)
   }
 
+  // Check cache first
+  for (const url of channelUrls) {
+    const cached = youtubeCache.get(url)
+    if (cached) return cached
+  }
+
+  // Scrape channel page HTML to extract channel ID
+  for (const url of channelUrls) {
+    try {
+      const response = await fetch(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+      })
+      if (!response.ok) continue
+      
+      const html = await response.text()
+      
+      // Method 1: Look for channel ID in JSON-LD structured data
+      const jsonLdMatch = html.match(/<script type="application\/ld\+json">(.*?)<\/script>/gs)
+      if (jsonLdMatch) {
+        for (const jsonLd of jsonLdMatch) {
+          try {
+            const json = JSON.parse(jsonLd.replace(/<script[^>]*>|<\/script>/g, ''))
+            const channelId = findChannelIdInObject(json)
+            if (channelId) {
+              channelUrls.forEach(u => youtubeCache.set(u, channelId))
+              return channelId
+            }
+          } catch (e) {
+            // Continue
+          }
+        }
+      }
+      
+      // Method 2: Look for channel ID in ytInitialData
+      const ytDataMatch = html.match(/var ytInitialData = ({.*?});/s)
+      if (ytDataMatch) {
+        try {
+          const data = JSON.parse(ytDataMatch[1])
+          const channelId = findChannelIdInObject(data)
+          if (channelId) {
+            channelUrls.forEach(u => youtubeCache.set(u, channelId))
+            return channelId
+          }
+        } catch (e) {
+          // Continue
+        }
+      }
+      
+      // Method 3: Look for channel ID in various HTML patterns
+      const patterns = [
+        /"channelId":"([A-Za-z0-9_-]{22})"/i,
+        /"externalId":"([A-Za-z0-9_-]{22})"/i,
+        /channel_id=([A-Za-z0-9_-]{22})/i,
+        /youtube\.com\/channel\/([A-Za-z0-9_-]{22})/i,
+        /<link rel="canonical" href="https:\/\/www\.youtube\.com\/channel\/([A-Za-z0-9_-]{22})"/i,
+        /"browseId":"([A-Za-z0-9_-]{22})"/i
+      ]
+      
+      for (const pattern of patterns) {
+        const match = html.match(pattern)
+        if (match && match[1]?.startsWith('UC')) {
+          const channelId = match[1]
+          channelUrls.forEach(u => youtubeCache.set(u, channelId))
+          return channelId
+        }
+      }
+    } catch (error) {
+      continue
+    }
+  }
+
+  console.warn(`[YouTube] Could not resolve channel for ${identifier}`)
+  return null
+}
+
+function findChannelIdInObject(obj) {
+  if (!obj || typeof obj !== 'object') return null
+  
+  // Look for channel ID in common YouTube data structures
+  if (obj.channelId && /^UC[A-Za-z0-9_-]{22}$/i.test(obj.channelId)) {
+    return obj.channelId
+  }
+  if (obj.externalId && /^UC[A-Za-z0-9_-]{22}$/i.test(obj.externalId)) {
+    return obj.externalId
+  }
+  if (obj.browseId && /^UC[A-Za-z0-9_-]{22}$/i.test(obj.browseId)) {
+    return obj.browseId
+  }
+  
+  // Recursively search nested objects
+  for (const key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      const result = findChannelIdInObject(obj[key])
+      if (result) return result
+    }
+  }
+  
   return null
 }
 
@@ -104,7 +216,13 @@ async function fetchTwitchStatuses(login) {
 
   const livePayload = await twitchApi(`streams?user_login=${encodeURIComponent(login)}`)
   const isLive = livePayload.data?.[0]
-  const liveStatus = isLive ? isLive.started_at : null
+  let liveStatus = isLive ? isLive.started_at : null
+
+  // If not currently live, check archived streams for last live time
+  if (!liveStatus) {
+    const archivedPayload = await twitchApi(`videos?user_id=${user.id}&first=1&sort=time&type=archive`)
+    liveStatus = archivedPayload.data?.[0]?.created_at || null
+  }
 
   const videosPayload = await twitchApi(`videos?user_id=${user.id}&first=1&sort=time&type=all`)
   const lastVideo = videosPayload.data?.[0]?.created_at || null

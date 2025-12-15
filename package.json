@@ -9,5 +9,8 @@
     "generate": "node index.mjs",
     "statuses": "node statuses.mjs",
     "prepare": "git config core.hooksPath .husky"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
   }
 }

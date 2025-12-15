@@ -37,6 +37,7 @@ const sections = countryOrder.map((country) => {
 const content = `${heading}\n${sections.join('\n\n')}\n`
 
 await fs.writeFile('README.md', content, { encoding: 'utf-8' })
+console.log('✅ Successfully generated README.md')
 
 function buildActivityLine(status) {
   if (!status) return 'Última actividad → Desconocida'
@@ -49,7 +50,7 @@ function buildActivityLine(status) {
   }
 
   if (status.twitch?.lastLive) {
-    parts.push(`Twitch en vivo desde: ${formatTimestamp(status.twitch.lastLive)}`)
+    parts.push(`Twitch última vez en vivo: ${formatTimestamp(status.twitch.lastLive)}`)
   } else if (status.twitch?.lastVideo) {
     parts.push(`Twitch último video: ${formatTimestamp(status.twitch.lastVideo)}`)
   } else if (status.twitch) {
@@ -123,7 +124,6 @@ function formatTimestamp(value) {
   try {
     return new Intl.DateTimeFormat('es-ES', {
       dateStyle: 'medium',
-      timeStyle: 'short',
     }).format(new Date(value))
   } catch (error) {
     return value
