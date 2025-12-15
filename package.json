@@ -8,6 +8,7 @@
   "scripts": {
     "generate": "node index.mjs",
     "statuses": "node statuses.mjs",
+    "check-links": "node link-check.mjs",
     "prepare": "git config core.hooksPath .husky"
   },
   "dependencies": {
