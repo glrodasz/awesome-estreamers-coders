@@ -13,10 +13,19 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
-async function resolveYouTubeChannelId(url) {
-  const directMatch = url.match(/youtube\.com\/channel\/([^/?]+)/i)
-  if (directMatch) return directMatch[1]
+function buildYouTubeUrl(identifier) {
+  if (/^https?:\/\//i.test(identifier)) return identifier
+  return `https://www.youtube.com/${identifier}`
+}
 
+async function resolveYouTubeChannelId(identifier) {
+  if (!identifier) return null
+  if (/^UC[A-Za-z0-9_-]{22}$/i.test(identifier)) return identifier
+
+  const slug = identifier.replace(/^channel\//i, '')
+  if (/^UC[A-Za-z0-9_-]{22}$/i.test(slug)) return slug
+
+  const url = buildYouTubeUrl(identifier)
   const cached = youtubeCache.get(url)
   if (cached) return cached
 
@@ -31,7 +40,7 @@ async function resolveYouTubeChannelId(url) {
       return channelFromAuthor[1]
     }
   } catch (error) {
-    console.warn(`[YouTube] Could not resolve channel for ${url}: ${error.message}`)
+    console.warn(`[YouTube] Could not resolve channel for ${identifier}: ${error.message}`)
   }
 
   return null
@@ -103,25 +112,14 @@ async function fetchTwitchStatuses(login) {
   return { userId: user.id, login: user.login, lastLive: liveStatus, lastVideo }
 }
 
-function extractLink(links, predicate) {
-  return links.find((link) => predicate(link.label, link.url)) || null
-}
-
-function parseTwitchLogin(url) {
-  const match = url.match(/twitch\.tv\/([^/?]+)/i)
-  return match ? match[1] : null
-}
-
 async function buildStatuses() {
   const entries = await Promise.all(
     data.map(async (person, index) => {
       const status = { name: person.name }
-      const youtubeLink = extractLink(person.links, (label, url) => /youtube/i.test(label) || /youtube\.com/i.test(url))
-      const twitchLink = extractLink(person.links, (label, url) => /twitch/i.test(label) || /twitch\.tv/i.test(url))
 
-      if (youtubeLink) {
+      if (person.youtube) {
         try {
-          const channelId = await resolveYouTubeChannelId(youtubeLink.url)
+          const channelId = await resolveYouTubeChannelId(person.youtube)
           if (channelId) {
             const lastUpload = await fetchYouTubeLastUpload(channelId)
             status.youtube = { channelId, lastUpload }
@@ -135,16 +133,10 @@ async function buildStatuses() {
         }
       }
 
-      if (twitchLink) {
+      if (person.twitch) {
         try {
-          const login = parseTwitchLogin(twitchLink.url)
-          if (login) {
-            const twitchStatus = await fetchTwitchStatuses(login)
-            status.twitch = twitchStatus
-          } else {
-            console.warn(`[Twitch] Unable to parse login for ${person.name}`)
-            status.twitch = {}
-          }
+          const twitchStatus = await fetchTwitchStatuses(person.twitch)
+          status.twitch = twitchStatus
         } catch (error) {
           console.warn(`[Twitch] Error fetching status for ${person.name}: ${error.message}`)
           status.twitch = {}
