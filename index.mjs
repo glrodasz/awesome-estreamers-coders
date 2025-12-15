@@ -79,6 +79,14 @@ function buildLinks(person) {
     links.push({ label: 'Twitch', url: buildTwitchUrl(person.twitch) })
   }
 
+  if (person.twitter) {
+    links.push({ label: 'Twitter', url: buildTwitterUrl(person.twitter) })
+  }
+
+  if (person.facebook) {
+    links.push({ label: 'Facebook', url: buildFacebookUrl(person.facebook) })
+  }
+
   if (Array.isArray(person.otherLinks)) {
     links.push(...person.otherLinks)
   }
@@ -99,6 +107,16 @@ function buildTwitchUrl(login) {
 function buildDiscordUrl(invite) {
   if (/^https?:\/\//i.test(invite)) return invite
   return `https://discord.gg/${invite}`
+}
+
+function buildTwitterUrl(handle) {
+  if (/^https?:\/\//i.test(handle)) return handle
+  return `https://twitter.com/${handle.replace(/^@/, '')}`
+}
+
+function buildFacebookUrl(handle) {
+  if (/^https?:\/\//i.test(handle)) return handle
+  return `https://www.facebook.com/${handle}`
 }
 
 function formatTimestamp(value) {

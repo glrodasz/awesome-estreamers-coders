@@ -8,7 +8,7 @@
   - [YouTube](https://www.youtube.com/JorgeCano) · [Twitter](https://twitter.com/jorgeucano)
   - Última actividad → YouTube: Desconocida
 - **Gonzalo Pozzo** — Solutions architect @ Vercel, Frontend / React ❤.
-  - [Sitio web](https://goncy.dev) · [Discord](https://discord.gonzalopozzo.com/) · [YouTube](https://www.youtube.com/c/GonzaloPozzo) · [Twitch](https://www.twitch.tv/goncypozzo) · [Twitter](https://twitter.com/goncy) · [Facebook](https://www.facebook.com/goncy.pozzo/)
+  - [Sitio web](https://goncy.dev) · [Discord](https://discord.gonzalopozzo.com/) · [YouTube](https://www.youtube.com/c/GonzaloPozzo) · [Twitch](https://www.twitch.tv/goncypozzo) · [Twitter](https://twitter.com/goncy) · [Facebook](https://www.facebook.com/goncy.pozzo)
   - Última actividad → YouTube: Desconocida · Twitch: Desconocida
 - **Noe VamoaCodear** — Desarrolladora Frontend 🟣 • Aprendemos tecnologías en Twitch.
   - [Sitio web](https://vamoacodear.com.ar/) · [Discord](https://discord.gg/vamoacodear) · [YouTube](https://www.youtube.com/c/vamoacodear) · [Twitch](https://www.twitch.tv/vamoacodear) · [Twitter](https://twitter.com/vamoacodear)
@@ -68,7 +68,7 @@
   - [Sitio web](https://www.baumannzone.dev/) · [YouTube](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA) · [Twitch](https://www.twitch.tv/baumannzone) · [Twitter](https://twitter.com/baumannzone)
   - Última actividad → YouTube: Desconocida · Twitch: Desconocida
 - **Dorian Designs** — Apasionado de las nuevas tecnologías y en especial del ecosistema de javascript.
-  - [Sitio web](https://cursos.doriandesings.com/) · [Discord](https://discord.gg/nE2dZrmZAS) · [YouTube](https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A) · [Twitch](https://www.twitch.tv/doriandesings) · [Twitter](https://twitter.com/DorianDesings) · [Facebook](https://www.facebook.com/yoaprendocondorian/)
+  - [Sitio web](https://cursos.doriandesings.com/) · [Discord](https://discord.gg/nE2dZrmZAS) · [YouTube](https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A) · [Twitch](https://www.twitch.tv/doriandesings) · [Twitter](https://twitter.com/DorianDesings) · [Facebook](https://www.facebook.com/yoaprendocondorian)
   - Última actividad → YouTube: Desconocida · Twitch: Desconocida
 
 ## Mexico
@@ -98,7 +98,7 @@
 ## Perú
 
 - **Leonidas Esteban** — Google Developer Expert, programming teacher, speaker and Frontend professional.
-  - [Sitio web](https://leonidasesteban.com/cursos) · [YouTube](https://www.youtube.com/LeonidasEsteban) · [Twitter](https://twitter.com/LeonidasEsteban) · [Facebook](https://www.facebook.com/LeonidasEsteban/)
+  - [Sitio web](https://leonidasesteban.com/cursos) · [YouTube](https://www.youtube.com/LeonidasEsteban) · [Twitter](https://twitter.com/LeonidasEsteban) · [Facebook](https://www.facebook.com/LeonidasEsteban)
   - Última actividad → YouTube: Desconocida
 - **Fazttech** — Programador y Desarrollador Web que comparte tutoriales y juega online :).
   - [Sitio web](https://faztweb.com/) · [Discord](https://discord.gg/sjxTPvUvt5) · [YouTube](https://www.youtube.com/fazttech) · [Twitch](https://www.twitch.tv/fazttech) · [Twitter](https://twitter.com/fazttech) · [Facebook](https://www.facebook.com/FaztTech)

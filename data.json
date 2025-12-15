@@ -4,12 +4,7 @@
     "description": "#Angular #GDE · Owner de @ngbaires · @ngconf organizer · Principal architect @HeroDevs @scullyIO · @angulareando · #EStreamerCoders.",
     "country": "Argentina",
     "youtube": "JorgeCano",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/jorgeucano"
-      }
-    ]
+    "twitter": "jorgeucano"
   },
   {
     "name": "Gonzalo Pozzo",
@@ -19,16 +14,8 @@
     "discord": "https://discord.gonzalopozzo.com/",
     "youtube": "c/GonzaloPozzo",
     "twitch": "goncypozzo",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/goncy"
-      },
-      {
-        "label": "Facebook",
-        "url": "https://www.facebook.com/goncy.pozzo/"
-      }
-    ]
+    "twitter": "goncy",
+    "facebook": "goncy.pozzo"
   },
   {
     "name": "Noe VamoaCodear",
@@ -38,20 +25,14 @@
     "discord": "vamoacodear",
     "youtube": "c/vamoacodear",
     "twitch": "vamoacodear",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/vamoacodear"
-      }
-    ]
+    "twitter": "vamoacodear"
   },
   {
     "name": "Sebastián Carroza",
     "description": "Desarrollador Frontend enfocado a Javascript, Vue, Typescript, Vuetify.",
     "country": "Chile",
     "discord": "HDCJk44WtG",
-    "twitch": "razor7w_w",
-    "otherLinks": []
+    "twitch": "razor7w_w"
   },
   {
     "name": "Ignacio Gutiérrez",
@@ -61,16 +42,8 @@
     "discord": "SKKPdttHmT",
     "youtube": "bluuweb",
     "twitch": "bluuweb",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/bluuweb"
-      },
-      {
-        "label": "Facebook",
-        "url": "https://www.facebook.com/bluuweb"
-      }
-    ]
+    "twitter": "bluuweb",
+    "facebook": "bluuweb"
   },
   {
     "name": "Ana Belisa Martínez",
@@ -79,16 +52,8 @@
     "website": "https://anabelisa.co/",
     "youtube": "anabelisam",
     "twitch": "anabelisam",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/anabelisam_"
-      },
-      {
-        "label": "Facebook",
-        "url": "https://www.facebook.com/anabelisam"
-      }
-    ]
+    "twitter": "anabelisam_",
+    "facebook": "anabelisam"
   },
   {
     "name": "Guillermo Rodas",
@@ -98,12 +63,7 @@
     "discord": "https://glrz.me/discord",
     "youtube": "guillermorodas",
     "twitch": "guillermorodas",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/glrodasz"
-      }
-    ]
+    "twitter": "glrodasz"
   },
   {
     "name": "Julián Duque",
@@ -112,24 +72,14 @@
     "website": "https://www.julianduque.co",
     "youtube": "user/julianduquej",
     "twitch": "julianduque",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/julian_duque"
-      }
-    ]
+    "twitter": "julian_duque"
   },
   {
     "name": "Lina Castro",
     "description": "Software Developer | Linux Enthusiastic | Developer Ubuntu Touch #OpenSource #FreeSoftware.",
     "country": "Colombia",
     "twitch": "lirrums",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/lirrums"
-      }
-    ]
+    "twitter": "lirrums"
   },
   {
     "name": "Daniel Suarez Dev",
@@ -137,12 +87,7 @@
     "country": "Colombia",
     "youtube": "channel/UC_zzfLSjrYNKrOIGK_js_AA",
     "twitch": "danielsuarezdev",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/DanielSuarezDev"
-      }
-    ]
+    "twitter": "DanielSuarezDev"
   },
   {
     "name": "Nicolas Molina",
@@ -150,12 +95,7 @@
     "country": "Colombia",
     "website": "https://nicobytes.com/",
     "youtube": "c/nicobytes",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/nicobytes"
-      }
-    ]
+    "twitter": "nicobytes"
   },
   {
     "name": "Desiré Carmona",
@@ -164,12 +104,7 @@
     "website": "https://desiremcarmona.com/#/",
     "youtube": "channel/UCjKXiQauEZBw-oLPiw--vgg",
     "twitch": "helle_world",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/helleworld_"
-      }
-    ]
+    "twitter": "helleworld_"
   },
   {
     "name": "Carlos Azaustre",
@@ -179,12 +114,7 @@
     "discord": "carlosazaustre",
     "youtube": "CarlosAzaustre",
     "twitch": "carlosazaustre",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/carlosazaustre"
-      }
-    ]
+    "twitter": "carlosazaustre"
   },
   {
     "name": "Brais Moure",
@@ -194,16 +124,8 @@
     "discord": "mouredev",
     "youtube": "MouredevApps",
     "twitch": "mouredev",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/MoureDev"
-      },
-      {
-        "label": "Facebook",
-        "url": "https://www.facebook.com/mouredev"
-      }
-    ]
+    "twitter": "MoureDev",
+    "facebook": "mouredev"
   },
   {
     "name": "Miguel Ángel Durán",
@@ -213,16 +135,8 @@
     "discord": "midudev",
     "youtube": "midudev",
     "twitch": "midudev",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/midudev"
-      },
-      {
-        "label": "Facebook",
-        "url": "https://www.facebook.com/midudev.frontend"
-      }
-    ]
+    "twitter": "midudev",
+    "facebook": "midudev.frontend"
   },
   {
     "name": "Pablo Sirera",
@@ -232,12 +146,7 @@
     "discord": "DsvmWs8Ban",
     "youtube": "PabloSirera",
     "twitch": "pablosirera",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/pablosirera"
-      }
-    ]
+    "twitter": "pablosirera"
   },
   {
     "name": "Santiago Martín",
@@ -245,12 +154,7 @@
     "country": "España",
     "website": "https://www.santiagomartin.dev/",
     "twitch": "santima10",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/SantiMA10b"
-      }
-    ]
+    "twitter": "SantiMA10b"
   },
   {
     "name": "Jorge Baumann",
@@ -259,12 +163,7 @@
     "website": "https://www.baumannzone.dev/",
     "youtube": "channel/UCTTj5ztXnGeDRPFVsBp7VMA",
     "twitch": "baumannzone",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/baumannzone"
-      }
-    ]
+    "twitter": "baumannzone"
   },
   {
     "name": "Dorian Designs",
@@ -274,16 +173,8 @@
     "discord": "nE2dZrmZAS",
     "youtube": "channel/UCzuwt7Pi_VB8cP5q5UE4u-A",
     "twitch": "doriandesings",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/DorianDesings"
-      },
-      {
-        "label": "Facebook",
-        "url": "https://www.facebook.com/yoaprendocondorian/"
-      }
-    ]
+    "twitter": "DorianDesings",
+    "facebook": "yoaprendocondorian"
   },
   {
     "name": "Oscar Barajas",
@@ -292,24 +183,14 @@
     "website": "https://gndx.dev/",
     "youtube": "c/oscarbarajas",
     "twitch": "gndxdev",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/gndx"
-      }
-    ]
+    "twitter": "gndx"
   },
   {
     "name": "Ricardo Celis",
     "description": "Streams Science & Technology, Among Us and Apex Legends.",
     "country": "Mexico",
     "twitch": "celismx",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/CelisMX"
-      }
-    ]
+    "twitter": "CelisMX"
   },
   {
     "name": "Pablo Trinidad",
@@ -317,12 +198,7 @@
     "country": "Mexico",
     "youtube": "channel/UC-Ol76LwNXj8scU_VtKDxVg",
     "twitch": "pablotrinidad",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/_pablotrinidad_"
-      }
-    ]
+    "twitter": "_pablotrinidad_"
   },
   {
     "name": "Héctor De León",
@@ -331,12 +207,7 @@
     "website": "http://hdeleon.net/",
     "youtube": "c/hdeleonnet",
     "twitch": "hdeleonnet",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/powerhdeleon"
-      }
-    ]
+    "twitter": "powerhdeleon"
   },
   {
     "name": "Jose Jesus Guzman Eusebio",
@@ -344,12 +215,7 @@
     "country": "Mexico",
     "youtube": "c/hdeleonnet",
     "twitch": "brujeriatech",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/powerhdeleon"
-      }
-    ]
+    "twitter": "powerhdeleon"
   },
   {
     "name": "Erifranck Nuñez",
@@ -358,12 +224,7 @@
     "website": "https://www.erifranck.art/",
     "youtube": "c/erifrancknunez",
     "twitch": "erifranck",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/erifranckn"
-      }
-    ]
+    "twitter": "erifranckn"
   },
   {
     "name": "Leonidas Esteban",
@@ -371,16 +232,8 @@
     "country": "Perú",
     "website": "https://leonidasesteban.com/cursos",
     "youtube": "LeonidasEsteban",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/LeonidasEsteban"
-      },
-      {
-        "label": "Facebook",
-        "url": "https://www.facebook.com/LeonidasEsteban/"
-      }
-    ]
+    "twitter": "LeonidasEsteban",
+    "facebook": "LeonidasEsteban"
   },
   {
     "name": "Fazttech",
@@ -390,15 +243,7 @@
     "discord": "sjxTPvUvt5",
     "youtube": "fazttech",
     "twitch": "fazttech",
-    "otherLinks": [
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/fazttech"
-      },
-      {
-        "label": "Facebook",
-        "url": "https://www.facebook.com/FaztTech"
-      }
-    ]
+    "twitter": "fazttech",
+    "facebook": "FaztTech"
   }
 ]
