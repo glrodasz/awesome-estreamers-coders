@@ -68,10 +68,6 @@ function buildLinks(person) {
     links.push({ label: 'Sitio web', url: person.website })
   }
 
-  if (person.discord) {
-    links.push({ label: 'Discord', url: buildDiscordUrl(person.discord) })
-  }
-
   if (person.youtube) {
     links.push({ label: 'YouTube', url: buildYouTubeUrl(person.youtube) })
   }
@@ -103,11 +99,6 @@ function buildYouTubeUrl(identifier) {
 function buildTwitchUrl(login) {
   if (/^https?:\/\//i.test(login)) return login
   return `https://www.twitch.tv/${login}`
-}
-
-function buildDiscordUrl(invite) {
-  if (/^https?:\/\//i.test(invite)) return invite
-  return `https://discord.gg/${invite}`
 }
 
 function buildTwitterUrl(handle) {

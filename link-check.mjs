@@ -12,11 +12,6 @@ function buildTwitchUrl(login) {
   return `https://www.twitch.tv/${login}`
 }
 
-function buildDiscordUrl(invite) {
-  if (/^https?:\/\//i.test(invite)) return invite
-  return `https://discord.gg/${invite}`
-}
-
 function buildTwitterUrl(handle) {
   if (/^https?:\/\//i.test(handle)) return handle
   return `https://twitter.com/${handle.replace(/^@/, '')}`
@@ -32,10 +27,6 @@ function buildLinks(person) {
 
   if (person.website) {
     links.push({ label: 'Sitio web', url: person.website })
-  }
-
-  if (person.discord) {
-    links.push({ label: 'Discord', url: buildDiscordUrl(person.discord) })
   }
 
   if (person.youtube) {
@@ -61,7 +52,7 @@ function buildLinks(person) {
   return links
 }
 
-async function checkUrl(url) {
+async function checkUrl(url, timeoutMs = 10000) {
   const checkedAt = new Date().toISOString()
   const result = { status: 'broken', httpStatus: null, checkedAt }
 
@@ -71,15 +62,28 @@ async function checkUrl(url) {
   ]
 
   for (const attempt of attempts) {
+    const controller = new AbortController()
+    const timeoutId = setTimeout(() => controller.abort(), timeoutMs)
+
     try {
-      const response = await fetch(url, { method: attempt.method, redirect: 'follow' })
+      const response = await fetch(url, {
+        method: attempt.method,
+        redirect: 'follow',
+        signal: controller.signal,
+      })
+      clearTimeout(timeoutId)
       result.httpStatus = response.status
       if (response.ok) {
         result.status = 'ok'
         return result
       }
     } catch (error) {
-      result.error = error.message
+      clearTimeout(timeoutId)
+      if (error.name === 'AbortError') {
+        result.error = 'Request timeout'
+      } else {
+        result.error = error.message
+      }
     }
   }
 
@@ -87,19 +91,65 @@ async function checkUrl(url) {
 }
 
 async function checkLinks() {
-  const updated = []
-
+  // Collect all links with person info
+  const allLinks = []
   for (const person of data) {
     const links = buildLinks(person)
-    const checked = []
-
     for (const link of links) {
+      allLinks.push({ person, link })
+    }
+  }
+
+  const totalLinks = allLinks.length
+  console.log(`Checking ${totalLinks} links across ${data.length} streamers...\n`)
+
+  // Process links in batches for concurrency
+  const batchSize = 10
+  const checkedLinks = []
+  let processed = 0
+
+  for (let i = 0; i < allLinks.length; i += batchSize) {
+    const batch = allLinks.slice(i, i + batchSize)
+    const batchPromises = batch.map(async ({ person, link }) => {
       const status = await checkUrl(link.url)
-      checked.push({ ...link, ...status })
+      return { person, link, status }
+    })
+
+    const results = await Promise.allSettled(batchPromises)
+    for (let j = 0; j < results.length; j++) {
+      const result = results[j]
+      if (result.status === 'fulfilled') {
+        checkedLinks.push(result.value)
+      } else {
+        // Handle promise rejection (shouldn't happen, but just in case)
+        const batchItem = batch[j]
+        checkedLinks.push({
+          person: batchItem.person,
+          link: batchItem.link,
+          status: { status: 'broken', error: result.reason?.message || 'Unknown error', checkedAt: new Date().toISOString() },
+        })
+      }
     }
 
-    updated.push({ ...person, linkStatuses: checked })
+    processed += batch.length
+    const percentage = Math.round((processed / totalLinks) * 100)
+    console.log(`Progress: ${processed}/${totalLinks} (${percentage}%)`)
   }
+
+  // Group checked links back by person
+  const personMap = new Map()
+  for (const person of data) {
+    personMap.set(person, [])
+  }
+
+  for (const { person, link, status } of checkedLinks) {
+    personMap.get(person)?.push({ ...link, ...status })
+  }
+
+  const updated = Array.from(personMap.entries()).map(([person, linkStatuses]) => ({
+    ...person,
+    linkStatuses,
+  }))
 
   const broken = updated
     .flatMap((entry) => entry.linkStatuses.map((link) => ({ ...link, name: entry.name })))
@@ -107,7 +157,7 @@ async function checkLinks() {
 
   await fs.writeFile('data.json', JSON.stringify(updated, null, 2), 'utf-8')
 
-  console.log(`Checked ${updated.reduce((sum, entry) => sum + entry.linkStatuses.length, 0)} links across ${updated.length} streamers.`)
+  console.log(`\nChecked ${totalLinks} links across ${updated.length} streamers.`)
   if (broken.length) {
     console.log('\nBroken links:')
     broken.forEach((item) => {
