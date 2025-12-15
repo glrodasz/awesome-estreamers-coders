@@ -103,3 +103,9 @@
 - **Fazttech** — Programador y Desarrollador Web que comparte tutoriales y juega online :).
   - [Sitio web](https://faztweb.com/) · [Discord](https://discord.gg/sjxTPvUvt5) · [YouTube](https://www.youtube.com/fazttech) · [Twitch](https://www.twitch.tv/fazttech) · [Twitter](https://twitter.com/fazttech) · [Facebook](https://www.facebook.com/FaztTech)
   - Última actividad → YouTube: Desconocida · Twitch: Desconocida
+
+## Utilidades
+
+- `npm run generate`: actualiza el README con los datos de `data.json` y la última actividad conocida.
+- `npm run statuses`: consulta la actividad reciente en YouTube y Twitch y guarda los resultados en `statuses.json`.
+- `npm run check-links`: valida los enlaces de cada streamer, informa por consola cuáles revisar y guarda los resultados en el campo `linkStatuses` de `data.json` (incluyendo `status`, `httpStatus` y `checkedAt` por enlace).

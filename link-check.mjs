@@ -87,7 +87,7 @@ async function checkUrl(url) {
 }
 
 async function checkLinks() {
-  const entries = []
+  const updated = []
 
   for (const person of data) {
     const links = buildLinks(person)
@@ -98,22 +98,16 @@ async function checkLinks() {
       checked.push({ ...link, ...status })
     }
 
-    entries.push({ name: person.name, links: checked })
+    updated.push({ ...person, linkStatuses: checked })
   }
 
-  const broken = entries
-    .flatMap((entry) => entry.links.map((link) => ({ ...link, name: entry.name })))
+  const broken = updated
+    .flatMap((entry) => entry.linkStatuses.map((link) => ({ ...link, name: entry.name })))
     .filter((link) => link.status !== 'ok')
 
-  const payload = {
-    checkedAt: new Date().toISOString(),
-    entries,
-    broken,
-  }
+  await fs.writeFile('data.json', JSON.stringify(updated, null, 2), 'utf-8')
 
-  await fs.writeFile('link-statuses.json', JSON.stringify(payload, null, 2), 'utf-8')
-
-  console.log(`Checked ${entries.reduce((sum, entry) => sum + entry.links.length, 0)} links across ${entries.length} streamers.`)
+  console.log(`Checked ${updated.reduce((sum, entry) => sum + entry.linkStatuses.length, 0)} links across ${updated.length} streamers.`)
   if (broken.length) {
     console.log('\nBroken links:')
     broken.forEach((item) => {
