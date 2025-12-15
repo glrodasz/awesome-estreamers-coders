@@ -3,301 +3,973 @@
     "name": "Jorge Cano",
     "description": "#Angular #GDE · Owner de @ngbaires · @ngconf organizer · Principal architect @HeroDevs @scullyIO · @angulareando · #EStreamerCoders.",
     "country": "Argentina",
-    "links": [
-      { "label": "Twitter", "url": "https://twitter.com/jorgeucano" },
-      { "label": "YouTube", "url": "https://www.youtube.com/JorgeCano" }
+    "youtube": "JorgeCano",
+    "twitter": "jorgeucano",
+    "linkStatuses": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/JorgeCano",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:40.487Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/jorgeucano",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:40.505Z"
+      }
     ]
   },
   {
     "name": "Gonzalo Pozzo",
     "description": "Solutions architect @ Vercel, Frontend / React ❤.",
     "country": "Argentina",
-    "links": [
-      { "label": "Sitio web", "url": "https://goncy.dev" },
-      { "label": "Comunidad", "url": "https://discord.gonzalopozzo.com/" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/goncypozzo" },
-      { "label": "Twitter", "url": "https://twitter.com/goncy" },
-      { "label": "Facebook", "url": "https://www.facebook.com/goncy.pozzo/" },
-      { "label": "YouTube", "url": "https://www.youtube.com/c/GonzaloPozzo/" }
+    "website": "https://goncy.dev",
+    "youtube": "c/GonzaloPozzo",
+    "twitch": "goncypozzo",
+    "twitter": "goncy",
+    "facebook": "goncy.pozzo",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://goncy.dev",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:40.505Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/c/GonzaloPozzo",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:40.506Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/goncypozzo",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:40.506Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/goncy",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:40.507Z"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/goncy.pozzo",
+        "status": "broken",
+        "httpStatus": 400,
+        "checkedAt": "2025-12-15T10:25:40.507Z"
+      }
     ]
   },
   {
     "name": "Noe VamoaCodear",
     "description": "Desarrolladora Frontend 🟣 • Aprendemos tecnologías en Twitch.",
     "country": "Argentina",
-    "links": [
-      { "label": "Sitio web", "url": "https://vamoacodear.com.ar/" },
-      { "label": "Comunidad", "url": "https://discord.io/vamoacodear" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/vamoacodear" },
-      { "label": "Twitter", "url": "https://twitter.com/vamoacodear" },
-      { "label": "YouTube", "url": "https://www.youtube.com/c/vamoacodear" }
+    "youtube": "c/vamoacodear",
+    "twitch": "vamoacodear",
+    "twitter": "vamoacodear",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://vamoacodear.com.ar/",
+        "status": "broken",
+        "httpStatus": null,
+        "checkedAt": "2025-12-15T10:25:40.507Z",
+        "error": "fetch failed"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/c/vamoacodear",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:41.258Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/vamoacodear",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:41.260Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/vamoacodear",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:41.262Z"
+      }
     ]
   },
   {
     "name": "Sebastián Carroza",
     "description": "Desarrollador Frontend enfocado a Javascript, Vue, Typescript, Vuetify.",
     "country": "Chile",
-    "links": [
-      { "label": "Comunidad", "url": "https://discord.com/invite/HDCJk44WtG" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/razor7w_w/" }
+    "twitch": "razor7w_w",
+    "linkStatuses": [
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/razor7w_w",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:41.263Z"
+      }
     ]
   },
   {
     "name": "Ignacio Gutiérrez",
     "description": "Desarrollador Frontend; comparte contenido sobre React, NextJS, Vue y más.",
     "country": "Chile",
-    "links": [
-      { "label": "Sitio web", "url": "https://linkr.bio/bluuweb" },
-      { "label": "Comunidad", "url": "https://discord.com/invite/SKKPdttHmT" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/bluuweb/" },
-      { "label": "Twitter", "url": "https://twitter.com/bluuweb" },
-      { "label": "Facebook", "url": "https://www.facebook.com/bluuweb" },
-      { "label": "YouTube", "url": "https://www.youtube.com/bluuweb" }
+    "website": "https://linkr.bio/bluuweb",
+    "youtube": "bluuweb",
+    "twitch": "bluuweb",
+    "twitter": "bluuweb",
+    "facebook": "bluuweb",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://linkr.bio/bluuweb",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:41.264Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/bluuweb",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:41.265Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/bluuweb",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:41.266Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/bluuweb",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:41.266Z"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/bluuweb",
+        "status": "broken",
+        "httpStatus": 400,
+        "checkedAt": "2025-12-15T10:25:41.907Z"
+      }
     ]
   },
   {
     "name": "Ana Belisa Martínez",
     "description": "Master Coach at @platzi · Systems Engineer · Web Developer · Mom Bebeloper · Lead at DevC Bogotá · Founder @wcfcolombia · Speaker · Head of #ElCodigoRosa.",
     "country": "Colombia",
-    "links": [
-      { "label": "Sitio web", "url": "https://anabelisa.co/" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/anabelisam" },
-      { "label": "Twitter", "url": "https://twitter.com/anabelisam_" },
-      { "label": "Facebook", "url": "https://www.facebook.com/anabelisam" },
-      { "label": "YouTube", "url": "https://www.youtube.com/anabelisam" }
+    "youtube": "anabelisam",
+    "twitch": "anabelisam",
+    "twitter": "anabelisam_",
+    "facebook": "anabelisam",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://anabelisa.co/",
+        "status": "broken",
+        "httpStatus": null,
+        "checkedAt": "2025-12-15T10:25:41.909Z",
+        "error": "fetch failed"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/anabelisam",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:41.911Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/anabelisam",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:41.913Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/anabelisam_",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:41.914Z"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/anabelisam",
+        "status": "broken",
+        "httpStatus": 400,
+        "checkedAt": "2025-12-15T10:25:41.914Z"
+      }
     ]
   },
   {
     "name": "Guillermo Rodas",
     "description": "Made in 🇨🇴 Colombia living in Sweden 🇸🇪 — Google Developer Expert en Tecnologías Web.",
     "country": "Colombia",
-    "links": [
-      { "label": "Sitio web", "url": "https://guillermorodas.com/" },
-      { "label": "Comunidad", "url": "https://glrz.me/discord" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/guillermorodas" },
-      { "label": "Twitter", "url": "https://twitter.com/glrodasz" },
-      { "label": "YouTube", "url": "https://www.youtube.com/guillermorodas" }
+    "website": "https://guillermorodas.com/",
+    "youtube": "guillermorodas",
+    "twitch": "guillermorodas",
+    "twitter": "glrodasz",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://guillermorodas.com/",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:41.915Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/guillermorodas",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:41.915Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/guillermorodas",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:41.916Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/glrodasz",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:42.534Z"
+      }
     ]
   },
   {
     "name": "Julián Duque",
     "description": "Developer and Educator at MNTD · Community Leader · NodeConf and JSConf Colombia organizer · Sr. Developer Advocate at Salesforce Heroku.",
     "country": "Colombia",
-    "links": [
-      { "label": "Sitio web", "url": "https://www.julianduque.co" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/julianduque" },
-      { "label": "Twitter", "url": "https://twitter.com/julian_duque" },
-      { "label": "YouTube", "url": "https://youtube.com/user/julianduquej" }
+    "website": "https://www.julianduque.co",
+    "youtube": "user/julianduquej",
+    "twitch": "julianduque",
+    "twitter": "julian_duque",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://www.julianduque.co",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:42.536Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/user/julianduquej",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:42.537Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/julianduque",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:42.538Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/julian_duque",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:42.538Z"
+      }
     ]
   },
   {
     "name": "Lina Castro",
     "description": "Software Developer | Linux Enthusiastic | Developer Ubuntu Touch #OpenSource #FreeSoftware.",
     "country": "Colombia",
-    "links": [
-      { "label": "Twitch", "url": "https://www.twitch.tv/lirrums" },
-      { "label": "Twitter", "url": "https://twitter.com/lirrums" }
+    "twitch": "lirrums",
+    "twitter": "lirrums",
+    "linkStatuses": [
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/lirrums",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:42.539Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/lirrums",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:42.539Z"
+      }
     ]
   },
   {
     "name": "Daniel Suarez Dev",
     "description": "Frontend Developer and Educator | Freelancer | JavaScript, HTML, CSS, Figma y todo tema que aporte a la comunidad frontend.",
     "country": "Colombia",
-    "links": [
-      { "label": "Twitch", "url": "https://www.twitch.tv/danielsuarezdev" },
-      { "label": "Twitter", "url": "https://twitter.com/DanielSuarezDev" },
-      { "label": "YouTube", "url": "https://www.youtube.com/channel/UC_zzfLSjrYNKrOIGK_js_AA" }
+    "youtube": "channel/UC_zzfLSjrYNKrOIGK_js_AA",
+    "twitch": "danielsuarezdev",
+    "twitter": "DanielSuarezDev",
+    "linkStatuses": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/channel/UC_zzfLSjrYNKrOIGK_js_AA",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:42.539Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/danielsuarezdev",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:42.540Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/DanielSuarezDev",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:42.540Z"
+      }
     ]
   },
   {
     "name": "Nicolas Molina",
     "description": "GDE in Web Technologies and Angular. Senior Front-end developer and teacher at Platzi.",
     "country": "Colombia",
-    "links": [
-      { "label": "Sitio web", "url": "https://nicobytes.com/" },
-      { "label": "Twitter", "url": "https://twitter.com/nicobytes" },
-      { "label": "YouTube", "url": "https://www.youtube.com/c/nicobytes" }
+    "website": "https://nicobytes.com/",
+    "youtube": "c/nicobytes",
+    "twitter": "nicobytes",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://nicobytes.com/",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:43.672Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/c/nicobytes",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:43.673Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/nicobytes",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:43.674Z"
+      }
     ]
   },
   {
     "name": "Desiré Carmona",
     "description": "Unity programmer from Spain. She used to be a web developer/designer and UX-UI designer. Now she creates games!",
     "country": "España",
-    "links": [
-      { "label": "Sitio web", "url": "https://desiremcarmona.com/#/" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/helle_world" },
-      { "label": "Twitter", "url": "https://twitter.com/helleworld_" },
-      { "label": "YouTube", "url": "https://www.youtube.com/channel/UCjKXiQauEZBw-oLPiw--vgg" }
+    "twitch": "helle_world",
+    "twitter": "helleworld_",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://desiremcarmona.com/#/",
+        "status": "broken",
+        "httpStatus": null,
+        "checkedAt": "2025-12-15T10:25:43.674Z",
+        "error": "fetch failed"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/helle_world",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:43.675Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/helleworld_",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:43.675Z"
+      }
     ]
   },
   {
     "name": "Carlos Azaustre",
     "description": "Desarrollador web desde hace más de 8 años. Google Developer Expert (GDE) en Tecnologías Web.",
     "country": "España",
-    "links": [
-      { "label": "Sitio web", "url": "https://mypublicinbox.com/carlosazaustre" },
-      { "label": "Comunidad", "url": "https://discord.com/invite/carlosazaustre" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/carlosazaustre" },
-      { "label": "Twitter", "url": "https://twitter.com/carlosazaustre" },
-      { "label": "YouTube", "url": "https://www.youtube.com/CarlosAzaustre" }
+    "website": "https://mypublicinbox.com/carlosazaustre",
+    "youtube": "CarlosAzaustre",
+    "twitch": "carlosazaustre",
+    "twitter": "carlosazaustre",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://mypublicinbox.com/carlosazaustre",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:43.675Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/CarlosAzaustre",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:43.676Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/carlosazaustre",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:43.677Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/carlosazaustre",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:44.587Z"
+      }
     ]
   },
   {
     "name": "Brais Moure",
     "description": "Desarrollador de software profesional desde hace más de 10 años. Actualmente trabaja como freelance creando apps para iOS y Android.",
     "country": "España",
-    "links": [
-      { "label": "Sitio web", "url": "https://moure.dev/" },
-      { "label": "Comunidad", "url": "https://discord.com/invite/mouredev" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/mouredev" },
-      { "label": "Twitter", "url": "https://twitter.com/MoureDev" },
-      { "label": "Facebook", "url": "https://www.facebook.com/mouredev" },
-      { "label": "YouTube", "url": "https://www.youtube.com/MouredevApps" }
+    "website": "https://moure.dev/",
+    "youtube": "MouredevApps",
+    "twitch": "mouredev",
+    "twitter": "MoureDev",
+    "facebook": "mouredev",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://moure.dev/",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:44.589Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/MouredevApps",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:44.591Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/mouredev",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:44.592Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/MoureDev",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:44.592Z"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/mouredev",
+        "status": "broken",
+        "httpStatus": 400,
+        "checkedAt": "2025-12-15T10:25:44.592Z"
+      }
     ]
   },
   {
     "name": "Miguel Ángel Durán",
     "description": "Javascript ☕️, React ⚛️, CSS🎨, HTML, Node.js, Firebase y mucho más.",
     "country": "España",
-    "links": [
-      { "label": "Sitio web", "url": "https://midu.dev/" },
-      { "label": "Comunidad", "url": "https://discord.gg/midudev" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/midudev/" },
-      { "label": "Twitter", "url": "https://twitter.com/midudev" },
-      { "label": "Facebook", "url": "https://www.facebook.com/midudev.frontend" },
-      { "label": "YouTube", "url": "https://www.youtube.com/midudev" }
+    "website": "https://midu.dev/",
+    "youtube": "midudev",
+    "twitch": "midudev",
+    "twitter": "midudev",
+    "facebook": "midudev.frontend",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://midu.dev/",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:44.593Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/midudev",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:44.594Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/midudev",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:45.792Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/midudev",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:45.794Z"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/midudev.frontend",
+        "status": "broken",
+        "httpStatus": 400,
+        "checkedAt": "2025-12-15T10:25:45.796Z"
+      }
     ]
   },
   {
     "name": "Pablo Sirera",
     "description": "Desarrollador Frontend enfocado con Javascript, Vue 💚, Nuxt, Firebase y más 🔥.",
     "country": "España",
-    "links": [
-      { "label": "Sitio web", "url": "https://pablosirera.com/" },
-      { "label": "Comunidad", "url": "https://discord.com/invite/DsvmWs8Ban" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/pablosirera" },
-      { "label": "Twitter", "url": "https://twitter.com/pablosirera" },
-      { "label": "YouTube", "url": "https://www.youtube.com/PabloSirera" }
+    "website": "https://pablosirera.com/",
+    "youtube": "PabloSirera",
+    "twitch": "pablosirera",
+    "twitter": "pablosirera",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://pablosirera.com/",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:45.798Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/PabloSirera",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:45.800Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/pablosirera",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:45.801Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/pablosirera",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:45.801Z"
+      }
     ]
   },
   {
     "name": "Santiago Martín",
     "description": "Software Engineer 🚀 TypeScript, React, NEXT.js, Node, Deno, Google Cloud (+ Firebase)... todo lo necesario para hacer un proyecto desde 0.",
     "country": "España",
-    "links": [
-      { "label": "Sitio web", "url": "https://www.santiagomartin.dev/" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/santima10" },
-      { "label": "Twitter", "url": "https://twitter.com/SantiMA10b" }
+    "website": "https://www.santiagomartin.dev/",
+    "twitch": "santima10",
+    "twitter": "SantiMA10b",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://www.santiagomartin.dev/",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:45.801Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/santima10",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:45.802Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/SantiMA10b",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:46.279Z"
+      }
     ]
   },
   {
     "name": "Jorge Baumann",
     "description": "Open Source Developer at #RambitoJS 🐶 · JavaScript · Vue.js · Testing · Firebase · CSS · Node.js.",
     "country": "España",
-    "links": [
-      { "label": "Sitio web", "url": "https://www.baumannzone.dev/" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/baumannzone" },
-      { "label": "Twitter", "url": "https://twitter.com/baumannzone" },
-      { "label": "YouTube", "url": "https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA" }
+    "website": "https://www.baumannzone.dev/",
+    "youtube": "channel/UCTTj5ztXnGeDRPFVsBp7VMA",
+    "twitch": "baumannzone",
+    "twitter": "baumannzone",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://www.baumannzone.dev/",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:46.279Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:46.280Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/baumannzone",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:46.280Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/baumannzone",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:46.280Z"
+      }
     ]
   },
   {
     "name": "Dorian Designs",
     "description": "Apasionado de las nuevas tecnologías y en especial del ecosistema de javascript.",
     "country": "España",
-    "links": [
-      { "label": "Sitio web", "url": "https://cursos.doriandesings.com/" },
-      { "label": "Comunidad", "url": "https://discord.com/invite/nE2dZrmZAS" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/doriandesings" },
-      { "label": "Twitter", "url": "https://twitter.com/DorianDesings" },
-      { "label": "Facebook", "url": "https://www.facebook.com/yoaprendocondorian/" },
-      { "label": "YouTube", "url": "https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A" }
+    "youtube": "channel/UCzuwt7Pi_VB8cP5q5UE4u-A",
+    "twitch": "doriandesings",
+    "twitter": "DorianDesings",
+    "facebook": "yoaprendocondorian",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://cursos.doriandesings.com/",
+        "status": "broken",
+        "httpStatus": null,
+        "checkedAt": "2025-12-15T10:25:46.280Z",
+        "error": "fetch failed"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:46.281Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/doriandesings",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:46.281Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/DorianDesings",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:46.281Z"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/yoaprendocondorian",
+        "status": "broken",
+        "httpStatus": 400,
+        "checkedAt": "2025-12-15T10:25:47.505Z"
+      }
     ]
   },
   {
     "name": "Oscar Barajas",
     "description": "Frontend & Foundation Layer at @platzi #education · Lead at Developer Circles from Facebook · ReactJS, Speaker & Blogger. I teach ReactJS in @platzi - 🇲🇽🇨🇴",
     "country": "Mexico",
-    "links": [
-      { "label": "Sitio web", "url": "https://gndx.dev/" },
-      { "label": "Twitch", "url": "https://twitch.tv/gndxdev" },
-      { "label": "Twitter", "url": "https://twitter.com/gndx" },
-      { "label": "YouTube", "url": "https://www.youtube.com/c/oscarbarajas" }
+    "website": "https://gndx.dev/",
+    "youtube": "c/oscarbarajas",
+    "twitter": "gndx",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://gndx.dev/",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:47.506Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/c/oscarbarajas",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:47.506Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/gndx",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:47.507Z"
+      }
     ]
   },
   {
     "name": "Ricardo Celis",
     "description": "Streams Science & Technology, Among Us and Apex Legends.",
     "country": "Mexico",
-    "links": [
-      { "label": "Twitch", "url": "https://twitch.tv/celismx" },
-      { "label": "Twitter", "url": "https://twitter.com/CelisMX" }
+    "twitch": "celismx",
+    "twitter": "CelisMX",
+    "linkStatuses": [
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/celismx",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:47.507Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/CelisMX",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:47.507Z"
+      }
     ]
   },
   {
     "name": "Pablo Trinidad",
     "description": "Software Engineer; ha trabajado para Google, Microsoft y startups de LATAM. Estudiante de la Facultad de Ciencias de la UNAM [Go/Python/C++/Punch Cards].",
     "country": "Mexico",
-    "links": [
-      { "label": "Twitch", "url": "https://twitch.tv/pablotrinidad" },
-      { "label": "Twitter", "url": "https://twitter.com/_pablotrinidad_" },
-      { "label": "YouTube", "url": "https://www.youtube.com/channel/UC-Ol76LwNXj8scU_VtKDxVg" }
+    "youtube": "channel/UC-Ol76LwNXj8scU_VtKDxVg",
+    "twitter": "_pablotrinidad_",
+    "linkStatuses": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/channel/UC-Ol76LwNXj8scU_VtKDxVg",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:47.507Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/_pablotrinidad_",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:47.507Z"
+      }
     ]
   },
   {
     "name": "Héctor De León",
     "description": "Ingeniero en computación, aficionado a la inteligencia artificial y al desarrollo de sistemas que optimicen procesos. Creador de contenido para Youtube y Udemy. Microsoft Most Valuable Professional 2022 🏆.",
     "country": "Mexico",
-    "links": [
-      { "label": "Sitio web", "url": "http://hdeleon.net/" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/hdeleonnet" },
-      { "label": "Twitter", "url": "https://twitter.com/powerhdeleon" },
-      { "label": "YouTube", "url": "https://www.youtube.com/c/hdeleonnet" }
+    "website": "http://hdeleon.net/",
+    "youtube": "c/hdeleonnet",
+    "twitch": "hdeleonnet",
+    "twitter": "powerhdeleon",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "http://hdeleon.net/",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:47.508Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/c/hdeleonnet",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:47.508Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/hdeleonnet",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:48.114Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/powerhdeleon",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:48.115Z"
+      }
     ]
   },
   {
     "name": "Jose Jesus Guzman Eusebio",
     "description": "Le encanta enseñar y compartir conocimiento en tecnología como Sherpa Digital de Microsoft y host del podcast \"No es Brujería, es Tecnología\".",
     "country": "Mexico",
-    "links": [
-      { "label": "Twitch", "url": "https://www.twitch.tv/brujeriatech" },
-      { "label": "Twitter", "url": "https://twitter.com/powerhdeleon" },
-      { "label": "YouTube", "url": "https://www.youtube.com/c/hdeleonnet" }
+    "youtube": "c/hdeleonnet",
+    "twitch": "brujeriatech",
+    "twitter": "powerhdeleon",
+    "linkStatuses": [
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/c/hdeleonnet",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:48.115Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/brujeriatech",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:48.116Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/powerhdeleon",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:48.116Z"
+      }
     ]
   },
   {
     "name": "Erifranck Nuñez",
     "description": "Desarrollador frontend en Globant; amante de la ilustración y la animación; entrenador pokemon en tiempos libres.",
     "country": "Venezuela",
-    "links": [
-      { "label": "Sitio web", "url": "https://www.erifranck.art/" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/erifranck" },
-      { "label": "Twitter", "url": "https://twitter.com/erifranckn" },
-      { "label": "YouTube", "url": "https://www.youtube.com/c/erifrancknunez" }
+    "website": "https://www.erifranck.art/",
+    "youtube": "c/erifrancknunez",
+    "twitch": "erifranck",
+    "twitter": "erifranckn",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://www.erifranck.art/",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:48.117Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/c/erifrancknunez",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:48.117Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/erifranck",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:48.117Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/erifranckn",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:48.118Z"
+      }
     ]
   },
   {
     "name": "Leonidas Esteban",
     "description": "Google Developer Expert, programming teacher, speaker and Frontend professional.",
     "country": "Perú",
-    "links": [
-      { "label": "Sitio web", "url": "https://leonidasesteban.com/cursos" },
-      { "label": "Twitter", "url": "https://twitter.com/LeonidasEsteban" },
-      { "label": "Facebook", "url": "https://www.facebook.com/LeonidasEsteban/" },
-      { "label": "YouTube", "url": "https://www.youtube.com/LeonidasEsteban" }
+    "website": "https://leonidasesteban.com/cursos",
+    "youtube": "LeonidasEsteban",
+    "twitter": "LeonidasEsteban",
+    "facebook": "LeonidasEsteban",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://leonidasesteban.com/cursos",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:48.118Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/LeonidasEsteban",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:49.033Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/LeonidasEsteban",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:49.034Z"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/LeonidasEsteban",
+        "status": "broken",
+        "httpStatus": 400,
+        "checkedAt": "2025-12-15T10:25:49.035Z"
+      }
     ]
   },
   {
     "name": "Fazttech",
     "description": "Programador y Desarrollador Web que comparte tutoriales y juega online :).",
     "country": "Perú",
-    "links": [
-      { "label": "Sitio web", "url": "https://faztweb.com/" },
-      { "label": "Comunidad", "url": "https://discord.com/invite/sjxTPvUvt5" },
-      { "label": "Twitch", "url": "https://www.twitch.tv/fazttech" },
-      { "label": "Twitter", "url": "https://twitter.com/fazttech" },
-      { "label": "Facebook", "url": "https://www.facebook.com/FaztTech" },
-      { "label": "YouTube", "url": "https://www.youtube.com/fazttech" }
+    "website": "https://faztweb.com/",
+    "youtube": "fazttech",
+    "twitch": "fazttech",
+    "twitter": "fazttech",
+    "facebook": "FaztTech",
+    "linkStatuses": [
+      {
+        "label": "Sitio web",
+        "url": "https://faztweb.com/",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:49.036Z"
+      },
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/fazttech",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:49.036Z"
+      },
+      {
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/fazttech",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:49.037Z"
+      },
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/fazttech",
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2025-12-15T10:25:49.037Z"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/FaztTech",
+        "status": "broken",
+        "httpStatus": 400,
+        "checkedAt": "2025-12-15T10:25:49.038Z"
+      }
     ]
   }
 ]

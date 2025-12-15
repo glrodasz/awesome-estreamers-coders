@@ -1,0 +1,306 @@
+{
+  "generatedAt": "2025-12-15T10:25:05.904Z",
+  "entries": [
+    {
+      "name": "Jorge Cano",
+      "youtube": {
+        "channelId": "UCdp9sM22GW5uIOaU9eZ7n6w",
+        "lastUpload": "2025-06-06T17:00:06+00:00"
+      }
+    },
+    {
+      "name": "Gonzalo Pozzo",
+      "youtube": {
+        "channelId": "UCCvaRcYdZCZBrBQVnsUBg5Q",
+        "lastUpload": "2025-10-29T14:53:39+00:00"
+      },
+      "twitch": {
+        "userId": "48388828",
+        "login": "goncypozzo",
+        "lastLive": "2025-12-09T21:58:30Z",
+        "lastVideo": "2025-12-09T21:58:30Z"
+      }
+    },
+    {
+      "name": "Noe VamoaCodear",
+      "youtube": {
+        "channelId": "UCI4kOPuHdMoCzrE9QfSC0nQ",
+        "lastUpload": "2023-10-10T18:26:12+00:00"
+      },
+      "twitch": {
+        "userId": "577749808",
+        "login": "vamoacodear",
+        "lastLive": null,
+        "lastVideo": null
+      }
+    },
+    {
+      "name": "Sebastián Carroza",
+      "twitch": {
+        "userId": "144242244",
+        "login": "razor7w_w",
+        "lastLive": null,
+        "lastVideo": null
+      }
+    },
+    {
+      "name": "Ignacio Gutiérrez",
+      "youtube": {
+        "channelId": "UCH7IANkyEcsVW_y1IlpkamQ",
+        "lastUpload": "2025-12-03T14:00:06+00:00"
+      },
+      "twitch": {
+        "userId": "517911408",
+        "login": "bluuweb",
+        "lastLive": "2025-11-12T21:29:56Z",
+        "lastVideo": "2025-11-12T21:29:56Z"
+      }
+    },
+    {
+      "name": "Ana Belisa Martínez",
+      "youtube": {
+        "channelId": "UC1kRtcxh5vxl4CSwNZ2U-Sw",
+        "lastUpload": "2025-10-04T04:17:53+00:00"
+      },
+      "twitch": {
+        "userId": "517322178",
+        "login": "anabelisam",
+        "lastLive": null,
+        "lastVideo": null
+      }
+    },
+    {
+      "name": "Guillermo Rodas",
+      "youtube": {
+        "channelId": "UCA9rep71JxeR7tZotHqFDig",
+        "lastUpload": "2025-07-09T09:30:42+00:00"
+      },
+      "twitch": {
+        "userId": "152590097",
+        "login": "guillermorodas",
+        "lastLive": null,
+        "lastVideo": "2024-09-20T11:20:01Z"
+      }
+    },
+    {
+      "name": "Julián Duque",
+      "youtube": {
+        "channelId": "UCf_ymsPEZLmSM7_OvLF87KQ",
+        "lastUpload": "2024-05-29T21:22:03+00:00"
+      },
+      "twitch": {
+        "userId": "105683011",
+        "login": "julianduque",
+        "lastLive": null,
+        "lastVideo": "2022-11-22T21:09:09Z"
+      }
+    },
+    {
+      "name": "Lina Castro",
+      "twitch": {
+        "userId": "246117544",
+        "login": "lirrums",
+        "lastLive": null,
+        "lastVideo": "2020-09-09T19:43:04Z"
+      }
+    },
+    {
+      "name": "Daniel Suarez Dev",
+      "youtube": {
+        "channelId": "UC_zzfLSjrYNKrOIGK_js_AA",
+        "lastUpload": "2025-06-26T15:57:44+00:00"
+      },
+      "twitch": {
+        "userId": "550376014",
+        "login": "danielsuarezdev",
+        "lastLive": null,
+        "lastVideo": "2022-03-02T00:29:40Z"
+      }
+    },
+    {
+      "name": "Nicolas Molina",
+      "youtube": {
+        "channelId": "UCz8-0dWiVLY17Rea7qi2cSQ",
+        "lastUpload": "2025-12-01T22:59:31+00:00"
+      }
+    },
+    {
+      "name": "Desiré Carmona",
+      "twitch": {
+        "userId": "485423281",
+        "login": "helle_world",
+        "lastLive": null,
+        "lastVideo": null
+      }
+    },
+    {
+      "name": "Carlos Azaustre",
+      "youtube": {
+        "channelId": "UCJgGc8pQO1lv04VXrBxA_Hg",
+        "lastUpload": "2025-11-19T12:06:09+00:00"
+      },
+      "twitch": {
+        "userId": "245405656",
+        "login": "carlosazaustre",
+        "lastLive": null,
+        "lastVideo": "2022-07-26T12:17:03Z"
+      }
+    },
+    {
+      "name": "Brais Moure",
+      "youtube": {
+        "channelId": "UCxPD7bsocoAMq8Dj18kmGyQ",
+        "lastUpload": "2025-12-11T17:00:50+00:00"
+      },
+      "twitch": {
+        "userId": "499886526",
+        "login": "mouredev",
+        "lastLive": "2025-11-12T18:58:02Z",
+        "lastVideo": "2025-11-12T18:58:02Z"
+      }
+    },
+    {
+      "name": "Miguel Ángel Durán",
+      "youtube": {
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "lastUpload": "2025-12-13T20:11:48+00:00"
+      },
+      "twitch": {
+        "userId": "422915264",
+        "login": "midudev",
+        "lastLive": "2025-12-08T17:01:44Z",
+        "lastVideo": "2025-12-08T17:01:44Z"
+      }
+    },
+    {
+      "name": "Pablo Sirera",
+      "youtube": {
+        "channelId": "UCl41m8HBifhzM6Dh1V04wqA",
+        "lastUpload": "2025-11-18T17:01:42+00:00"
+      },
+      "twitch": {
+        "userId": "421932815",
+        "login": "pablosirera",
+        "lastLive": null,
+        "lastVideo": null
+      }
+    },
+    {
+      "name": "Santiago Martín",
+      "twitch": {
+        "userId": "30664176",
+        "login": "santima10",
+        "lastLive": null,
+        "lastVideo": "2020-05-17T13:16:26Z"
+      }
+    },
+    {
+      "name": "Jorge Baumann",
+      "youtube": {
+        "channelId": "UCTTj5ztXnGeDRPFVsBp7VMA",
+        "lastUpload": "2025-02-04T17:36:29+00:00"
+      },
+      "twitch": {
+        "userId": "41107227",
+        "login": "baumannzone",
+        "lastLive": null,
+        "lastVideo": "2021-09-25T08:45:30Z"
+      }
+    },
+    {
+      "name": "Dorian Designs",
+      "youtube": {
+        "channelId": "UCzuwt7Pi_VB8cP5q5UE4u-A",
+        "lastUpload": "2025-01-26T12:30:06+00:00"
+      },
+      "twitch": {
+        "userId": "101327309",
+        "login": "doriandesings",
+        "lastLive": null,
+        "lastVideo": null
+      }
+    },
+    {
+      "name": "Oscar Barajas",
+      "youtube": {
+        "channelId": "UCw05fUBPwmpu-ehXFMqfdMw",
+        "lastUpload": "2025-06-10T23:55:24+00:00"
+      }
+    },
+    {
+      "name": "Ricardo Celis",
+      "twitch": {
+        "userId": "24863137",
+        "login": "celismx",
+        "lastLive": null,
+        "lastVideo": null
+      }
+    },
+    {
+      "name": "Pablo Trinidad",
+      "youtube": {
+        "channelId": "UC-Ol76LwNXj8scU_VtKDxVg",
+        "lastUpload": "2020-04-03T02:33:23+00:00"
+      }
+    },
+    {
+      "name": "Héctor De León",
+      "youtube": {
+        "channelId": "UCDUdeFslCNoM29MAlZOfdWQ",
+        "lastUpload": "2025-12-09T18:21:40+00:00"
+      },
+      "twitch": {
+        "userId": "401736135",
+        "login": "hdeleonnet",
+        "lastLive": "2025-12-12T19:36:15Z",
+        "lastVideo": "2025-12-12T19:36:15Z"
+      }
+    },
+    {
+      "name": "Jose Jesus Guzman Eusebio",
+      "youtube": {
+        "channelId": "UCDUdeFslCNoM29MAlZOfdWQ",
+        "lastUpload": "2025-12-09T18:21:40+00:00"
+      },
+      "twitch": {
+        "userId": "638366392",
+        "login": "brujeriatech",
+        "lastLive": null,
+        "lastVideo": "2023-05-01T22:17:12Z"
+      }
+    },
+    {
+      "name": "Erifranck Nuñez",
+      "youtube": {
+        "channelId": "UCvBuIO5PR2saqJm-doTyZrA",
+        "lastUpload": "2025-12-09T12:26:52+00:00"
+      },
+      "twitch": {
+        "userId": "133237970",
+        "login": "erifranck",
+        "lastLive": "2025-12-04T01:47:10Z",
+        "lastVideo": "2025-12-04T01:47:10Z"
+      }
+    },
+    {
+      "name": "Leonidas Esteban",
+      "youtube": {
+        "channelId": "UCLsSfk2x6p3XvlknDi39zCQ",
+        "lastUpload": "2025-04-15T00:43:41+00:00"
+      }
+    },
+    {
+      "name": "Fazttech",
+      "youtube": {
+        "channelId": "UCX9NJ471o7Wie1DQe94RVIg",
+        "lastUpload": "2025-12-13T21:05:23+00:00"
+      },
+      "twitch": {
+        "userId": "223370704",
+        "login": "fazttech",
+        "lastLive": null,
+        "lastVideo": null
+      }
+    }
+  ]
+}
