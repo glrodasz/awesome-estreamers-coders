@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-twitch: #9146ff;
+  --color-youtube: #ff0033;
+  --color-kick: #53fc18;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply bg-zinc-50 text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}

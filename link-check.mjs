@@ -1,56 +1,7 @@
 import fs from 'fs/promises'
+import { buildLinks } from './lib/links.mjs'
 
 const data = JSON.parse(await fs.readFile('data.json', 'utf-8'))
-
-function buildYouTubeUrl(identifier) {
-  if (/^https?:\/\//i.test(identifier)) return identifier
-  return `https://www.youtube.com/${identifier}`
-}
-
-function buildTwitchUrl(login) {
-  if (/^https?:\/\//i.test(login)) return login
-  return `https://www.twitch.tv/${login}`
-}
-
-function buildTwitterUrl(handle) {
-  if (/^https?:\/\//i.test(handle)) return handle
-  return `https://twitter.com/${handle.replace(/^@/, '')}`
-}
-
-function buildFacebookUrl(handle) {
-  if (/^https?:\/\//i.test(handle)) return handle
-  return `https://www.facebook.com/${handle}`
-}
-
-function buildLinks(person) {
-  const links = []
-
-  if (person.website) {
-    links.push({ label: 'Sitio web', url: person.website })
-  }
-
-  if (person.youtube) {
-    links.push({ label: 'YouTube', url: buildYouTubeUrl(person.youtube) })
-  }
-
-  if (person.twitch) {
-    links.push({ label: 'Twitch', url: buildTwitchUrl(person.twitch) })
-  }
-
-  if (person.twitter) {
-    links.push({ label: 'Twitter', url: buildTwitterUrl(person.twitter) })
-  }
-
-  if (person.facebook) {
-    links.push({ label: 'Facebook', url: buildFacebookUrl(person.facebook) })
-  }
-
-  if (Array.isArray(person.otherLinks)) {
-    links.push(...person.otherLinks)
-  }
-
-  return links
-}
 
 async function checkUrl(url, timeoutMs = 10000) {
   const checkedAt = new Date().toISOString()

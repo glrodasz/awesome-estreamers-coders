@@ -1,6 +1,6 @@
 # Awesome EStreamers Coders
 
-ℹ️ Si estas haciendo streaming en Twitch o YouTube sobre contenido relacionado a la tecnología o programación eres bienvenida o bienvenido de hacer un PR agregando tu información en esta lista.
+ℹ️ Si estas haciendo streaming en Twitch, YouTube o Kick sobre contenido relacionado a la tecnología o programación eres bienvenida o bienvenido de hacer un PR agregando tu información en esta lista.
 
 ## Argentina
 

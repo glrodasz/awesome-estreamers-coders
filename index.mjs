@@ -1,4 +1,5 @@
 import fs from 'fs/promises'
+import { buildLinks } from './lib/links.mjs'
 
 const data = JSON.parse(await fs.readFile('data.json', 'utf-8'))
 const statuses = await readStatuses()
@@ -6,7 +7,7 @@ const statusByName = new Map(statuses.entries.map((entry) => [entry.name, entry]
 
 const heading = `# Awesome EStreamers Coders
 
-ℹ️ Si estas haciendo streaming en Twitch o YouTube sobre contenido relacionado a la tecnología o programación eres bienvenida o bienvenido de hacer un PR agregando tu información en esta lista.
+ℹ️ Si estas haciendo streaming en Twitch, YouTube o Kick sobre contenido relacionado a la tecnología o programación eres bienvenida o bienvenido de hacer un PR agregando tu información en esta lista.
 `
 
 const countryOrder = data.reduce((order, entry) => {
@@ -21,7 +22,7 @@ const sections = countryOrder.map((country) => {
   people.forEach((person) => {
     const { name, description } = person
     lines.push(`- **${name}** — ${description}`)
-    const formattedLinks = buildLinks(person)
+    const formattedLinks = formatLinks(person)
     lines.push(`  - ${formattedLinks}`)
 
     const status = statusByName.get(name)
@@ -61,54 +62,10 @@ function buildActivityLine(status) {
   return `Última actividad → ${parts.join(' · ')}`
 }
 
-function buildLinks(person) {
-  const links = []
-
-  if (person.website) {
-    links.push({ label: 'Sitio web', url: person.website })
-  }
-
-  if (person.youtube) {
-    links.push({ label: 'YouTube', url: buildYouTubeUrl(person.youtube) })
-  }
-
-  if (person.twitch) {
-    links.push({ label: 'Twitch', url: buildTwitchUrl(person.twitch) })
-  }
-
-  if (person.twitter) {
-    links.push({ label: 'Twitter', url: buildTwitterUrl(person.twitter) })
-  }
-
-  if (person.facebook) {
-    links.push({ label: 'Facebook', url: buildFacebookUrl(person.facebook) })
-  }
-
-  if (Array.isArray(person.otherLinks)) {
-    links.push(...person.otherLinks)
-  }
-
-  return links.map((link) => `[${link.label}](${link.url})`).join(' · ')
-}
-
-function buildYouTubeUrl(identifier) {
-  if (/^https?:\/\//i.test(identifier)) return identifier
-  return `https://www.youtube.com/${identifier}`
-}
-
-function buildTwitchUrl(login) {
-  if (/^https?:\/\//i.test(login)) return login
-  return `https://www.twitch.tv/${login}`
-}
-
-function buildTwitterUrl(handle) {
-  if (/^https?:\/\//i.test(handle)) return handle
-  return `https://twitter.com/${handle.replace(/^@/, '')}`
-}
-
-function buildFacebookUrl(handle) {
-  if (/^https?:\/\//i.test(handle)) return handle
-  return `https://www.facebook.com/${handle}`
+function formatLinks(person) {
+  return buildLinks(person)
+    .map((link) => `[${link.label}](${link.url})`)
+    .join(' · ')
 }
 
 function formatTimestamp(value) {
