@@ -1,11 +1,12 @@
-import fs from 'fs/promises'
+import { LINK_STATUSES_FILE, loadStreamers, readGenerated, writeGenerated } from './lib/data.mjs'
 import { buildLinks } from './lib/links.mjs'
 
-const data = JSON.parse(await fs.readFile('data.json', 'utf-8'))
+const data = loadStreamers()
+const previous = readGenerated(LINK_STATUSES_FILE).entries
+const today = new Date().toISOString().slice(0, 10)
 
 async function checkUrl(url, timeoutMs = 10000) {
-  const checkedAt = new Date().toISOString()
-  const result = { status: 'broken', httpStatus: null, checkedAt }
+  const result = { status: 'broken', httpStatus: null }
 
   const attempts = [
     { method: 'HEAD' },
@@ -77,7 +78,7 @@ async function checkLinks() {
         checkedLinks.push({
           person: batchItem.person,
           link: batchItem.link,
-          status: { status: 'broken', error: result.reason?.message || 'Unknown error', checkedAt: new Date().toISOString() },
+          status: { status: 'broken', httpStatus: null, error: result.reason?.message || 'Unknown error' },
         })
       }
     }
@@ -87,33 +88,28 @@ async function checkLinks() {
     console.log(`Progress: ${processed}/${totalLinks} (${percentage}%)`)
   }
 
-  // Group checked links back by person
-  const personMap = new Map()
-  for (const person of data) {
-    personMap.set(person, [])
-  }
-
+  // Group results by streamer name; a link keeps the day it first broke.
+  const entries = Object.fromEntries(data.map((person) => [person.name, []]))
   for (const { person, link, status } of checkedLinks) {
-    personMap.get(person)?.push({ ...link, ...status })
+    const before = previous[person.name]?.find((item) => item.url === link.url)
+    entries[person.name].push({
+      ...link,
+      ...status,
+      ...(status.status !== 'ok' && { brokenSince: before?.brokenSince ?? today }),
+    })
   }
 
-  const updated = Array.from(personMap.entries()).map(([person, linkStatuses]) => ({
-    ...person,
-    linkStatuses,
-  }))
-
-  const broken = updated
-    .flatMap((entry) => entry.linkStatuses.map((link) => ({ ...link, name: entry.name })))
+  const broken = Object.entries(entries)
+    .flatMap(([name, links]) => links.map((link) => ({ ...link, name })))
     .filter((link) => link.status !== 'ok')
 
-  await fs.writeFile('data.json', JSON.stringify(updated, null, 2), 'utf-8')
-
-  console.log(`\nChecked ${totalLinks} links across ${updated.length} streamers.`)
+  const written = writeGenerated(LINK_STATUSES_FILE, entries)
+  console.log(`\nChecked ${totalLinks} links across ${data.length} streamers. ${written ? `Wrote ${LINK_STATUSES_FILE}.` : `${LINK_STATUSES_FILE} unchanged.`}`)
   if (broken.length) {
     console.log('\nBroken links:')
     broken.forEach((item) => {
       const statusText = item.httpStatus ? ` (${item.httpStatus})` : ''
-      console.log(`- ${item.name} → ${item.label}: ${item.url}${statusText}${item.error ? ` — ${item.error}` : ''}`)
+      console.log(`- ${item.name} → ${item.label}: ${item.url}${statusText}${item.error ? ` — ${item.error}` : ''} (desde ${item.brokenSince})`)
     })
   } else {
     console.log('All links look good!')

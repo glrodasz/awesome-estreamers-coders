@@ -1,23 +1,8 @@
-import data from '../data.json'
-import statuses from '../statuses.json'
+import { loadStreamers, readGenerated, STATUSES_FILE } from './data.mjs'
 import { buildLinks, channelHandle } from './links.mjs'
 import type { Platform } from './types'
 
-type RawStreamer = {
-  name: string
-  description: string
-  country: string
-  website?: string
-  youtube?: string
-  twitch?: string
-  kick?: string
-  twitter?: string
-  facebook?: string
-  otherLinks?: { label: string; url: string }[]
-}
-
 type RawStatus = {
-  name: string
   youtube?: { channelId?: string; lastUpload?: string | null }
   twitch?: { lastLive?: string | null; lastVideo?: string | null }
 }
@@ -31,13 +16,13 @@ export type Streamer = {
   twitchLogin: string | null
   kickSlug: string | null
   youtubeChannelId: string | null
-  /** Most recent known activity (ISO date) across platforms, from statuses.json. */
+  /** Most recent known activity (ISO date) across platforms, from generated/statuses.json. */
   lastActivity: string | null
 }
 
-const statusByName = new Map(
-  (statuses.entries as RawStatus[]).map((entry) => [entry.name, entry]),
-)
+const PLATFORMS: Platform[] = ['twitch', 'youtube', 'kick']
+
+const statuses = readGenerated(STATUSES_FILE).entries as Record<string, RawStatus>
 
 function mostRecent(dates: (string | null | undefined)[]): string | null {
   const valid = dates.filter((date): date is string => Boolean(date))
@@ -47,21 +32,18 @@ function mostRecent(dates: (string | null | undefined)[]): string | null {
   )
 }
 
-function toStreamer(person: RawStreamer): Streamer {
-  const status = statusByName.get(person.name)
-  const platforms: Platform[] = []
-  if (person.twitch) platforms.push('twitch')
-  if (person.youtube) platforms.push('youtube')
-  if (person.kick) platforms.push('kick')
+export const streamers: Streamer[] = loadStreamers().map((person) => {
+  const status = statuses[person.name]
+  const { twitch, kick } = person.links
 
   return {
     name: person.name,
     description: person.description,
     country: person.country,
     links: buildLinks(person),
-    platforms,
-    twitchLogin: person.twitch ? channelHandle(person.twitch) : null,
-    kickSlug: person.kick ? channelHandle(person.kick) : null,
+    platforms: PLATFORMS.filter((platform) => person.links[platform]),
+    twitchLogin: twitch ? channelHandle(twitch) : null,
+    kickSlug: kick ? channelHandle(kick) : null,
     youtubeChannelId: status?.youtube?.channelId ?? null,
     lastActivity: mostRecent([
       status?.youtube?.lastUpload,
@@ -69,8 +51,4 @@ function toStreamer(person: RawStreamer): Streamer {
       status?.twitch?.lastVideo,
     ]),
   }
-}
-
-export const streamers: Streamer[] = (data as RawStreamer[]).map(toStreamer)
-
-export const statusesGeneratedAt: string | null = statuses.generatedAt ?? null
+})

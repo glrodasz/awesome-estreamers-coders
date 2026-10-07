@@ -1,0 +1,51 @@
+name: Refresh streamer data
+
+# Re-checks links and last activity once a day and commits generated/ + README.md
+# only when something actually changed.
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --ignore-scripts
+
+      - name: Last activity (YouTube + Twitch)
+        run: npm run statuses
+        env:
+          TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+          TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+
+      - name: Link check
+        run: npm run check-links
+
+      - run: npm run generate
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet -- generated README.md; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add generated README.md
+          git commit -m "chore: refresh streamer statuses"
+          git push

@@ -1,6 +1,6 @@
 # Awesome EStreamers Coders
 
-ℹ️ Si estas haciendo streaming en Twitch, YouTube o Kick sobre contenido relacionado a la tecnología o programación eres bienvenida o bienvenido de hacer un PR agregando tu información en esta lista.
+ℹ️ Si estas haciendo streaming en Twitch, YouTube o Kick sobre contenido relacionado a la tecnología o programación eres bienvenida o bienvenido de hacer un PR agregando tu información en esta lista. Mira [cómo agregarte](#cómo-agregarte).
 
 ## Argentina
 
@@ -12,7 +12,7 @@
   - Última actividad → YouTube: 1 oct 2026 · Twitch última vez en vivo: 29 sept 2026
 - **Noe VamoaCodear** — Desarrolladora Frontend 🟣 • Aprendemos tecnologías en Twitch.
   - [YouTube](https://www.youtube.com/c/vamoacodear) · [Twitch](https://www.twitch.tv/vamoacodear) · [Twitter](https://twitter.com/vamoacodear)
-  - Última actividad → YouTube: 25 ago 2022 · Twitch: Desconocida
+  - Última actividad → YouTube: 24 ago 2022 · Twitch: Desconocida
 
 ## Chile
 
@@ -84,7 +84,7 @@
   - Última actividad → YouTube: 6 oct 2026 · Twitch: Desconocida
 - **Jose Jesus Guzman Eusebio** — Le encanta enseñar y compartir conocimiento en tecnología como Sherpa Digital de Microsoft y host del podcast "No es Brujería, es Tecnología".
   - [YouTube](https://www.youtube.com/c/hdeleonnet) · [Twitch](https://www.twitch.tv/brujeriatech) · [Twitter](https://twitter.com/powerhdeleon)
-  - Última actividad → YouTube: 6 oct 2026 · Twitch último video: 2 may 2023
+  - Última actividad → YouTube: Desconocida · Twitch último video: 1 may 2023
 
 ## Venezuela
 
@@ -100,3 +100,21 @@
 - **Fazttech** — Programador y Desarrollador Web que comparte tutoriales y juega online :).
   - [Sitio web](https://faztweb.com/) · [YouTube](https://www.youtube.com/fazttech) · [Twitch](https://www.twitch.tv/fazttech) · [Twitter](https://twitter.com/fazttech) · [Facebook](https://www.facebook.com/FaztTech)
   - Última actividad → YouTube: 6 oct 2026 · Twitch: Desconocida
+
+## ¿Cómo agregarte?
+
+Edita [`streamers.yml`](streamers.yml), agrega tu entrada al final y abre un PR:
+
+```yaml
+- name: Tu Nombre
+  description: Qué enseñas en tus streams.
+  country: México
+  links:
+    twitch: tu_usuario
+    youtube: "@tu_canal"
+    website: https://tusitio.dev
+```
+
+- `youtube`, `twitch`, `kick`, `twitter`, `x`, `facebook` y `github` aceptan tu usuario o la URL completa.
+- Cualquier otro enlace (`website`, `linkedin`, `instagram`, …) necesita la URL completa.
+- Puedes validar tu cambio con `npm run validate`. No edites `README.md` ni `generated/`: se generan solos.
