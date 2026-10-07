@@ -48,12 +48,6 @@
     twitch: gentlemanprogramming
     kick: gentleman-programming
 
-- name: Sebastián Carroza
-  description: Desarrollador Frontend enfocado a Javascript, Vue, Typescript, Vuetify.
-  country: Chile
-  links:
-    twitch: razor7w_w
-
 - name: Ignacio Gutiérrez
   description: Desarrollador Frontend; comparte contenido sobre React, NextJS, Vue y más.
   country: Chile
@@ -91,13 +85,6 @@
     twitch: julianduque
     twitter: julian_duque
 
-- name: Lina Castro
-  description: "Software Developer | Linux Enthusiastic | Developer Ubuntu Touch #OpenSource #FreeSoftware."
-  country: Colombia
-  links:
-    twitch: lirrums
-    twitter: lirrums
-
 - name: Daniel Suarez Dev
   description: Frontend Developer and Educator | Freelancer | JavaScript, HTML, CSS, Figma y todo tema que aporte a la comunidad frontend.
   country: Colombia
@@ -113,12 +100,6 @@
     website: https://nicobytes.com/
     youtube: c/nicobytes
     twitter: nicobytes
-
-- name: Desiré Carmona
-  description: Unity programmer from Spain. She used to be a web developer/designer and UX-UI designer. Now she creates games!
-  country: España
-  links:
-    twitch: helle_world
 
 - name: Carlos Azaustre
   description: Desarrollador web desde hace más de 8 años. Google Developer Expert (GDE) en Tecnologías Web.
@@ -192,13 +173,6 @@
     website: https://gndx.dev/
     youtube: c/oscarbarajas
     twitter: gndx
-
-- name: Ricardo Celis
-  description: Streams Science & Technology, Among Us and Apex Legends.
-  country: Mexico
-  links:
-    twitch: celismx
-    twitter: CelisMX
 
 - name: Héctor De León
   description: Ingeniero en computación, aficionado a la inteligencia artificial y al desarrollo de sistemas que optimicen procesos. Creador de contenido para Youtube y Udemy. Microsoft Most Valuable Professional 2022 🏆.
