@@ -1,14 +1,16 @@
 {
-  "generatedAt": "2026-10-07T00:06:22.320Z",
+  "generatedAt": "2026-10-07T13:17:52.588Z",
   "entries": {
     "Jorge Cano": [
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/JorgeCano",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/jorgeucano",
         "status": "ok",
@@ -17,6 +19,7 @@
     ],
     "Gonzalo Pozzo": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://goncy.dev",
         "status": "broken",
@@ -24,24 +27,28 @@
         "brokenSince": "2026-10-07"
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/c/GonzaloPozzo",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/goncypozzo",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/goncy",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "facebook",
         "label": "Facebook",
         "url": "https://www.facebook.com/goncy.pozzo",
         "status": "ok",
@@ -50,26 +57,53 @@
     ],
     "Noe VamoaCodear": [
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/c/vamoacodear",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/vamoacodear",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/vamoacodear",
         "status": "ok",
         "httpStatus": 200
       }
     ],
+    "Alan Buscaglia (Gentleman Programming)": [
+      {
+        "type": "youtube",
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@GentlemanProgramming",
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "type": "twitch",
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/gentlemanprogramming",
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "type": "kick",
+        "label": "Kick",
+        "url": "https://kick.com/gentleman-programming",
+        "status": "ok",
+        "httpStatus": 200
+      }
+    ],
     "Sebastián Carroza": [
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/razor7w_w",
         "status": "ok",
@@ -78,30 +112,35 @@
     ],
     "Ignacio Gutiérrez": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://bluuweb.github.io/",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/bluuweb",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/bluuweb",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/bluuweb",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "facebook",
         "label": "Facebook",
         "url": "https://www.facebook.com/bluuweb",
         "status": "ok",
@@ -110,24 +149,28 @@
     ],
     "Ana Belisa Martínez": [
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/anabelisam",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/anabelisam",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/anabelisam_",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "facebook",
         "label": "Facebook",
         "url": "https://www.facebook.com/anabelisam",
         "status": "ok",
@@ -136,24 +179,28 @@
     ],
     "Guillermo Rodas": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://guillermorodas.com/",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/guillermorodas",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/guillermorodas",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/glrodasz",
         "status": "ok",
@@ -162,24 +209,28 @@
     ],
     "Julián Duque": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://www.julianduque.co",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/user/julianduquej",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/julianduque",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/julian_duque",
         "status": "ok",
@@ -188,12 +239,14 @@
     ],
     "Lina Castro": [
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/lirrums",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/lirrums",
         "status": "ok",
@@ -202,18 +255,21 @@
     ],
     "Daniel Suarez Dev": [
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/channel/UC_zzfLSjrYNKrOIGK_js_AA",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/danielsuarezdev",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/DanielSuarezDev",
         "status": "ok",
@@ -222,18 +278,22 @@
     ],
     "Nicolas Molina": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://nicobytes.com/",
-        "status": "ok",
-        "httpStatus": 200
+        "status": "broken",
+        "httpStatus": 403,
+        "brokenSince": "2026-10-07"
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/c/nicobytes",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/nicobytes",
         "status": "ok",
@@ -242,6 +302,7 @@
     ],
     "Desiré Carmona": [
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/helle_world",
         "status": "ok",
@@ -250,24 +311,28 @@
     ],
     "Carlos Azaustre": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://mypublicinbox.com/carlosazaustre",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/CarlosAzaustre",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/carlosazaustre",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/carlosazaustre",
         "status": "ok",
@@ -276,30 +341,35 @@
     ],
     "Brais Moure": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://moure.dev/",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/MouredevApps",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/mouredev",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/MoureDev",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "facebook",
         "label": "Facebook",
         "url": "https://www.facebook.com/mouredev",
         "status": "ok",
@@ -308,30 +378,42 @@
     ],
     "Miguel Ángel Durán": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://midu.dev/",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/midudev",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/midudev",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "kick",
+        "label": "Kick",
+        "url": "https://kick.com/midudev",
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/midudev",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "facebook",
         "label": "Facebook",
         "url": "https://www.facebook.com/midudev.frontend",
         "status": "ok",
@@ -340,24 +422,28 @@
     ],
     "Pablo Sirera": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://pablosirera.com/",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/PabloSirera",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/pablosirera",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/pablosirera",
         "status": "ok",
@@ -366,18 +452,21 @@
     ],
     "Santiago Martín": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://www.santiagomartin.dev/",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/santima10",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/SantiMA10b",
         "status": "ok",
@@ -386,24 +475,28 @@
     ],
     "Jorge Baumann": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://www.baumannzone.dev/",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/baumannzone",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/baumannzone",
         "status": "ok",
@@ -412,24 +505,28 @@
     ],
     "Dorian Designs": [
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/doriandesings",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/DorianDesings",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "facebook",
         "label": "Facebook",
         "url": "https://www.facebook.com/yoaprendocondorian",
         "status": "ok",
@@ -438,18 +535,21 @@
     ],
     "Oscar Barajas": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://gndx.dev/",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/c/oscarbarajas",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/gndx",
         "status": "ok",
@@ -458,12 +558,14 @@
     ],
     "Ricardo Celis": [
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/celismx",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/CelisMX",
         "status": "ok",
@@ -472,24 +574,28 @@
     ],
     "Héctor De León": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "http://hdeleon.net/",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/c/hdeleonnet",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/hdeleonnet",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/powerhdeleon",
         "status": "ok",
@@ -498,18 +604,21 @@
     ],
     "Jose Jesus Guzman Eusebio": [
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/c/hdeleonnet",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/brujeriatech",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/powerhdeleon",
         "status": "ok",
@@ -518,24 +627,28 @@
     ],
     "Erifranck Nuñez": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://www.erifranck.art/",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/c/erifrancknunez",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/erifranck",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/erifranckn",
         "status": "ok",
@@ -544,24 +657,28 @@
     ],
     "Leonidas Esteban": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://leonidasesteban.com/cursos",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/LeonidasEsteban",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/LeonidasEsteban",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "facebook",
         "label": "Facebook",
         "url": "https://www.facebook.com/LeonidasEsteban",
         "status": "ok",
@@ -570,30 +687,35 @@
     ],
     "Fazttech": [
       {
+        "type": "website",
         "label": "Sitio web",
         "url": "https://faztweb.com/",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "youtube",
         "label": "YouTube",
         "url": "https://www.youtube.com/fazttech",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitch",
         "label": "Twitch",
         "url": "https://www.twitch.tv/fazttech",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "twitter",
         "label": "Twitter",
         "url": "https://twitter.com/fazttech",
         "status": "ok",
         "httpStatus": 200
       },
       {
+        "type": "facebook",
         "label": "Facebook",
         "url": "https://www.facebook.com/FaztTech",
         "status": "ok",

@@ -15,7 +15,7 @@
   - Última actividad → YouTube: 24 ago 2022 · Twitch: Desconocida
 - **Alan Buscaglia (Gentleman Programming)** — Arquitectura frontend, Angular, React y buenas prácticas de desarrollo, explicadas en vivo.
   - [YouTube](https://www.youtube.com/@GentlemanProgramming) · [Twitch](https://www.twitch.tv/gentlemanprogramming) · [Kick](https://kick.com/gentleman-programming)
-  - Última actividad → Desconocida
+  - Última actividad → YouTube: 6 oct 2026 · Twitch: Desconocida
 
 ## Chile
 
@@ -78,7 +78,7 @@
 
 - **Oscar Barajas** — Frontend & Foundation Layer at @platzi #education · Lead at Developer Circles from Facebook · ReactJS, Speaker & Blogger. I teach ReactJS in @platzi - 🇲🇽🇨🇴
   - [Sitio web](https://gndx.dev/) · [YouTube](https://www.youtube.com/c/oscarbarajas) · [Twitter](https://twitter.com/gndx)
-  - Última actividad → YouTube: 18 sept 2026
+  - Última actividad → YouTube: 7 oct 2026
 - **Ricardo Celis** — Streams Science & Technology, Among Us and Apex Legends.
   - [Twitch](https://www.twitch.tv/celismx) · [Twitter](https://twitter.com/CelisMX)
   - Última actividad → Twitch: Desconocida
@@ -87,7 +87,7 @@
   - Última actividad → YouTube: 6 oct 2026 · Twitch: Desconocida
 - **Jose Jesus Guzman Eusebio** — Le encanta enseñar y compartir conocimiento en tecnología como Sherpa Digital de Microsoft y host del podcast "No es Brujería, es Tecnología".
   - [YouTube](https://www.youtube.com/c/hdeleonnet) · [Twitch](https://www.twitch.tv/brujeriatech) · [Twitter](https://twitter.com/powerhdeleon)
-  - Última actividad → YouTube: Desconocida · Twitch último video: 1 may 2023
+  - Última actividad → YouTube: 6 oct 2026 · Twitch último video: 1 may 2023
 
 ## Venezuela
 
