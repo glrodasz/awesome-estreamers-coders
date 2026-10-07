@@ -19,9 +19,6 @@
 
 ## Chile
 
-- **Sebastián Carroza** — Desarrollador Frontend enfocado a Javascript, Vue, Typescript, Vuetify.
-  - [Twitch](https://www.twitch.tv/razor7w_w)
-  - Última actividad → Twitch: Desconocida
 - **Ignacio Gutiérrez** — Desarrollador Frontend; comparte contenido sobre React, NextJS, Vue y más.
   - [Sitio web](https://bluuweb.github.io/) · [YouTube](https://www.youtube.com/bluuweb) · [Twitch](https://www.twitch.tv/bluuweb) · [Twitter](https://twitter.com/bluuweb) · [Facebook](https://www.facebook.com/bluuweb)
   - Última actividad → YouTube: 15 ene 2026 · Twitch último video: 20 jul 2023
@@ -37,9 +34,6 @@
 - **Julián Duque** — Developer and Educator at MNTD · Community Leader · NodeConf and JSConf Colombia organizer · Sr. Developer Advocate at Salesforce Heroku.
   - [Sitio web](https://www.julianduque.co) · [YouTube](https://www.youtube.com/user/julianduquej) · [Twitch](https://www.twitch.tv/julianduque) · [Twitter](https://twitter.com/julian_duque)
   - Última actividad → YouTube: 29 may 2024 · Twitch último video: 22 nov 2022
-- **Lina Castro** — Software Developer | Linux Enthusiastic | Developer Ubuntu Touch #OpenSource #FreeSoftware.
-  - [Twitch](https://www.twitch.tv/lirrums) · [Twitter](https://twitter.com/lirrums)
-  - Última actividad → Twitch último video: 9 sept 2020
 - **Daniel Suarez Dev** — Frontend Developer and Educator | Freelancer | JavaScript, HTML, CSS, Figma y todo tema que aporte a la comunidad frontend.
   - [YouTube](https://www.youtube.com/channel/UC_zzfLSjrYNKrOIGK_js_AA) · [Twitch](https://www.twitch.tv/danielsuarezdev) · [Twitter](https://twitter.com/DanielSuarezDev)
   - Última actividad → YouTube: 26 jun 2025 · Twitch último video: 2 mar 2022
@@ -49,9 +43,6 @@
 
 ## España
 
-- **Desiré Carmona** — Unity programmer from Spain. She used to be a web developer/designer and UX-UI designer. Now she creates games!
-  - [Twitch](https://www.twitch.tv/helle_world)
-  - Última actividad → Twitch: Desconocida
 - **Carlos Azaustre** — Desarrollador web desde hace más de 8 años. Google Developer Expert (GDE) en Tecnologías Web.
   - [Sitio web](https://mypublicinbox.com/carlosazaustre) · [YouTube](https://www.youtube.com/CarlosAzaustre) · [Twitch](https://www.twitch.tv/carlosazaustre) · [Twitter](https://twitter.com/carlosazaustre)
   - Última actividad → YouTube: 1 oct 2026 · Twitch último video: 26 jul 2022
@@ -82,9 +73,6 @@
 - **Oscar Barajas** — Frontend & Foundation Layer at @platzi #education · Lead at Developer Circles from Facebook · ReactJS, Speaker & Blogger. I teach ReactJS in @platzi - 🇲🇽🇨🇴
   - [Sitio web](https://gndx.dev/) · [YouTube](https://www.youtube.com/c/oscarbarajas) · [Twitter](https://twitter.com/gndx)
   - Última actividad → YouTube: 7 oct 2026
-- **Ricardo Celis** — Streams Science & Technology, Among Us and Apex Legends.
-  - [Twitch](https://www.twitch.tv/celismx) · [Twitter](https://twitter.com/CelisMX)
-  - Última actividad → Twitch: Desconocida
 - **Héctor De León** — Ingeniero en computación, aficionado a la inteligencia artificial y al desarrollo de sistemas que optimicen procesos. Creador de contenido para Youtube y Udemy. Microsoft Most Valuable Professional 2022 🏆.
   - [Sitio web](http://hdeleon.net/) · [YouTube](https://www.youtube.com/c/hdeleonnet) · [Twitch](https://www.twitch.tv/hdeleonnet) · [Twitter](https://twitter.com/powerhdeleon)
   - Última actividad → YouTube: 6 oct 2026 · Twitch: Desconocida
