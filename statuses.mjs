@@ -1,11 +1,11 @@
-import fs from 'fs/promises'
-import path from 'path'
 import { config } from 'dotenv'
+import { loadStreamers, readGenerated, STATUSES_FILE, writeGenerated } from './lib/data.mjs'
+import { channelHandle } from './lib/links.mjs'
 
 config()
 
-const dataPath = path.resolve('data.json')
-const data = JSON.parse(await fs.readFile(dataPath, 'utf-8'))
+const data = loadStreamers()
+const previous = readGenerated(STATUSES_FILE).entries
 
 const TWITCH_CLIENT_ID = process.env.TWITCH_CLIENT_ID
 const TWITCH_CLIENT_SECRET = process.env.TWITCH_CLIENT_SECRET
@@ -233,46 +233,39 @@ async function fetchTwitchStatuses(login) {
 async function buildStatuses() {
   const entries = await Promise.all(
     data.map(async (person, index) => {
-      const status = { name: person.name }
+      const { youtube, twitch } = person.links
+      // A failed lookup keeps the last known value instead of erasing it.
+      const last = previous[person.name] ?? {}
+      const status = {}
 
-      if (person.youtube) {
+      if (youtube) {
         try {
-          const channelId = await resolveYouTubeChannelId(person.youtube)
-          if (channelId) {
-            const lastUpload = await fetchYouTubeLastUpload(channelId)
-            status.youtube = { channelId, lastUpload }
-          } else {
-            console.warn(`[YouTube] Unable to resolve channel id for ${person.name}`)
-            status.youtube = {}
-          }
+          const channelId = await resolveYouTubeChannelId(youtube)
+          if (!channelId) throw new Error('Unable to resolve channel id')
+          const lastUpload = await fetchYouTubeLastUpload(channelId)
+          status.youtube = { channelId, lastUpload }
         } catch (error) {
           console.warn(`[YouTube] Error fetching status for ${person.name}: ${error.message}`)
-          status.youtube = {}
+          status.youtube = last.youtube ?? {}
         }
       }
 
-      if (person.twitch) {
+      if (twitch) {
         try {
-          const twitchStatus = await fetchTwitchStatuses(person.twitch)
-          status.twitch = twitchStatus
+          status.twitch = await fetchTwitchStatuses(channelHandle(twitch))
         } catch (error) {
           console.warn(`[Twitch] Error fetching status for ${person.name}: ${error.message}`)
-          status.twitch = {}
+          status.twitch = last.twitch ?? {}
         }
       }
 
       if (index % 5 === 0) await sleep(150)
-      return status
+      return [person.name, status]
     })
   )
 
-  const payload = {
-    generatedAt: new Date().toISOString(),
-    entries,
-  }
-
-  await fs.writeFile('statuses.json', JSON.stringify(payload, null, 2), 'utf-8')
-  console.log('Wrote statuses.json with', entries.length, 'entries')
+  const written = writeGenerated(STATUSES_FILE, Object.fromEntries(entries))
+  console.log(written ? `Wrote ${STATUSES_FILE} with ${entries.length} entries` : `${STATUSES_FILE} unchanged`)
 }
 
 await buildStatuses()

@@ -1,18 +1,21 @@
 # Awesome EStreamers Coders
 
-ℹ️ Si estas haciendo streaming en Twitch o YouTube sobre contenido relacionado a la tecnología o programación eres bienvenida o bienvenido de hacer un PR agregando tu información en esta lista.
+ℹ️ Si estas haciendo streaming en Twitch, YouTube o Kick sobre contenido relacionado a la tecnología o programación eres bienvenida o bienvenido de hacer un PR agregando tu información en esta lista. Mira [cómo agregarte](#cómo-agregarte).
 
 ## Argentina
 
 - **Jorge Cano** — #Angular #GDE · Owner de @ngbaires · @ngconf organizer · Principal architect @HeroDevs @scullyIO · @angulareando · #EStreamerCoders.
   - [YouTube](https://www.youtube.com/JorgeCano) · [Twitter](https://twitter.com/jorgeucano)
-  - Última actividad → YouTube: 6 jun 2025
+  - Última actividad → YouTube: 18 jun 2026
 - **Gonzalo Pozzo** — Solutions architect @ Vercel, Frontend / React ❤.
   - [Sitio web](https://goncy.dev) · [YouTube](https://www.youtube.com/c/GonzaloPozzo) · [Twitch](https://www.twitch.tv/goncypozzo) · [Twitter](https://twitter.com/goncy) · [Facebook](https://www.facebook.com/goncy.pozzo)
-  - Última actividad → YouTube: 29 oct 2025 · Twitch última vez en vivo: 9 dic 2025
+  - Última actividad → YouTube: 1 oct 2026 · Twitch última vez en vivo: 29 sept 2026
 - **Noe VamoaCodear** — Desarrolladora Frontend 🟣 • Aprendemos tecnologías en Twitch.
   - [YouTube](https://www.youtube.com/c/vamoacodear) · [Twitch](https://www.twitch.tv/vamoacodear) · [Twitter](https://twitter.com/vamoacodear)
-  - Última actividad → YouTube: 10 oct 2023 · Twitch: Desconocida
+  - Última actividad → YouTube: 24 ago 2022 · Twitch: Desconocida
+- **Alan Buscaglia (Gentleman Programming)** — Arquitectura frontend, Angular, React y buenas prácticas de desarrollo, explicadas en vivo.
+  - [YouTube](https://www.youtube.com/@GentlemanProgramming) · [Twitch](https://www.twitch.tv/gentlemanprogramming) · [Kick](https://kick.com/gentleman-programming)
+  - Última actividad → Desconocida
 
 ## Chile
 
@@ -20,8 +23,8 @@
   - [Twitch](https://www.twitch.tv/razor7w_w)
   - Última actividad → Twitch: Desconocida
 - **Ignacio Gutiérrez** — Desarrollador Frontend; comparte contenido sobre React, NextJS, Vue y más.
-  - [Sitio web](https://linkr.bio/bluuweb) · [YouTube](https://www.youtube.com/bluuweb) · [Twitch](https://www.twitch.tv/bluuweb) · [Twitter](https://twitter.com/bluuweb) · [Facebook](https://www.facebook.com/bluuweb)
-  - Última actividad → YouTube: 3 dic 2025 · Twitch última vez en vivo: 12 nov 2025
+  - [Sitio web](https://bluuweb.github.io/) · [YouTube](https://www.youtube.com/bluuweb) · [Twitch](https://www.twitch.tv/bluuweb) · [Twitter](https://twitter.com/bluuweb) · [Facebook](https://www.facebook.com/bluuweb)
+  - Última actividad → YouTube: 15 ene 2026 · Twitch último video: 20 jul 2023
 
 ## Colombia
 
@@ -42,25 +45,25 @@
   - Última actividad → YouTube: 26 jun 2025 · Twitch último video: 2 mar 2022
 - **Nicolas Molina** — GDE in Web Technologies and Angular. Senior Front-end developer and teacher at Platzi.
   - [Sitio web](https://nicobytes.com/) · [YouTube](https://www.youtube.com/c/nicobytes) · [Twitter](https://twitter.com/nicobytes)
-  - Última actividad → YouTube: 1 dic 2025
+  - Última actividad → YouTube: 25 sept 2026
 
 ## España
 
 - **Desiré Carmona** — Unity programmer from Spain. She used to be a web developer/designer and UX-UI designer. Now she creates games!
-  - [Twitch](https://www.twitch.tv/helle_world) · [Twitter](https://twitter.com/helleworld_)
+  - [Twitch](https://www.twitch.tv/helle_world)
   - Última actividad → Twitch: Desconocida
 - **Carlos Azaustre** — Desarrollador web desde hace más de 8 años. Google Developer Expert (GDE) en Tecnologías Web.
   - [Sitio web](https://mypublicinbox.com/carlosazaustre) · [YouTube](https://www.youtube.com/CarlosAzaustre) · [Twitch](https://www.twitch.tv/carlosazaustre) · [Twitter](https://twitter.com/carlosazaustre)
-  - Última actividad → YouTube: 19 nov 2025 · Twitch último video: 26 jul 2022
+  - Última actividad → YouTube: 1 oct 2026 · Twitch último video: 26 jul 2022
 - **Brais Moure** — Desarrollador de software profesional desde hace más de 10 años. Actualmente trabaja como freelance creando apps para iOS y Android.
   - [Sitio web](https://moure.dev/) · [YouTube](https://www.youtube.com/MouredevApps) · [Twitch](https://www.twitch.tv/mouredev) · [Twitter](https://twitter.com/MoureDev) · [Facebook](https://www.facebook.com/mouredev)
-  - Última actividad → YouTube: 11 dic 2025 · Twitch última vez en vivo: 12 nov 2025
+  - Última actividad → YouTube: 1 oct 2026 · Twitch última vez en vivo: 24 sept 2026
 - **Miguel Ángel Durán** — Javascript ☕️, React ⚛️, CSS🎨, HTML, Node.js, Firebase y mucho más.
-  - [Sitio web](https://midu.dev/) · [YouTube](https://www.youtube.com/midudev) · [Twitch](https://www.twitch.tv/midudev) · [Twitter](https://twitter.com/midudev) · [Facebook](https://www.facebook.com/midudev.frontend)
-  - Última actividad → YouTube: 13 dic 2025 · Twitch última vez en vivo: 8 dic 2025
+  - [Sitio web](https://midu.dev/) · [YouTube](https://www.youtube.com/midudev) · [Twitch](https://www.twitch.tv/midudev) · [Kick](https://kick.com/midudev) · [Twitter](https://twitter.com/midudev) · [Facebook](https://www.facebook.com/midudev.frontend)
+  - Última actividad → YouTube: 6 oct 2026 · Twitch última vez en vivo: 5 oct 2026
 - **Pablo Sirera** — Desarrollador Frontend enfocado con Javascript, Vue 💚, Nuxt, Firebase y más 🔥.
   - [Sitio web](https://pablosirera.com/) · [YouTube](https://www.youtube.com/PabloSirera) · [Twitch](https://www.twitch.tv/pablosirera) · [Twitter](https://twitter.com/pablosirera)
-  - Última actividad → YouTube: 18 nov 2025 · Twitch: Desconocida
+  - Última actividad → YouTube: 3 sept 2026 · Twitch: Desconocida
 - **Santiago Martín** — Software Engineer 🚀 TypeScript, React, NEXT.js, Node, Deno, Google Cloud (+ Firebase)... todo lo necesario para hacer un proyecto desde 0.
   - [Sitio web](https://www.santiagomartin.dev/) · [Twitch](https://www.twitch.tv/santima10) · [Twitter](https://twitter.com/SantiMA10b)
   - Última actividad → Twitch último video: 17 may 2020
@@ -75,25 +78,22 @@
 
 - **Oscar Barajas** — Frontend & Foundation Layer at @platzi #education · Lead at Developer Circles from Facebook · ReactJS, Speaker & Blogger. I teach ReactJS in @platzi - 🇲🇽🇨🇴
   - [Sitio web](https://gndx.dev/) · [YouTube](https://www.youtube.com/c/oscarbarajas) · [Twitter](https://twitter.com/gndx)
-  - Última actividad → YouTube: 11 jun 2025
+  - Última actividad → YouTube: 18 sept 2026
 - **Ricardo Celis** — Streams Science & Technology, Among Us and Apex Legends.
   - [Twitch](https://www.twitch.tv/celismx) · [Twitter](https://twitter.com/CelisMX)
   - Última actividad → Twitch: Desconocida
-- **Pablo Trinidad** — Software Engineer; ha trabajado para Google, Microsoft y startups de LATAM. Estudiante de la Facultad de Ciencias de la UNAM [Go/Python/C++/Punch Cards].
-  - [YouTube](https://www.youtube.com/channel/UC-Ol76LwNXj8scU_VtKDxVg) · [Twitter](https://twitter.com/_pablotrinidad_)
-  - Última actividad → YouTube: 3 abr 2020
 - **Héctor De León** — Ingeniero en computación, aficionado a la inteligencia artificial y al desarrollo de sistemas que optimicen procesos. Creador de contenido para Youtube y Udemy. Microsoft Most Valuable Professional 2022 🏆.
   - [Sitio web](http://hdeleon.net/) · [YouTube](https://www.youtube.com/c/hdeleonnet) · [Twitch](https://www.twitch.tv/hdeleonnet) · [Twitter](https://twitter.com/powerhdeleon)
-  - Última actividad → YouTube: 9 dic 2025 · Twitch última vez en vivo: 12 dic 2025
+  - Última actividad → YouTube: 6 oct 2026 · Twitch: Desconocida
 - **Jose Jesus Guzman Eusebio** — Le encanta enseñar y compartir conocimiento en tecnología como Sherpa Digital de Microsoft y host del podcast "No es Brujería, es Tecnología".
   - [YouTube](https://www.youtube.com/c/hdeleonnet) · [Twitch](https://www.twitch.tv/brujeriatech) · [Twitter](https://twitter.com/powerhdeleon)
-  - Última actividad → YouTube: 9 dic 2025 · Twitch último video: 2 may 2023
+  - Última actividad → YouTube: Desconocida · Twitch último video: 1 may 2023
 
 ## Venezuela
 
 - **Erifranck Nuñez** — Desarrollador frontend en Globant; amante de la ilustración y la animación; entrenador pokemon en tiempos libres.
   - [Sitio web](https://www.erifranck.art/) · [YouTube](https://www.youtube.com/c/erifrancknunez) · [Twitch](https://www.twitch.tv/erifranck) · [Twitter](https://twitter.com/erifranckn)
-  - Última actividad → YouTube: 9 dic 2025 · Twitch última vez en vivo: 4 dic 2025
+  - Última actividad → YouTube: 15 feb 2026 · Twitch último video: 19 feb 2023
 
 ## Perú
 
@@ -102,4 +102,22 @@
   - Última actividad → YouTube: 15 abr 2025
 - **Fazttech** — Programador y Desarrollador Web que comparte tutoriales y juega online :).
   - [Sitio web](https://faztweb.com/) · [YouTube](https://www.youtube.com/fazttech) · [Twitch](https://www.twitch.tv/fazttech) · [Twitter](https://twitter.com/fazttech) · [Facebook](https://www.facebook.com/FaztTech)
-  - Última actividad → YouTube: 13 dic 2025 · Twitch: Desconocida
+  - Última actividad → YouTube: 6 oct 2026 · Twitch: Desconocida
+
+## ¿Cómo agregarte?
+
+Edita [`streamers.yml`](streamers.yml), agrega tu entrada al final y abre un PR:
+
+```yaml
+- name: Tu Nombre
+  description: Qué enseñas en tus streams.
+  country: México
+  links:
+    twitch: tu_usuario
+    youtube: "@tu_canal"
+    website: https://tusitio.dev
+```
+
+- `youtube`, `twitch`, `kick`, `twitter`, `x`, `facebook` y `github` aceptan tu usuario o la URL completa.
+- Cualquier otro enlace (`website`, `linkedin`, `instagram`, …) necesita la URL completa.
+- Puedes validar tu cambio con `npm run validate`. No edites `README.md` ni `generated/`: se generan solos.

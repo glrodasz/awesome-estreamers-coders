@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
 
+node validate.mjs || exit 1
 node index.mjs
 git add README.md
