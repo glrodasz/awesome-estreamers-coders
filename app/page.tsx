@@ -5,6 +5,7 @@ import { LiveTicker } from '@/components/LiveTicker'
 import { RefreshStatus } from '@/components/RefreshStatus'
 import { SectionHeading } from '@/components/SectionHeading'
 import { getLiveSnapshot } from '@/lib/live'
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site'
 import { streamers } from '@/lib/streamers'
 import { PLATFORM_LABELS, type LiveStream } from '@/lib/types'
 
@@ -19,6 +20,30 @@ function proposeUrl(stream: LiveStream) {
     body: `Canal: ${stream.url}\n\nLo vi en vivo en la sección "Descubre" de la landing.`,
   })
   return `${REPO_URL}/issues/new?${params}`
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE_NAME,
+  url: SITE_URL,
+  description: SITE_DESCRIPTION,
+  inLanguage: 'es',
+  about: {
+    '@type': 'ItemList',
+    name: 'Streamers de programación en español',
+    numberOfItems: streamers.length,
+    itemListElement: streamers.map((streamer, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'Person',
+        name: streamer.name,
+        description: streamer.description,
+        sameAs: streamer.links.map((link) => link.url),
+      },
+    })),
+  },
 }
 
 const HERO_STICKERS = [
@@ -40,6 +65,7 @@ export default async function Home() {
 
   return (
     <div className="overflow-x-clip">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
       <header className="scroll-border sticky top-0 z-40 bg-paper/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
           <a href="#" className="font-mono text-sm font-bold">

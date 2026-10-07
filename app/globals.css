@@ -266,3 +266,10 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* iOS Safari zooms into form controls with text under 16px on focus. */
+input,
+select,
+textarea {
+  font-size: max(16px, 1rem);
+}
