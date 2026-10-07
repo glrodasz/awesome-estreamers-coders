@@ -11,14 +11,14 @@
         "url": "https://www.youtube.com/JorgeCano",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:40.487Z"
+        "checkedAt": "2026-10-07T00:06:05.842Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/jorgeucano",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:40.505Z"
+        "checkedAt": "2026-10-07T00:06:05.882Z"
       }
     ]
   },
@@ -35,37 +35,37 @@
       {
         "label": "Sitio web",
         "url": "https://goncy.dev",
-        "status": "ok",
-        "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:40.505Z"
+        "status": "broken",
+        "httpStatus": 429,
+        "checkedAt": "2026-10-07T00:06:05.883Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/c/GonzaloPozzo",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:40.506Z"
+        "checkedAt": "2026-10-07T00:06:05.883Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/goncypozzo",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:40.506Z"
+        "checkedAt": "2026-10-07T00:06:05.884Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/goncy",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:40.507Z"
+        "checkedAt": "2026-10-07T00:06:05.884Z"
       },
       {
         "label": "Facebook",
         "url": "https://www.facebook.com/goncy.pozzo",
-        "status": "broken",
-        "httpStatus": 400,
-        "checkedAt": "2025-12-15T10:25:40.507Z"
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2026-10-07T00:06:05.884Z"
       }
     ]
   },
@@ -78,33 +78,25 @@
     "twitter": "vamoacodear",
     "linkStatuses": [
       {
-        "label": "Sitio web",
-        "url": "https://vamoacodear.com.ar/",
-        "status": "broken",
-        "httpStatus": null,
-        "checkedAt": "2025-12-15T10:25:40.507Z",
-        "error": "fetch failed"
-      },
-      {
         "label": "YouTube",
         "url": "https://www.youtube.com/c/vamoacodear",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:41.258Z"
+        "checkedAt": "2026-10-07T00:06:05.884Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/vamoacodear",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:41.260Z"
+        "checkedAt": "2026-10-07T00:06:05.885Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/vamoacodear",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:41.262Z"
+        "checkedAt": "2026-10-07T00:06:05.885Z"
       }
     ]
   },
@@ -119,7 +111,7 @@
         "url": "https://www.twitch.tv/razor7w_w",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:41.263Z"
+        "checkedAt": "2026-10-07T00:06:08.366Z"
       }
     ]
   },
@@ -127,7 +119,7 @@
     "name": "Ignacio Gutiérrez",
     "description": "Desarrollador Frontend; comparte contenido sobre React, NextJS, Vue y más.",
     "country": "Chile",
-    "website": "https://linkr.bio/bluuweb",
+    "website": "https://bluuweb.github.io/",
     "youtube": "bluuweb",
     "twitch": "bluuweb",
     "twitter": "bluuweb",
@@ -135,38 +127,38 @@
     "linkStatuses": [
       {
         "label": "Sitio web",
-        "url": "https://linkr.bio/bluuweb",
+        "url": "https://bluuweb.github.io/",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:41.264Z"
+        "checkedAt": "2026-10-07T00:06:08.366Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/bluuweb",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:41.265Z"
+        "checkedAt": "2026-10-07T00:06:08.367Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/bluuweb",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:41.266Z"
+        "checkedAt": "2026-10-07T00:06:08.367Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/bluuweb",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:41.266Z"
+        "checkedAt": "2026-10-07T00:06:08.367Z"
       },
       {
         "label": "Facebook",
         "url": "https://www.facebook.com/bluuweb",
-        "status": "broken",
-        "httpStatus": 400,
-        "checkedAt": "2025-12-15T10:25:41.907Z"
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2026-10-07T00:06:08.367Z"
       }
     ]
   },
@@ -180,40 +172,32 @@
     "facebook": "anabelisam",
     "linkStatuses": [
       {
-        "label": "Sitio web",
-        "url": "https://anabelisa.co/",
-        "status": "broken",
-        "httpStatus": null,
-        "checkedAt": "2025-12-15T10:25:41.909Z",
-        "error": "fetch failed"
-      },
-      {
         "label": "YouTube",
         "url": "https://www.youtube.com/anabelisam",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:41.911Z"
+        "checkedAt": "2026-10-07T00:06:08.367Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/anabelisam",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:41.913Z"
+        "checkedAt": "2026-10-07T00:06:08.368Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/anabelisam_",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:41.914Z"
+        "checkedAt": "2026-10-07T00:06:08.368Z"
       },
       {
         "label": "Facebook",
         "url": "https://www.facebook.com/anabelisam",
-        "status": "broken",
-        "httpStatus": 400,
-        "checkedAt": "2025-12-15T10:25:41.914Z"
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2026-10-07T00:06:08.368Z"
       }
     ]
   },
@@ -231,28 +215,28 @@
         "url": "https://guillermorodas.com/",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:41.915Z"
+        "checkedAt": "2026-10-07T00:06:09.326Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/guillermorodas",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:41.915Z"
+        "checkedAt": "2026-10-07T00:06:09.327Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/guillermorodas",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:41.916Z"
+        "checkedAt": "2026-10-07T00:06:09.327Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/glrodasz",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:42.534Z"
+        "checkedAt": "2026-10-07T00:06:09.327Z"
       }
     ]
   },
@@ -270,28 +254,28 @@
         "url": "https://www.julianduque.co",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:42.536Z"
+        "checkedAt": "2026-10-07T00:06:09.328Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/user/julianduquej",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:42.537Z"
+        "checkedAt": "2026-10-07T00:06:09.328Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/julianduque",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:42.538Z"
+        "checkedAt": "2026-10-07T00:06:09.328Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/julian_duque",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:42.538Z"
+        "checkedAt": "2026-10-07T00:06:09.328Z"
       }
     ]
   },
@@ -307,14 +291,14 @@
         "url": "https://www.twitch.tv/lirrums",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:42.539Z"
+        "checkedAt": "2026-10-07T00:06:09.328Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/lirrums",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:42.539Z"
+        "checkedAt": "2026-10-07T00:06:09.329Z"
       }
     ]
   },
@@ -331,21 +315,21 @@
         "url": "https://www.youtube.com/channel/UC_zzfLSjrYNKrOIGK_js_AA",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:42.539Z"
+        "checkedAt": "2026-10-07T00:06:11.597Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/danielsuarezdev",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:42.540Z"
+        "checkedAt": "2026-10-07T00:06:11.597Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/DanielSuarezDev",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:42.540Z"
+        "checkedAt": "2026-10-07T00:06:11.597Z"
       }
     ]
   },
@@ -362,21 +346,21 @@
         "url": "https://nicobytes.com/",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:43.672Z"
+        "checkedAt": "2026-10-07T00:06:11.597Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/c/nicobytes",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:43.673Z"
+        "checkedAt": "2026-10-07T00:06:11.598Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/nicobytes",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:43.674Z"
+        "checkedAt": "2026-10-07T00:06:11.599Z"
       }
     ]
   },
@@ -385,29 +369,13 @@
     "description": "Unity programmer from Spain. She used to be a web developer/designer and UX-UI designer. Now she creates games!",
     "country": "España",
     "twitch": "helle_world",
-    "twitter": "helleworld_",
     "linkStatuses": [
-      {
-        "label": "Sitio web",
-        "url": "https://desiremcarmona.com/#/",
-        "status": "broken",
-        "httpStatus": null,
-        "checkedAt": "2025-12-15T10:25:43.674Z",
-        "error": "fetch failed"
-      },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/helle_world",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:43.675Z"
-      },
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/helleworld_",
-        "status": "ok",
-        "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:43.675Z"
+        "checkedAt": "2026-10-07T00:06:11.599Z"
       }
     ]
   },
@@ -425,28 +393,28 @@
         "url": "https://mypublicinbox.com/carlosazaustre",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:43.675Z"
+        "checkedAt": "2026-10-07T00:06:11.599Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/CarlosAzaustre",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:43.676Z"
+        "checkedAt": "2026-10-07T00:06:11.599Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/carlosazaustre",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:43.677Z"
+        "checkedAt": "2026-10-07T00:06:11.600Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/carlosazaustre",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:44.587Z"
+        "checkedAt": "2026-10-07T00:06:14.183Z"
       }
     ]
   },
@@ -465,35 +433,35 @@
         "url": "https://moure.dev/",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:44.589Z"
+        "checkedAt": "2026-10-07T00:06:14.183Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/MouredevApps",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:44.591Z"
+        "checkedAt": "2026-10-07T00:06:14.185Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/mouredev",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:44.592Z"
+        "checkedAt": "2026-10-07T00:06:14.185Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/MoureDev",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:44.592Z"
+        "checkedAt": "2026-10-07T00:06:14.185Z"
       },
       {
         "label": "Facebook",
         "url": "https://www.facebook.com/mouredev",
-        "status": "broken",
-        "httpStatus": 400,
-        "checkedAt": "2025-12-15T10:25:44.592Z"
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2026-10-07T00:06:14.185Z"
       }
     ]
   },
@@ -512,35 +480,35 @@
         "url": "https://midu.dev/",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:44.593Z"
+        "checkedAt": "2026-10-07T00:06:14.187Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/midudev",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:44.594Z"
+        "checkedAt": "2026-10-07T00:06:14.188Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/midudev",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:45.792Z"
+        "checkedAt": "2026-10-07T00:06:14.189Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/midudev",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:45.794Z"
+        "checkedAt": "2026-10-07T00:06:14.190Z"
       },
       {
         "label": "Facebook",
         "url": "https://www.facebook.com/midudev.frontend",
-        "status": "broken",
-        "httpStatus": 400,
-        "checkedAt": "2025-12-15T10:25:45.796Z"
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2026-10-07T00:06:15.872Z"
       }
     ]
   },
@@ -558,28 +526,28 @@
         "url": "https://pablosirera.com/",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:45.798Z"
+        "checkedAt": "2026-10-07T00:06:15.872Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/PabloSirera",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:45.800Z"
+        "checkedAt": "2026-10-07T00:06:15.873Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/pablosirera",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:45.801Z"
+        "checkedAt": "2026-10-07T00:06:15.873Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/pablosirera",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:45.801Z"
+        "checkedAt": "2026-10-07T00:06:15.874Z"
       }
     ]
   },
@@ -596,21 +564,21 @@
         "url": "https://www.santiagomartin.dev/",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:45.801Z"
+        "checkedAt": "2026-10-07T00:06:15.874Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/santima10",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:45.802Z"
+        "checkedAt": "2026-10-07T00:06:15.874Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/SantiMA10b",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:46.279Z"
+        "checkedAt": "2026-10-07T00:06:15.874Z"
       }
     ]
   },
@@ -628,28 +596,28 @@
         "url": "https://www.baumannzone.dev/",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:46.279Z"
+        "checkedAt": "2026-10-07T00:06:15.875Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:46.280Z"
+        "checkedAt": "2026-10-07T00:06:15.875Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/baumannzone",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:46.280Z"
+        "checkedAt": "2026-10-07T00:06:17.736Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/baumannzone",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:46.280Z"
+        "checkedAt": "2026-10-07T00:06:17.736Z"
       }
     ]
   },
@@ -663,40 +631,32 @@
     "facebook": "yoaprendocondorian",
     "linkStatuses": [
       {
-        "label": "Sitio web",
-        "url": "https://cursos.doriandesings.com/",
-        "status": "broken",
-        "httpStatus": null,
-        "checkedAt": "2025-12-15T10:25:46.280Z",
-        "error": "fetch failed"
-      },
-      {
         "label": "YouTube",
         "url": "https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:46.281Z"
+        "checkedAt": "2026-10-07T00:06:17.736Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/doriandesings",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:46.281Z"
+        "checkedAt": "2026-10-07T00:06:17.737Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/DorianDesings",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:46.281Z"
+        "checkedAt": "2026-10-07T00:06:17.737Z"
       },
       {
         "label": "Facebook",
         "url": "https://www.facebook.com/yoaprendocondorian",
-        "status": "broken",
-        "httpStatus": 400,
-        "checkedAt": "2025-12-15T10:25:47.505Z"
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2026-10-07T00:06:17.737Z"
       }
     ]
   },
@@ -713,21 +673,21 @@
         "url": "https://gndx.dev/",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:47.506Z"
+        "checkedAt": "2026-10-07T00:06:17.737Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/c/oscarbarajas",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:47.506Z"
+        "checkedAt": "2026-10-07T00:06:17.738Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/gndx",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:47.507Z"
+        "checkedAt": "2026-10-07T00:06:17.738Z"
       }
     ]
   },
@@ -743,37 +703,14 @@
         "url": "https://www.twitch.tv/celismx",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:47.507Z"
+        "checkedAt": "2026-10-07T00:06:17.738Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/CelisMX",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:47.507Z"
-      }
-    ]
-  },
-  {
-    "name": "Pablo Trinidad",
-    "description": "Software Engineer; ha trabajado para Google, Microsoft y startups de LATAM. Estudiante de la Facultad de Ciencias de la UNAM [Go/Python/C++/Punch Cards].",
-    "country": "Mexico",
-    "youtube": "channel/UC-Ol76LwNXj8scU_VtKDxVg",
-    "twitter": "_pablotrinidad_",
-    "linkStatuses": [
-      {
-        "label": "YouTube",
-        "url": "https://www.youtube.com/channel/UC-Ol76LwNXj8scU_VtKDxVg",
-        "status": "ok",
-        "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:47.507Z"
-      },
-      {
-        "label": "Twitter",
-        "url": "https://twitter.com/_pablotrinidad_",
-        "status": "ok",
-        "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:47.507Z"
+        "checkedAt": "2026-10-07T00:06:19.649Z"
       }
     ]
   },
@@ -791,28 +728,28 @@
         "url": "http://hdeleon.net/",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:47.508Z"
+        "checkedAt": "2026-10-07T00:06:19.649Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/c/hdeleonnet",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:47.508Z"
+        "checkedAt": "2026-10-07T00:06:19.651Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/hdeleonnet",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:48.114Z"
+        "checkedAt": "2026-10-07T00:06:19.651Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/powerhdeleon",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:48.115Z"
+        "checkedAt": "2026-10-07T00:06:19.651Z"
       }
     ]
   },
@@ -829,21 +766,21 @@
         "url": "https://www.youtube.com/c/hdeleonnet",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:48.115Z"
+        "checkedAt": "2026-10-07T00:06:19.651Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/brujeriatech",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:48.116Z"
+        "checkedAt": "2026-10-07T00:06:19.652Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/powerhdeleon",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:48.116Z"
+        "checkedAt": "2026-10-07T00:06:19.652Z"
       }
     ]
   },
@@ -861,28 +798,28 @@
         "url": "https://www.erifranck.art/",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:48.117Z"
+        "checkedAt": "2026-10-07T00:06:19.652Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/c/erifrancknunez",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:48.117Z"
+        "checkedAt": "2026-10-07T00:06:19.654Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/erifranck",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:48.117Z"
+        "checkedAt": "2026-10-07T00:06:20.806Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/erifranckn",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:48.118Z"
+        "checkedAt": "2026-10-07T00:06:20.807Z"
       }
     ]
   },
@@ -900,28 +837,28 @@
         "url": "https://leonidasesteban.com/cursos",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:48.118Z"
+        "checkedAt": "2026-10-07T00:06:20.807Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/LeonidasEsteban",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:49.033Z"
+        "checkedAt": "2026-10-07T00:06:20.808Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/LeonidasEsteban",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:49.034Z"
+        "checkedAt": "2026-10-07T00:06:20.809Z"
       },
       {
         "label": "Facebook",
         "url": "https://www.facebook.com/LeonidasEsteban",
-        "status": "broken",
-        "httpStatus": 400,
-        "checkedAt": "2025-12-15T10:25:49.035Z"
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2026-10-07T00:06:20.809Z"
       }
     ]
   },
@@ -940,35 +877,35 @@
         "url": "https://faztweb.com/",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:49.036Z"
+        "checkedAt": "2026-10-07T00:06:20.810Z"
       },
       {
         "label": "YouTube",
         "url": "https://www.youtube.com/fazttech",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:49.036Z"
+        "checkedAt": "2026-10-07T00:06:20.811Z"
       },
       {
         "label": "Twitch",
         "url": "https://www.twitch.tv/fazttech",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:49.037Z"
+        "checkedAt": "2026-10-07T00:06:20.811Z"
       },
       {
         "label": "Twitter",
         "url": "https://twitter.com/fazttech",
         "status": "ok",
         "httpStatus": 200,
-        "checkedAt": "2025-12-15T10:25:49.037Z"
+        "checkedAt": "2026-10-07T00:06:20.811Z"
       },
       {
         "label": "Facebook",
         "url": "https://www.facebook.com/FaztTech",
-        "status": "broken",
-        "httpStatus": 400,
-        "checkedAt": "2025-12-15T10:25:49.038Z"
+        "status": "ok",
+        "httpStatus": 200,
+        "checkedAt": "2026-10-07T00:06:22.320Z"
       }
     ]
   }

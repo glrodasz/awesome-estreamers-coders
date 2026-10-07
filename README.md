@@ -20,7 +20,7 @@
   - [Twitch](https://www.twitch.tv/razor7w_w)
   - Última actividad → Twitch: Desconocida
 - **Ignacio Gutiérrez** — Desarrollador Frontend; comparte contenido sobre React, NextJS, Vue y más.
-  - [Sitio web](https://linkr.bio/bluuweb) · [YouTube](https://www.youtube.com/bluuweb) · [Twitch](https://www.twitch.tv/bluuweb) · [Twitter](https://twitter.com/bluuweb) · [Facebook](https://www.facebook.com/bluuweb)
+  - [Sitio web](https://bluuweb.github.io/) · [YouTube](https://www.youtube.com/bluuweb) · [Twitch](https://www.twitch.tv/bluuweb) · [Twitter](https://twitter.com/bluuweb) · [Facebook](https://www.facebook.com/bluuweb)
   - Última actividad → YouTube: 3 dic 2025 · Twitch última vez en vivo: 12 nov 2025
 
 ## Colombia
@@ -47,7 +47,7 @@
 ## España
 
 - **Desiré Carmona** — Unity programmer from Spain. She used to be a web developer/designer and UX-UI designer. Now she creates games!
-  - [Twitch](https://www.twitch.tv/helle_world) · [Twitter](https://twitter.com/helleworld_)
+  - [Twitch](https://www.twitch.tv/helle_world)
   - Última actividad → Twitch: Desconocida
 - **Carlos Azaustre** — Desarrollador web desde hace más de 8 años. Google Developer Expert (GDE) en Tecnologías Web.
   - [Sitio web](https://mypublicinbox.com/carlosazaustre) · [YouTube](https://www.youtube.com/CarlosAzaustre) · [Twitch](https://www.twitch.tv/carlosazaustre) · [Twitter](https://twitter.com/carlosazaustre)
@@ -79,9 +79,6 @@
 - **Ricardo Celis** — Streams Science & Technology, Among Us and Apex Legends.
   - [Twitch](https://www.twitch.tv/celismx) · [Twitter](https://twitter.com/CelisMX)
   - Última actividad → Twitch: Desconocida
-- **Pablo Trinidad** — Software Engineer; ha trabajado para Google, Microsoft y startups de LATAM. Estudiante de la Facultad de Ciencias de la UNAM [Go/Python/C++/Punch Cards].
-  - [YouTube](https://www.youtube.com/channel/UC-Ol76LwNXj8scU_VtKDxVg) · [Twitter](https://twitter.com/_pablotrinidad_)
-  - Última actividad → YouTube: 3 abr 2020
 - **Héctor De León** — Ingeniero en computación, aficionado a la inteligencia artificial y al desarrollo de sistemas que optimicen procesos. Creador de contenido para Youtube y Udemy. Microsoft Most Valuable Professional 2022 🏆.
   - [Sitio web](http://hdeleon.net/) · [YouTube](https://www.youtube.com/c/hdeleonnet) · [Twitch](https://www.twitch.tv/hdeleonnet) · [Twitter](https://twitter.com/powerhdeleon)
   - Última actividad → YouTube: 9 dic 2025 · Twitch última vez en vivo: 12 dic 2025
