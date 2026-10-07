@@ -143,11 +143,11 @@ export default async function Home() {
             id="descubre-titulo"
             index="02"
             title="Descubre"
-            description="Streams en español de programación y tecnología en Twitch y Kick que todavía no están en la lista."
+            description="Streams en español de desarrollo de software en Twitch y Kick que todavía no están en la lista."
           />
           {snapshot.discover.length > 0 ? (
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {snapshot.discover.slice(0, 6).map((stream) => (
+              {snapshot.discover.map((stream) => (
                 <LiveCard
                   key={stream.url}
                   stream={stream}

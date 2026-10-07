@@ -5,12 +5,8 @@ import { appTokenProvider, chunk, fetchOk, NotConfiguredError } from './http'
 const API_BASE = 'https://api.kick.com/public/v1'
 const REVALIDATE_SECONDS = 60
 const DISCOVER_LANGUAGE = 'es'
-const DISCOVER_CATEGORY_QUERIES = ['Software', 'Science']
-const DISCOVER_CATEGORY_NAMES = new Set([
-  'software development',
-  'science & technology',
-  'science and technology',
-])
+const DISCOVER_CATEGORY_QUERIES = ['Software']
+const DISCOVER_CATEGORY_NAMES = new Set(['software development'])
 
 type KickCategory = { id: number; name: string }
 
