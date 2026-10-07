@@ -11,7 +11,7 @@ import { PLATFORM_LABELS, type LiveStream } from '@/lib/types'
 export const revalidate = 60
 
 const REPO_URL = 'https://github.com/glrodasz/awesome-estreamers-coders'
-const ADD_CHANNEL_URL = `${REPO_URL}/edit/master/data.json`
+const ADD_CHANNEL_URL = `${REPO_URL}/edit/master/streamers.yml`
 
 function proposeUrl(stream: LiveStream) {
   const params = new URLSearchParams({

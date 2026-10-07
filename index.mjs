@@ -1,13 +1,32 @@
 import fs from 'fs/promises'
+import { loadStreamers, readGenerated, STATUSES_FILE, STREAMERS_FILE } from './lib/data.mjs'
 import { buildLinks } from './lib/links.mjs'
 
-const data = JSON.parse(await fs.readFile('data.json', 'utf-8'))
-const statuses = await readStatuses()
-const statusByName = new Map(statuses.entries.map((entry) => [entry.name, entry]))
+const data = loadStreamers()
+const statuses = readGenerated(STATUSES_FILE).entries
 
 const heading = `# Awesome EStreamers Coders
 
-ℹ️ Si estas haciendo streaming en Twitch, YouTube o Kick sobre contenido relacionado a la tecnología o programación eres bienvenida o bienvenido de hacer un PR agregando tu información en esta lista.
+ℹ️ Si estas haciendo streaming en Twitch, YouTube o Kick sobre contenido relacionado a la tecnología o programación eres bienvenida o bienvenido de hacer un PR agregando tu información en esta lista. Mira [cómo agregarte](#cómo-agregarte).
+`
+
+const contributing = `## ¿Cómo agregarte?
+
+Edita [\`${STREAMERS_FILE}\`](${STREAMERS_FILE}), agrega tu entrada al final y abre un PR:
+
+\`\`\`yaml
+- name: Tu Nombre
+  description: Qué enseñas en tus streams.
+  country: México
+  links:
+    twitch: tu_usuario
+    youtube: "@tu_canal"
+    website: https://tusitio.dev
+\`\`\`
+
+- \`youtube\`, \`twitch\`, \`kick\`, \`twitter\`, \`x\`, \`facebook\` y \`github\` aceptan tu usuario o la URL completa.
+- Cualquier otro enlace (\`website\`, \`linkedin\`, \`instagram\`, …) necesita la URL completa.
+- Puedes validar tu cambio con \`npm run validate\`. No edites \`README.md\` ni \`generated/\`: se generan solos.
 `
 
 const countryOrder = data.reduce((order, entry) => {
@@ -25,7 +44,7 @@ const sections = countryOrder.map((country) => {
     const formattedLinks = formatLinks(person)
     lines.push(`  - ${formattedLinks}`)
 
-    const status = statusByName.get(name)
+    const status = statuses[name]
     const activityLine = buildActivityLine(status)
     if (activityLine) {
       lines.push(`  - ${activityLine}`)
@@ -35,7 +54,7 @@ const sections = countryOrder.map((country) => {
   return lines.join('\n')
 })
 
-const content = `${heading}\n${sections.join('\n\n')}\n`
+const content = `${heading}\n${sections.join('\n\n')}\n\n${contributing}`
 
 await fs.writeFile('README.md', content, { encoding: 'utf-8' })
 console.log('✅ Successfully generated README.md')
@@ -70,21 +89,12 @@ function formatLinks(person) {
 
 function formatTimestamp(value) {
   try {
+    // UTC so the README is identical whether it is generated locally or in CI.
     return new Intl.DateTimeFormat('es-ES', {
       dateStyle: 'medium',
+      timeZone: 'UTC',
     }).format(new Date(value))
   } catch (error) {
     return value
   }
-}
-
-async function readStatuses() {
-  try {
-    const raw = await fs.readFile('statuses.json', 'utf-8')
-    const parsed = JSON.parse(raw)
-    if (Array.isArray(parsed.entries)) return parsed
-  } catch (error) {
-    console.warn('No statuses.json found, skipping activity section')
-  }
-  return { generatedAt: null, entries: [] }
 }
