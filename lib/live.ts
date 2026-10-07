@@ -46,20 +46,20 @@ const DISCOVER_LIMIT = DISCOVER_QUOTAS.reduce((total, [, count]) => total + coun
 
 /**
  * Picks a platform mix (3 Twitch, 2 Kick, 1 YouTube), backfilling missing slots from other platforms.
- * A channel simulcasting on several platforms is shown once.
+ * A channel simulcasting on several platforms is shown once, on the platform with the most viewers.
  */
 export function mixDiscover(streams: LiveStream[]): LiveStream[] {
-  const sorted = [...streams].sort(byViewers)
+  const seenChannels = new Set<string>()
+  const remaining = [...streams].sort(byViewers).filter((stream) => {
+    if (seenChannels.has(stream.channelKey)) return false
+    seenChannels.add(stream.channelKey)
+    return true
+  })
   const picked: LiveStream[] = []
-  const pickedChannels = new Set<string>()
   const take = (platform: Platform, count: number) => {
-    for (const stream of sorted) {
-      if (count <= 0) return
-      if (stream.platform !== platform || pickedChannels.has(stream.channelKey)) continue
-      picked.push(stream)
-      pickedChannels.add(stream.channelKey)
-      count--
-    }
+    const taken = remaining.filter((stream) => stream.platform === platform).slice(0, Math.max(count, 0))
+    for (const stream of taken) remaining.splice(remaining.indexOf(stream), 1)
+    picked.push(...taken)
   }
 
   for (const [platform, quota] of DISCOVER_QUOTAS) take(platform, quota)

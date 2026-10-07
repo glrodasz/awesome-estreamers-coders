@@ -104,10 +104,14 @@ describe('mixDiscover', () => {
     expect(mixed.map((s) => s.channelKey)).toEqual(['twitch0', 'twitch1', 'twitch2', 'kick0', 'kick1', 'kick2'])
   })
 
-  it('shows a simulcast channel once', () => {
-    const simulcast = streamsOf('kick', 1).map((s) => ({ ...s, channelKey: 'twitch0' }))
-    const mixed = mixDiscover([...streamsOf('twitch', 10), ...simulcast])
-    expect(mixed.filter((s) => s.channelKey === 'twitch0')).toHaveLength(1)
-    expect(platformCounts(mixed)).toEqual({ twitch: 6 })
+  it('shows a simulcast channel once, on the platform with more viewers', () => {
+    const simulcast = (platform: Platform, viewers: number) =>
+      streamsOf(platform, 1).map((s) => ({ ...s, channelKey: 'pashoai', viewers }))
+
+    const kickWins = mixDiscover([...streamsOf('twitch', 10), ...simulcast('twitch', 2), ...simulcast('kick', 3)])
+    expect(kickWins.filter((s) => s.channelKey === 'pashoai').map((s) => s.platform)).toEqual(['kick'])
+
+    const twitchWins = mixDiscover([...streamsOf('twitch', 2), ...simulcast('twitch', 3), ...simulcast('kick', 2)])
+    expect(twitchWins.filter((s) => s.channelKey === 'pashoai').map((s) => s.platform)).toEqual(['twitch'])
   })
 })
