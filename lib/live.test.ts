@@ -1,5 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { getLiveSnapshot } from './live'
+import { getLiveSnapshot, mixDiscover } from './live'
+import type { LiveStream, Platform } from './types'
 
 const stream = (login: string, viewers: number) => ({
   user_login: login,
@@ -61,5 +62,45 @@ describe('getLiveSnapshot', () => {
 
     expect(snapshot.live).toEqual([])
     expect(snapshot.issues).toContainEqual({ platform: 'twitch', reason: 'error' })
+  })
+})
+
+describe('mixDiscover', () => {
+  const streamsOf = (platform: Platform, count: number): LiveStream[] =>
+    Array.from({ length: count }, (_, i) => ({
+      platform,
+      channelKey: `${platform}${i}`,
+      channelName: `${platform}${i}`,
+      title: '',
+      category: null,
+      viewers: (platform === 'twitch' ? 1000 : 10) - i,
+      startedAt: null,
+      thumbnail: null,
+      url: `https://example.com/${platform}${i}`,
+    }))
+  const platformCounts = (streams: LiveStream[]) =>
+    streams.reduce<Record<string, number>>((counts, s) => ({ ...counts, [s.platform]: (counts[s.platform] ?? 0) + 1 }), {})
+
+  it('shows 3 Twitch, 2 Kick and 1 YouTube when all are available', () => {
+    const mixed = mixDiscover([...streamsOf('twitch', 10), ...streamsOf('kick', 5), ...streamsOf('youtube', 5)])
+    expect(platformCounts(mixed)).toEqual({ twitch: 3, kick: 2, youtube: 1 })
+  })
+
+  it('gives the YouTube slot to Kick when there is no YouTube', () => {
+    const mixed = mixDiscover([...streamsOf('twitch', 10), ...streamsOf('kick', 5)])
+    expect(platformCounts(mixed)).toEqual({ twitch: 3, kick: 3 })
+  })
+
+  it('fills with Twitch when there is no Kick or YouTube', () => {
+    expect(platformCounts(mixDiscover(streamsOf('twitch', 10)))).toEqual({ twitch: 6 })
+    expect(platformCounts(mixDiscover([...streamsOf('twitch', 10), ...streamsOf('kick', 1)]))).toEqual({
+      twitch: 5,
+      kick: 1,
+    })
+  })
+
+  it('keeps the top streams per platform, sorted by viewers', () => {
+    const mixed = mixDiscover([...streamsOf('kick', 3), ...streamsOf('twitch', 4)].reverse())
+    expect(mixed.map((s) => s.channelKey)).toEqual(['twitch0', 'twitch1', 'twitch2', 'kick0', 'kick1', 'kick2'])
   })
 })
