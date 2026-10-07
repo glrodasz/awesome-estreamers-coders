@@ -3,7 +3,7 @@ import { appTokenProvider, chunk, fetchOk, NotConfiguredError } from './http'
 
 const REVALIDATE_SECONDS = 60
 const DISCOVER_LANGUAGE = 'es'
-const DISCOVER_CATEGORIES = ['Software and Game Development', 'Science & Technology']
+const DISCOVER_CATEGORIES = ['Software and Game Development']
 
 export type TwitchStream = {
   user_login: string

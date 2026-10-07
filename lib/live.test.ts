@@ -103,4 +103,11 @@ describe('mixDiscover', () => {
     const mixed = mixDiscover([...streamsOf('kick', 3), ...streamsOf('twitch', 4)].reverse())
     expect(mixed.map((s) => s.channelKey)).toEqual(['twitch0', 'twitch1', 'twitch2', 'kick0', 'kick1', 'kick2'])
   })
+
+  it('shows a simulcast channel once', () => {
+    const simulcast = streamsOf('kick', 1).map((s) => ({ ...s, channelKey: 'twitch0' }))
+    const mixed = mixDiscover([...streamsOf('twitch', 10), ...simulcast])
+    expect(mixed.filter((s) => s.channelKey === 'twitch0')).toHaveLength(1)
+    expect(platformCounts(mixed)).toEqual({ twitch: 6 })
+  })
 })

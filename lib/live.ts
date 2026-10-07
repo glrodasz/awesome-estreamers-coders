@@ -42,19 +42,28 @@ const DISCOVER_QUOTAS: [Platform, number][] = [
 // Empty slots go to the smaller platforms first so Twitch doesn't crowd them out.
 const DISCOVER_BACKFILL: Platform[] = ['kick', 'youtube', 'twitch']
 
-/** Picks a platform mix (3 Twitch, 2 Kick, 1 YouTube), backfilling missing slots from other platforms. */
-export function mixDiscover(streams: LiveStream[]): LiveStream[] {
-  const remaining = new Map<Platform, LiveStream[]>()
-  for (const stream of [...streams].sort(byViewers)) {
-    remaining.set(stream.platform, [...(remaining.get(stream.platform) ?? []), stream])
-  }
-  const take = (platform: Platform, count: number) => remaining.get(platform)?.splice(0, count) ?? []
+const DISCOVER_LIMIT = DISCOVER_QUOTAS.reduce((total, [, count]) => total + count, 0)
 
-  const picked = DISCOVER_QUOTAS.flatMap(([platform, count]) => take(platform, count))
-  const limit = DISCOVER_QUOTAS.reduce((total, [, count]) => total + count, 0)
-  for (const platform of DISCOVER_BACKFILL) {
-    picked.push(...take(platform, limit - picked.length))
+/**
+ * Picks a platform mix (3 Twitch, 2 Kick, 1 YouTube), backfilling missing slots from other platforms.
+ * A channel simulcasting on several platforms is shown once.
+ */
+export function mixDiscover(streams: LiveStream[]): LiveStream[] {
+  const sorted = [...streams].sort(byViewers)
+  const picked: LiveStream[] = []
+  const pickedChannels = new Set<string>()
+  const take = (platform: Platform, count: number) => {
+    for (const stream of sorted) {
+      if (count <= 0) return
+      if (stream.platform !== platform || pickedChannels.has(stream.channelKey)) continue
+      picked.push(stream)
+      pickedChannels.add(stream.channelKey)
+      count--
+    }
   }
+
+  for (const [platform, quota] of DISCOVER_QUOTAS) take(platform, quota)
+  for (const platform of DISCOVER_BACKFILL) take(platform, DISCOVER_LIMIT - picked.length)
   return picked.sort(byViewers)
 }
 
