@@ -73,6 +73,9 @@
 - **Dorian Designs** — Apasionado de las nuevas tecnologías y en especial del ecosistema de javascript.
   - [YouTube](https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A) · [Twitch](https://www.twitch.tv/doriandesings) · [Twitter](https://twitter.com/DorianDesings) · [Facebook](https://www.facebook.com/yoaprendocondorian)
   - Última actividad → YouTube: 26 ene 2025 · Twitch: Desconocida
+- **ManzDev** — Divulgador de desarrollo web en español; HTML, CSS, JavaScript y Web Components explicados en directo.
+  - [Sitio web](https://manz.dev/) · [YouTube](https://www.youtube.com/@ManzDev) · [Twitch](https://www.twitch.tv/manzdev) · [Twitter](https://twitter.com/Manz)
+  - Última actividad → Desconocida
 
 ## Mexico
 

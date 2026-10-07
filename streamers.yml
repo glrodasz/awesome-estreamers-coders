@@ -244,3 +244,12 @@
     twitch: fazttech
     twitter: fazttech
     facebook: FaztTech
+
+- name: ManzDev
+  description: Divulgador de desarrollo web en español; HTML, CSS, JavaScript y Web Components explicados en directo.
+  country: España
+  links:
+    website: https://manz.dev/
+    youtube: "@ManzDev"
+    twitch: manzdev
+    twitter: Manz
