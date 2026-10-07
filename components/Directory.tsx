@@ -14,6 +14,22 @@ const PLATFORMS = Object.keys(PLATFORM_LABELS) as Platform[]
 const STAGGER_MS = 30
 const MAX_STAGGER_STEPS = 12
 
+/** Brand colors for link chips; unknown link types keep the neutral ink style. */
+const LINK_STYLES: Record<string, string> = {
+  youtube: 'bg-youtube text-white',
+  twitch: 'bg-twitch text-white',
+  kick: 'bg-kick text-black',
+  twitter: 'bg-[#1d9bf0] text-white',
+  x: 'bg-black text-white',
+  facebook: 'bg-[#1877f2] text-white',
+  github: 'bg-[#24292f] text-white',
+  linkedin: 'bg-[#0a66c2] text-white',
+  instagram: 'bg-[#e1306c] text-white',
+  tiktok: 'bg-[#ff0050] text-white',
+  bluesky: 'bg-[#1185fe] text-white',
+  website: 'bg-accent text-black',
+}
+
 const ACTIVE_CHIP: Record<Platform | 'all', string> = {
   all: 'aria-pressed:bg-ink aria-pressed:text-paper',
   twitch: 'aria-pressed:bg-twitch aria-pressed:text-white',
@@ -130,7 +146,7 @@ export function Directory({ streamers, liveNames }: Props) {
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="rounded-md border-2 border-ink px-2 py-0.5 font-mono text-xs font-semibold transition-colors duration-150 hover:bg-ink hover:text-paper"
+                          className={`rounded-md border-2 border-ink px-2 py-0.5 font-mono text-xs font-semibold transition duration-150 hover:-translate-x-px hover:-translate-y-px hover:shadow-[2px_2px_0_0_var(--ink)] active:translate-0 active:shadow-none ${LINK_STYLES[link.type] ?? 'hover:bg-ink hover:text-paper'}`}
                         >
                           {link.label}
                         </a>

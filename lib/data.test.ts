@@ -53,10 +53,10 @@ describe('buildLinks', () => {
         },
       }),
     ).toEqual([
-      { label: 'YouTube', url: 'https://www.youtube.com/@ada' },
-      { label: 'Twitch', url: 'https://www.twitch.tv/ada_dev' },
-      { label: 'LinkedIn', url: 'https://linkedin.com/in/ada' },
-      { label: 'Mastodon', url: 'https://hachyderm.io/@ada' },
+      { type: 'youtube', label: 'YouTube', url: 'https://www.youtube.com/@ada' },
+      { type: 'twitch', label: 'Twitch', url: 'https://www.twitch.tv/ada_dev' },
+      { type: 'linkedin', label: 'LinkedIn', url: 'https://linkedin.com/in/ada' },
+      { type: 'mastodon', label: 'Mastodon', url: 'https://hachyderm.io/@ada' },
     ])
   })
 })

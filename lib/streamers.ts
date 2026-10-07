@@ -11,7 +11,8 @@ export type Streamer = {
   name: string
   description: string
   country: string
-  links: { label: string; url: string }[]
+  /** `type` is the key from streamers.yml (twitch, youtube, website, …). */
+  links: { type: string; label: string; url: string }[]
   platforms: Platform[]
   twitchLogin: string | null
   kickSlug: string | null
