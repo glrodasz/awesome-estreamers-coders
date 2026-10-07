@@ -40,6 +40,14 @@
     twitch: vamoacodear
     twitter: vamoacodear
 
+- name: Alan Buscaglia (Gentleman Programming)
+  description: Arquitectura frontend, Angular, React y buenas prácticas de desarrollo, explicadas en vivo.
+  country: Argentina
+  links:
+    youtube: "@GentlemanProgramming"
+    twitch: gentlemanprogramming
+    kick: gentleman-programming
+
 - name: Sebastián Carroza
   description: Desarrollador Frontend enfocado a Javascript, Vue, Typescript, Vuetify.
   country: Chile
@@ -138,6 +146,7 @@
     website: https://midu.dev/
     youtube: midudev
     twitch: midudev
+    kick: midudev
     twitter: midudev
     facebook: midudev.frontend
 

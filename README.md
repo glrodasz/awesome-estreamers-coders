@@ -13,6 +13,9 @@
 - **Noe VamoaCodear** — Desarrolladora Frontend 🟣 • Aprendemos tecnologías en Twitch.
   - [YouTube](https://www.youtube.com/c/vamoacodear) · [Twitch](https://www.twitch.tv/vamoacodear) · [Twitter](https://twitter.com/vamoacodear)
   - Última actividad → YouTube: 24 ago 2022 · Twitch: Desconocida
+- **Alan Buscaglia (Gentleman Programming)** — Arquitectura frontend, Angular, React y buenas prácticas de desarrollo, explicadas en vivo.
+  - [YouTube](https://www.youtube.com/@GentlemanProgramming) · [Twitch](https://www.twitch.tv/gentlemanprogramming) · [Kick](https://kick.com/gentleman-programming)
+  - Última actividad → Desconocida
 
 ## Chile
 
@@ -56,7 +59,7 @@
   - [Sitio web](https://moure.dev/) · [YouTube](https://www.youtube.com/MouredevApps) · [Twitch](https://www.twitch.tv/mouredev) · [Twitter](https://twitter.com/MoureDev) · [Facebook](https://www.facebook.com/mouredev)
   - Última actividad → YouTube: 1 oct 2026 · Twitch última vez en vivo: 24 sept 2026
 - **Miguel Ángel Durán** — Javascript ☕️, React ⚛️, CSS🎨, HTML, Node.js, Firebase y mucho más.
-  - [Sitio web](https://midu.dev/) · [YouTube](https://www.youtube.com/midudev) · [Twitch](https://www.twitch.tv/midudev) · [Twitter](https://twitter.com/midudev) · [Facebook](https://www.facebook.com/midudev.frontend)
+  - [Sitio web](https://midu.dev/) · [YouTube](https://www.youtube.com/midudev) · [Twitch](https://www.twitch.tv/midudev) · [Kick](https://kick.com/midudev) · [Twitter](https://twitter.com/midudev) · [Facebook](https://www.facebook.com/midudev.frontend)
   - Última actividad → YouTube: 6 oct 2026 · Twitch última vez en vivo: 5 oct 2026
 - **Pablo Sirera** — Desarrollador Frontend enfocado con Javascript, Vue 💚, Nuxt, Firebase y más 🔥.
   - [Sitio web](https://pablosirera.com/) · [YouTube](https://www.youtube.com/PabloSirera) · [Twitch](https://www.twitch.tv/pablosirera) · [Twitter](https://twitter.com/pablosirera)
