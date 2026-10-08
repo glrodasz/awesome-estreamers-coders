@@ -11,16 +11,16 @@
 #     kick: tu_usuario
 #     website: https://tusitio.dev
 #
-# youtube, twitch, kick, twitter, x, facebook y github aceptan el usuario;
+# youtube, twitch, kick, x, facebook y github aceptan el usuario;
 # cualquier otro enlace (website, linkedin, instagram, …) necesita la URL completa.
 # El estado de los enlaces y la última actividad se generan solos en generated/.
 
 - name: Jorge Cano
-  description: "#Angular #GDE · Owner de @ngbaires · @ngconf organizer · Principal architect @HeroDevs @scullyIO · @angulareando · #EStreamerCoders."
+  description: "#Angular & Performance Google Developer Expert"
   country: Argentina
   links:
     youtube: JorgeCano
-    twitter: jorgeucano
+    x: jorgeucano
 
 - name: Gonzalo Pozzo
   description: Solutions architect @ Vercel, Frontend / React ❤.
@@ -29,7 +29,7 @@
     website: https://goncy.dev
     youtube: c/GonzaloPozzo
     twitch: goncypozzo
-    twitter: goncy
+    x: goncy
     facebook: goncy.pozzo
 
 - name: Noe VamoaCodear
@@ -38,14 +38,14 @@
   links:
     youtube: c/vamoacodear
     twitch: vamoacodear
-    twitter: vamoacodear
+    x: vamoacodear
 
 - name: Alan Buscaglia (Gentleman Programming)
-  description: Arquitectura frontend, Angular, React y buenas prácticas de desarrollo, explicadas en vivo.
+  description: App Lead @prowler-cloud, Angular GDE and Microsoft MVP. Creates AI-first tools for developers.
   country: Argentina
   links:
     youtube: "@GentlemanProgramming"
-    twitch: gentlemanprogramming
+    twitch: gentleman_programming
     kick: gentleman-programming
 
 - name: Ignacio Gutiérrez
@@ -55,80 +55,80 @@
     website: https://bluuweb.github.io/
     youtube: bluuweb
     twitch: bluuweb
-    twitter: bluuweb
+    x: bluuweb
     facebook: bluuweb
 
 - name: Ana Belisa Martínez
-  description: "Master Coach at @platzi · Systems Engineer · Web Developer · Mom Bebeloper · Lead at DevC Bogotá · Founder @wcfcolombia · Speaker · Head of #ElCodigoRosa."
+  description: Head of Student Success at Platzi · Web Developer 🇨🇴
   country: Colombia
   links:
     youtube: anabelisam
     twitch: anabelisam
-    twitter: anabelisam_
+    x: anabelisam_
     facebook: anabelisam
 
 - name: Guillermo Rodas
-  description: Made in 🇨🇴 Colombia living in Sweden 🇸🇪 — Google Developer Expert en Tecnologías Web.
+  description: Senior Full-stack AI Engineer building production AI systems and helping developer communities grow.
   country: Colombia
   links:
     website: https://guillermorodas.com/
     youtube: guillermorodas
     twitch: guillermorodas
-    twitter: glrodasz
+    x: glrodasz
 
 - name: Julián Duque
-  description: Developer and Educator at MNTD · Community Leader · NodeConf and JSConf Colombia organizer · Sr. Developer Advocate at Salesforce Heroku.
+  description: Software architect at MuleSoft; Node.js emeritus collaborator. Builds and teaches agentic AI and event-driven systems.
   country: Colombia
   links:
     website: https://www.julianduque.co
     youtube: user/julianduquej
     twitch: julianduque
-    twitter: julian_duque
+    x: julian_duque
 
 - name: Daniel Suarez Dev
-  description: Frontend Developer and Educator | Freelancer | JavaScript, HTML, CSS, Figma y todo tema que aporte a la comunidad frontend.
+  description: Full-stack developer and content creator. React, React Native, Node.js, SQL, AWS and Astro.
   country: Colombia
   links:
     youtube: channel/UC_zzfLSjrYNKrOIGK_js_AA
     twitch: danielsuarezdev
-    twitter: DanielSuarezDev
+    x: DanielSuarezDev
 
 - name: Nicolas Molina
-  description: GDE in Web Technologies and Angular. Senior Front-end developer and teacher at Platzi.
+  description: Senior Front-end Developer at dotCMS. Angular GDE and Microsoft MVP.
   country: Colombia
   links:
     website: https://nicobytes.com/
     youtube: c/nicobytes
-    twitter: nicobytes
+    x: nicobytes
 
 - name: Carlos Azaustre
-  description: Desarrollador web desde hace más de 8 años. Google Developer Expert (GDE) en Tecnologías Web.
+  description: Ingeniero de software y educador con más de 20 años creando webs. JavaScript, TypeScript, arquitectura e IA.
   country: España
   links:
     website: https://mypublicinbox.com/carlosazaustre
     youtube: CarlosAzaustre
     twitch: carlosazaustre
-    twitter: carlosazaustre
+    x: carlosazaustre
 
 - name: Brais Moure
-  description: Desarrollador de software profesional desde hace más de 10 años. Actualmente trabaja como freelance creando apps para iOS y Android.
+  description: Divulgador e ingeniero que enseña a principiantes sobre software e IA.
   country: España
   links:
     website: https://moure.dev/
     youtube: MouredevApps
     twitch: mouredev
-    twitter: MoureDev
+    x: MoureDev
     facebook: mouredev
 
 - name: Miguel Ángel Durán
-  description: Javascript ☕️, React ⚛️, CSS🎨, HTML, Node.js, Firebase y mucho más.
+  description: Divulgación y clases de programación, desarrollo web e IA en Twitch y YouTube.
   country: España
   links:
     website: https://midu.dev/
     youtube: midudev
     twitch: midudev
     kick: midudev
-    twitter: midudev
+    x: midudev
     facebook: midudev.frontend
 
 - name: Pablo Sirera
@@ -138,24 +138,24 @@
     website: https://pablosirera.com/
     youtube: PabloSirera
     twitch: pablosirera
-    twitter: pablosirera
+    x: pablosirera
 
 - name: Santiago Martín
-  description: Software Engineer 🚀 TypeScript, React, NEXT.js, Node, Deno, Google Cloud (+ Firebase)... todo lo necesario para hacer un proyecto desde 0.
+  description: Software Engineer. Comunidad en @asturiaswcraft y live coding.
   country: España
   links:
     website: https://www.santiagomartin.dev/
     twitch: santima10
-    twitter: SantiMA10b
+    x: SantiMA10b
 
 - name: Jorge Baumann
-  description: "Open Source Developer at #RambitoJS 🐶 · JavaScript · Vue.js · Testing · Firebase · CSS · Node.js."
+  description: Senior Full Stack Developer. Ingeniero, divulgador y speaker sobre desarrollo web.
   country: España
   links:
     website: https://www.baumannzone.dev/
     youtube: channel/UCTTj5ztXnGeDRPFVsBp7VMA
     twitch: baumannzone
-    twitter: baumannzone
+    x: baumannzone
 
 - name: Dorian Designs
   description: Apasionado de las nuevas tecnologías y en especial del ecosistema de javascript.
@@ -163,7 +163,7 @@
   links:
     youtube: channel/UCzuwt7Pi_VB8cP5q5UE4u-A
     twitch: doriandesings
-    twitter: DorianDesings
+    x: DorianDesings
     facebook: yoaprendocondorian
 
 - name: Oscar Barajas
@@ -172,62 +172,237 @@
   links:
     website: https://gndx.dev/
     youtube: "@gndx"
-    twitter: gndx
+    x: gndx
     github: gndx
     twitch: gndxdev
     linkedin: https://www.linkedin.com/in/oscarbarajas/
     instagram: https://instagram.com/gndx
 
 - name: Héctor De León
-  description: Ingeniero en computación, aficionado a la inteligencia artificial y al desarrollo de sistemas que optimicen procesos. Creador de contenido para Youtube y Udemy. Microsoft Most Valuable Professional 2022 🏆.
+  description: Ingeniero en computación, aficionado a la IA y autor. Creador de Metal Code; comparte conocimientos de programación.
   country: Mexico
   links:
     website: http://hdeleon.net/
     youtube: c/hdeleonnet
     twitch: hdeleonnet
-    twitter: powerhdeleon
+    x: powerhdeleon
 
 - name: Jose Jesus Guzman Eusebio
-  description: Le encanta enseñar y compartir conocimiento en tecnología como Sherpa Digital de Microsoft y host del podcast "No es Brujería, es Tecnología".
+  description: Desarrollador backend y Android, CTO en Envíaje y Sherpa Digital de Innovacción Virtual de @microsoft. @brujeriatech.
   country: Mexico
   links:
-    youtube: c/hdeleonnet
     twitch: brujeriatech
-    twitter: powerhdeleon
+    github: josejesusguzman
 
 - name: Erifranck Nuñez
-  description: Desarrollador frontend en Globant; amante de la ilustración y la animación; entrenador pokemon en tiempos libres.
+  description: Software developer training in machine learning.
   country: Venezuela
   links:
     website: https://www.erifranck.art/
     youtube: c/erifrancknunez
     twitch: erifranck
-    twitter: erifranckn
+    x: erifranckn
 
 - name: Leonidas Esteban
-  description: Google Developer Expert, programming teacher, speaker and Frontend professional.
+  description: Software Engineer, Professor
   country: Perú
   links:
     website: https://leonidasesteban.com/cursos
     youtube: LeonidasEsteban
-    twitter: LeonidasEsteban
+    x: LeonidasEsteban
     facebook: LeonidasEsteban
 
 - name: Fazttech
-  description: Programador y Desarrollador Web que comparte tutoriales y juega online :).
+  description: Formación práctica en inteligencia artificial y desarrollo web, con proyectos y repositorios para experimentar y desplegar.
   country: Perú
   links:
     website: https://faztweb.com/
     youtube: fazttech
     twitch: fazttech
-    twitter: fazttech
+    x: fazttech
     facebook: FaztTech
 
 - name: ManzDev
-  description: Divulgador de desarrollo web en español; HTML, CSS, JavaScript y Web Components explicados en directo.
+  description: Profesor, ingeniero informático y divulgador. Programación web, CSS e inteligencia artificial; comparte conocimiento en directo.
   country: España
   links:
     website: https://manz.dev/
     youtube: "@ManzDev"
     twitch: manzdev
-    twitter: Manz
+    x: Manz
+
+- name: Afor Digital
+  description: Desarrollo frontend, creación de productos y aprendizaje compartido con la comunidad.
+  country: España
+  links:
+    youtube: "@afor_digital"
+    twitch: afor_digital
+    website: https://www.afor.digital
+    x: afor_digital
+
+- name: Alva Majo
+  description: "Desarrollo de videojuegos indie: ideas, decisiones y experiencias detrás de crear tus propios juegos."
+  country: España
+  links:
+    youtube: "@alvamajo"
+    twitch: alvamajo
+
+- name: Apple Coding (Julio César Fernández)
+  description: Swift, SwiftUI y desarrollo de aplicaciones nativas para el ecosistema Apple.
+  country: España
+  links:
+    twitch: applecoding
+    website: https://www.applecoding.com
+    github: applecoding
+
+- name: BettaTech
+  description: Ingeniería de software, arquitectura y cloud para ir más allá de aprender a programar.
+  country: España
+  links:
+    youtube: c/BettaTech
+    website: https://www.commitacademy.io
+    x: BettaTech
+
+- name: Carlos Coronado (CarlosGameDeveloper)
+  description: Desarrollo de videojuegos con Unreal Engine, tutoriales y experiencias de la industria.
+  country: España
+  links:
+    twitch: carlosgamedeveloper
+
+- name: Codely
+  description: Arquitectura, testing y buenas prácticas para crear software mantenible y escalable.
+  country: España
+  links:
+    youtube: channel/UC9IKtxn9AIGelnYmwYr0Lxw
+    twitch: codelytv
+    website: https://codely.com
+    x: CodelyTV
+    github: CodelyTV
+
+- name: Fernando Herrera
+  description: Desarrollo web y móvil, con cursos y proyectos para pasar de los fundamentos a aplicaciones completas.
+  country: Costa Rica
+  links:
+    youtube: channel/UCuaPTYj15JSkETGnEseaFFg
+    website: https://fernando-herrera.com
+    x: Fernando_Her85
+    github: Klerith
+
+- name: Freddy Montes
+  description: Frontend y diseño de interfaces, con proyectos prácticos en React, Next.js y CSS.
+  country: Costa Rica
+  links:
+    youtube: channel/UCrv92ZCJjXgI1wK7Ru0rObg
+    website: https://fmontes.com
+    x: fmontes
+    github: fmontes
+
+- name: Germán Rodríguez (PadawansTrainer)
+  description: Desarrollo web con HTML, CSS, JavaScript, PHP y MySQL, poniendo los fundamentos antes que los frameworks.
+  country: Argentina
+  links:
+    youtube: https://www.youtube.com/grodriguezDW
+    twitch: padawanstrainer
+    github: padawanstrainer
+
+- name: HolaMundo (Nicolás Schürmann)
+  description: Programación y desarrollo de aplicaciones con JavaScript, Python y React, desde las bases hasta la práctica.
+  country: Chile
+  links:
+    youtube: "@holamundodev"
+
+- name: Jon MirCha
+  description: Fundamentos del desarrollo web, con énfasis en código sencillo, duradero y sin dependencias innecesarias.
+  country: México
+  links:
+    youtube: "@jonmircha"
+    website: https://jonmircha.com
+    x: jonmircha
+
+- name: Laboratorio Gluon
+  description: Electrónica y programación para construir proyectos con Arduino, ESP32 y Raspberry Pi.
+  country: España
+  links:
+    youtube: "@LaboratorioGluon"
+    twitch: labgluon
+    website: https://www.laboratoriogluon.com
+    x: LabGluon
+
+- name: Maxi Programa
+  description: Programación desde cero y desarrollo de aplicaciones con C#, .NET y SQL.
+  country: Argentina
+  links:
+    youtube: "@MaxiPrograma"
+    twitch: maxiprograma
+    website: https://maxiprograma.com
+
+- name: Melenitas Dev
+  description: Unity y C# para crear videojuegos, recrear mecánicas y convertir ideas en proyectos jugables.
+  country: España
+  links:
+    youtube: "@MelenitasDev"
+    twitch: melenitasdev
+    website: https://melenitas.dev
+    github: MelenitasDev
+
+- name: Pelado Nerd
+  description: Linux, Docker y Kubernetes para entender la infraestructura, desplegar aplicaciones y automatizar tareas.
+  country: Argentina
+  links:
+    youtube: "@PeladoNerd"
+    website: https://www.peladonerd.com
+    x: PeladoNerd
+    github: pablokbs
+
+- name: Rafa Laguna (RafaLagoon)
+  description: "Godot, Linux y software libre: videojuegos y proyectos para aprender experimentando."
+  country: España
+  links:
+    youtube: "@rafalagoon"
+    twitch: rafalagoon
+    x: RafaLagoon
+    github: rafalagoon
+
+- name: Rocío Tomé (RothioTome)
+  description: Desarrollo de videojuegos indie con Godot, creatividad y accesibilidad.
+  country: España
+  links:
+    youtube: "@Rothiotome"
+    twitch: RothioTome
+    website: https://rociotome.com
+    x: rothiotome
+
+- name: s4vitar
+  description: Hacking ético y ciberseguridad, con pentesting y análisis de vulnerabilidades.
+  country: España
+  links:
+    youtube: "@s4vitar"
+    twitch: s4vitaar
+    website: https://hack4u.io
+    x: s4vitar
+
+- name: Sergie Code
+  description: Desarrollo web e inteligencia artificial, con cursos y proyectos para aprender desde cero.
+  country: Argentina
+  links:
+    youtube: "@SergieCode"
+    website: https://www.sergiecode.com
+    x: sergiecode
+    github: sergiecode
+
+- name: TodoCode (Luisina de Paula)
+  description: Java y desarrollo backend, desde la lógica de programación hasta las APIs con Spring Boot.
+  country: Argentina
+  links:
+    youtube: "@TodoCode"
+    twitch: todocode
+    website: https://www.todocodeacademy.com
+    x: todo_code
+
+- name: Víctor Robles WEB
+  description: Desarrollo web, formación y proyectos prácticos para aprender a programar y crecer profesionalmente.
+  country: España
+  links:
+    youtube: "@VictorRoblesWEB"
+    website: https://victorroblesweb.es
+    github: victorobs

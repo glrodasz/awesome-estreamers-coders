@@ -19,7 +19,6 @@ const LINK_STYLES: Record<string, string> = {
   youtube: 'bg-youtube text-white',
   twitch: 'bg-twitch text-white',
   kick: 'bg-kick text-black',
-  twitter: 'bg-[#1d9bf0] text-white',
   x: 'bg-black text-white',
   facebook: 'bg-[#1877f2] text-white',
   github: 'bg-[#24292f] text-white',
@@ -155,9 +154,9 @@ export function Directory({ streamers, liveNames }: Props) {
                     <p className="border-t-2 border-dashed border-ink/30 pt-2 font-mono text-[11px] text-muted">
                       {isLive
                         ? '● Transmitiendo ahora'
-                        : s.lastActivity
-                          ? `Última actividad: ${formatDate(s.lastActivity)}`
-                          : 'Última actividad: desconocida'}
+                        : s.lastLive
+                          ? `Último directo: ${formatDate(s.lastLive)}`
+                          : 'Último directo: sin verificar'}
                     </p>
                   </li>
                 )

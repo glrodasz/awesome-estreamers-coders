@@ -1,4 +1,5 @@
 import fs from 'fs/promises'
+import { lastLiveDate } from './lib/activity.mjs'
 import { loadStreamers, readGenerated, STATUSES_FILE, STREAMERS_FILE } from './lib/data.mjs'
 import { buildLinks } from './lib/links.mjs'
 
@@ -24,7 +25,7 @@ Edita [\`${STREAMERS_FILE}\`](${STREAMERS_FILE}), agrega tu entrada al final y a
     website: https://tusitio.dev
 \`\`\`
 
-- \`youtube\`, \`twitch\`, \`kick\`, \`twitter\`, \`x\`, \`facebook\` y \`github\` aceptan tu usuario o la URL completa.
+- \`youtube\`, \`twitch\`, \`kick\`, \`x\`, \`facebook\` y \`github\` aceptan tu usuario o la URL completa.
 - Cualquier otro enlace (\`website\`, \`linkedin\`, \`instagram\`, …) necesita la URL completa.
 - Puedes validar tu cambio con \`npm run validate\`. No edites \`README.md\` ni \`generated/\`: se generan solos.
 `
@@ -45,10 +46,7 @@ const sections = countryOrder.map((country) => {
     lines.push(`  - ${formattedLinks}`)
 
     const status = statuses[name]
-    const activityLine = buildActivityLine(status)
-    if (activityLine) {
-      lines.push(`  - ${activityLine}`)
-    }
+    lines.push(`  - ${buildActivityLine(status)}`)
   })
 
   return lines.join('\n')
@@ -60,25 +58,9 @@ await fs.writeFile('README.md', content, { encoding: 'utf-8' })
 console.log('✅ Successfully generated README.md')
 
 function buildActivityLine(status) {
-  if (!status) return 'Última actividad → Desconocida'
-
-  const parts = []
-  if (status.youtube?.lastUpload) {
-    parts.push(`YouTube: ${formatTimestamp(status.youtube.lastUpload)}`)
-  } else if (status.youtube) {
-    parts.push('YouTube: Desconocida')
-  }
-
-  if (status.twitch?.lastLive) {
-    parts.push(`Twitch última vez en vivo: ${formatTimestamp(status.twitch.lastLive)}`)
-  } else if (status.twitch?.lastVideo) {
-    parts.push(`Twitch último video: ${formatTimestamp(status.twitch.lastVideo)}`)
-  } else if (status.twitch) {
-    parts.push('Twitch: Desconocida')
-  }
-
-  if (!parts.length) return 'Última actividad → Desconocida'
-  return `Última actividad → ${parts.join(' · ')}`
+  const lastLive = lastLiveDate(status)
+  if (!lastLive) return 'Último directo → sin verificar'
+  return `Último directo → ${formatTimestamp(lastLive)}`
 }
 
 function formatLinks(person) {
