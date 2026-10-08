@@ -1,16 +1,18 @@
 {
-  "generatedAt": "2026-10-07T13:17:37.388Z",
+  "generatedAt": "2026-10-08T08:09:29.689Z",
   "entries": {
     "Jorge Cano": {
       "youtube": {
         "channelId": "UCdp9sM22GW5uIOaU9eZ7n6w",
-        "lastUpload": "2026-06-18T15:00:06+00:00"
+        "lastUpload": "2026-06-18T15:00:06+00:00",
+        "lastLive": "2026-06-18T15:00:06Z"
       }
     },
     "Gonzalo Pozzo": {
       "youtube": {
         "channelId": "UCCvaRcYdZCZBrBQVnsUBg5Q",
-        "lastUpload": "2026-10-01T14:47:13+00:00"
+        "lastUpload": "2026-10-01T14:47:13+00:00",
+        "lastLive": "2022-02-13T10:50:59Z"
       },
       "twitch": {
         "userId": "48388828",
@@ -34,27 +36,24 @@
     "Alan Buscaglia (Gentleman Programming)": {
       "youtube": {
         "channelId": "UCbx_d228PdYwgB4Jz202SIQ",
-        "lastUpload": "2026-10-06T15:54:01+00:00"
+        "lastUpload": "2026-10-06T15:54:01+00:00",
+        "lastLive": "2022-07-09T08:14:10Z"
       },
-      "twitch": {}
-    },
-    "Sebastián Carroza": {
-      "twitch": {
-        "userId": "144242244",
-        "login": "razor7w_w",
-        "lastLive": null,
-        "lastVideo": null
+      "twitch": {},
+      "kick": {
+        "lastLive": "2026-10-01T18:53:16Z"
       }
     },
     "Ignacio Gutiérrez": {
       "youtube": {
         "channelId": "UCH7IANkyEcsVW_y1IlpkamQ",
-        "lastUpload": "2026-01-15T21:18:52+00:00"
+        "lastUpload": "2026-01-15T21:18:52+00:00",
+        "lastLive": "2025-12-03T14:00:06Z"
       },
       "twitch": {
         "userId": "517911408",
         "login": "bluuweb",
-        "lastLive": null,
+        "lastLive": "2023-07-20T18:07:50Z",
         "lastVideo": "2023-07-20T18:07:50Z"
       }
     },
@@ -78,14 +77,15 @@
       "twitch": {
         "userId": "152590097",
         "login": "guillermorodas",
-        "lastLive": null,
+        "lastLive": "2024-09-20T11:20:01Z",
         "lastVideo": "2024-09-20T11:20:01Z"
       }
     },
     "Julián Duque": {
       "youtube": {
         "channelId": "UCf_ymsPEZLmSM7_OvLF87KQ",
-        "lastUpload": "2024-05-29T21:22:03+00:00"
+        "lastUpload": "2024-05-29T21:22:03+00:00",
+        "lastLive": "2021-04-17T21:01:33Z"
       },
       "twitch": {
         "userId": "105683011",
@@ -94,56 +94,44 @@
         "lastVideo": "2022-11-22T21:09:09Z"
       }
     },
-    "Lina Castro": {
-      "twitch": {
-        "userId": "246117544",
-        "login": "lirrums",
-        "lastLive": null,
-        "lastVideo": "2020-09-09T19:43:04Z"
-      }
-    },
     "Daniel Suarez Dev": {
       "youtube": {
         "channelId": "UC_zzfLSjrYNKrOIGK_js_AA",
-        "lastUpload": "2025-06-26T15:57:44+00:00"
+        "lastUpload": "2025-06-26T15:57:44+00:00",
+        "lastLive": "2022-02-19T11:53:09Z"
       },
       "twitch": {
         "userId": "550376014",
         "login": "danielsuarezdev",
-        "lastLive": null,
+        "lastLive": "2022-03-02T00:29:40Z",
         "lastVideo": "2022-03-02T00:29:40Z"
       }
     },
     "Nicolas Molina": {
       "youtube": {
         "channelId": "UCz8-0dWiVLY17Rea7qi2cSQ",
-        "lastUpload": "2026-09-25T12:32:14+00:00"
-      }
-    },
-    "Desiré Carmona": {
-      "twitch": {
-        "userId": "485423281",
-        "login": "helle_world",
-        "lastLive": null,
-        "lastVideo": null
+        "lastUpload": "2026-09-25T12:32:14+00:00",
+        "lastLive": "2026-08-06T00:42:36Z"
       }
     },
     "Carlos Azaustre": {
       "youtube": {
         "channelId": "UCJgGc8pQO1lv04VXrBxA_Hg",
-        "lastUpload": "2026-10-01T16:28:07+00:00"
+        "lastUpload": "2026-10-07T15:51:57+00:00",
+        "lastLive": "2025-06-19T06:02:34Z"
       },
       "twitch": {
         "userId": "245405656",
         "login": "carlosazaustre",
-        "lastLive": null,
+        "lastLive": "2022-07-26T12:17:03Z",
         "lastVideo": "2022-07-26T12:17:03Z"
       }
     },
     "Brais Moure": {
       "youtube": {
         "channelId": "UCxPD7bsocoAMq8Dj18kmGyQ",
-        "lastUpload": "2026-10-01T18:46:58+00:00"
+        "lastUpload": "2026-10-07T19:05:19+00:00",
+        "lastLive": "2026-10-07T16:55:33Z"
       },
       "twitch": {
         "userId": "499886526",
@@ -155,13 +143,17 @@
     "Miguel Ángel Durán": {
       "youtube": {
         "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
-        "lastUpload": "2026-10-06T19:17:07+00:00"
+        "lastUpload": "2026-10-06T19:17:07+00:00",
+        "lastLive": "2026-07-28T18:18:34Z"
       },
       "twitch": {
         "userId": "422915264",
         "login": "midudev",
         "lastLive": "2026-10-05T16:03:19Z",
         "lastVideo": "2026-10-05T16:03:19Z"
+      },
+      "kick": {
+        "lastLive": "2026-10-05T16:03:23Z"
       }
     },
     "Pablo Sirera": {
@@ -180,7 +172,7 @@
       "twitch": {
         "userId": "30664176",
         "login": "santima10",
-        "lastLive": null,
+        "lastLive": "2020-05-17T13:16:26Z",
         "lastVideo": "2020-05-17T13:16:26Z"
       }
     },
@@ -192,14 +184,15 @@
       "twitch": {
         "userId": "41107227",
         "login": "baumannzone",
-        "lastLive": null,
+        "lastLive": "2021-09-25T08:45:30Z",
         "lastVideo": "2021-09-25T08:45:30Z"
       }
     },
     "Dorian Designs": {
       "youtube": {
         "channelId": "UCzuwt7Pi_VB8cP5q5UE4u-A",
-        "lastUpload": "2025-01-26T12:30:06+00:00"
+        "lastUpload": "2025-01-26T12:30:06+00:00",
+        "lastLive": "2025-01-26T12:30:06Z"
       },
       "twitch": {
         "userId": "101327309",
@@ -211,21 +204,15 @@
     "Oscar Barajas": {
       "youtube": {
         "channelId": "UCw05fUBPwmpu-ehXFMqfdMw",
-        "lastUpload": "2026-10-07T02:16:44+00:00"
-      }
-    },
-    "Ricardo Celis": {
-      "twitch": {
-        "userId": "24863137",
-        "login": "celismx",
-        "lastLive": null,
-        "lastVideo": null
+        "lastUpload": "2026-10-07T15:06:54+00:00",
+        "lastLive": "2026-10-07T01:06:16Z"
       }
     },
     "Héctor De León": {
       "youtube": {
         "channelId": "UCDUdeFslCNoM29MAlZOfdWQ",
-        "lastUpload": "2026-10-06T15:45:39+00:00"
+        "lastUpload": "2026-10-07T17:08:57+00:00",
+        "lastLive": "2024-08-09T18:00:56Z"
       },
       "twitch": {
         "userId": "401736135",
@@ -235,45 +222,268 @@
       }
     },
     "Jose Jesus Guzman Eusebio": {
-      "youtube": {
-        "channelId": "UCDUdeFslCNoM29MAlZOfdWQ",
-        "lastUpload": "2026-10-06T15:45:39+00:00"
-      },
       "twitch": {
         "userId": "638366392",
         "login": "brujeriatech",
-        "lastLive": null,
+        "lastLive": "2022-10-01T02:09:41Z",
         "lastVideo": "2023-05-01T22:17:12Z"
       }
     },
     "Erifranck Nuñez": {
       "youtube": {
         "channelId": "UCvBuIO5PR2saqJm-doTyZrA",
-        "lastUpload": "2026-02-15T20:47:00+00:00"
+        "lastUpload": "2026-02-15T20:47:00+00:00",
+        "lastLive": "2025-04-11T16:27:52Z"
       },
       "twitch": {
         "userId": "133237970",
         "login": "erifranck",
-        "lastLive": null,
+        "lastLive": "2023-02-19T04:46:24Z",
         "lastVideo": "2023-02-19T04:46:24Z"
       }
     },
     "Leonidas Esteban": {
       "youtube": {
         "channelId": "UCLsSfk2x6p3XvlknDi39zCQ",
-        "lastUpload": "2025-04-15T00:43:41+00:00"
+        "lastUpload": "2025-04-15T00:43:41+00:00",
+        "lastLive": "2023-06-04T02:33:37Z"
       }
     },
     "Fazttech": {
       "youtube": {
         "channelId": "UCX9NJ471o7Wie1DQe94RVIg",
-        "lastUpload": "2026-10-06T21:59:23+00:00"
+        "lastUpload": "2026-10-06T21:59:23+00:00",
+        "lastLive": "2024-11-01T21:03:35Z"
       },
       "twitch": {
         "userId": "223370704",
         "login": "fazttech",
         "lastLive": null,
         "lastVideo": null
+      }
+    },
+    "ManzDev": {
+      "youtube": {
+        "channelId": "UCgZoKiTvvpEnr1zI6Kv_i7A",
+        "lastUpload": "2026-10-07T09:04:05+00:00",
+        "lastLive": "2026-10-06T17:25:00Z"
+      },
+      "twitch": {
+        "userId": "504185570",
+        "login": "manzdev",
+        "lastLive": "2026-10-06T17:25:02Z",
+        "lastVideo": "2026-10-06T17:25:02Z"
+      }
+    },
+    "Afor Digital": {
+      "youtube": {
+        "channelId": "UCkDwFvETfXmnIwpX7lV3F1g",
+        "lastUpload": "2026-09-24T16:00:14+00:00"
+      },
+      "twitch": {
+        "userId": "843314662",
+        "login": "afor_digital",
+        "lastLive": "2026-10-05T18:52:31Z",
+        "lastVideo": "2026-10-05T18:52:31Z"
+      }
+    },
+    "Alva Majo": {
+      "youtube": {
+        "channelId": "UCmaEoq1zaakpdudbzgll-zw",
+        "lastUpload": "2026-10-06T06:00:04+00:00"
+      },
+      "twitch": {
+        "userId": "43912951",
+        "login": "alvamajo",
+        "lastLive": "2026-10-06T18:27:27Z",
+        "lastVideo": "2026-10-06T18:27:27Z"
+      }
+    },
+    "Apple Coding (Julio César Fernández)": {
+      "twitch": {
+        "userId": "476367930",
+        "login": "applecoding",
+        "lastLive": "2026-09-21T16:02:02Z",
+        "lastVideo": "2026-09-21T16:02:02Z"
+      }
+    },
+    "BettaTech": {
+      "youtube": {
+        "channelId": "UCSf6S_PAhXsqGMTPDiKgdRg",
+        "lastUpload": "2026-10-07T18:00:29+00:00",
+        "lastLive": "2026-09-17T17:00:59Z"
+      }
+    },
+    "Carlos Coronado (CarlosGameDeveloper)": {
+      "twitch": {
+        "userId": "166450279",
+        "login": "carlosgamedeveloper",
+        "lastLive": "2026-10-01T08:04:14Z",
+        "lastVideo": "2026-10-01T08:04:14Z"
+      }
+    },
+    "Codely": {
+      "youtube": {
+        "channelId": "UC9IKtxn9AIGelnYmwYr0Lxw",
+        "lastUpload": "2026-10-06T16:00:17+00:00",
+        "lastLive": "2026-10-02T08:18:16Z"
+      },
+      "twitch": {
+        "userId": "254836271",
+        "login": "codelytv",
+        "lastLive": "2026-10-02T08:18:18Z",
+        "lastVideo": "2026-10-02T08:18:18Z"
+      }
+    },
+    "Fernando Herrera": {
+      "youtube": {
+        "channelId": "UCuaPTYj15JSkETGnEseaFFg",
+        "lastUpload": "2026-10-08T03:55:07+00:00",
+        "lastLive": "2026-10-06T14:10:57Z"
+      }
+    },
+    "Freddy Montes": {
+      "youtube": {
+        "channelId": "UCrv92ZCJjXgI1wK7Ru0rObg",
+        "lastUpload": "2026-09-29T01:05:53+00:00",
+        "lastLive": "2022-01-28T13:01:28Z"
+      }
+    },
+    "Germán Rodríguez (PadawansTrainer)": {
+      "youtube": {
+        "channelId": "UCXEE79yOmQsBzVFDYsnlJfw",
+        "lastUpload": "2026-08-31T23:12:28+00:00",
+        "lastLive": "2025-10-11T22:38:54Z"
+      },
+      "twitch": {
+        "userId": "780711820",
+        "login": "padawanstrainer",
+        "lastLive": "2026-10-05T22:00:41Z",
+        "lastVideo": "2026-10-05T22:00:41Z"
+      }
+    },
+    "HolaMundo (Nicolás Schürmann)": {
+      "youtube": {
+        "channelId": "UC4FHiPgS1KXkUMx3dxBUtPg",
+        "lastUpload": "2026-10-07T13:00:30+00:00",
+        "lastLive": "2026-10-04T20:52:26Z"
+      }
+    },
+    "Jon MirCha": {
+      "youtube": {
+        "channelId": "UCXR7VjA26PcHP3vb6F2X3VQ",
+        "lastUpload": "2026-10-05T21:50:59+00:00",
+        "lastLive": "2025-12-23T11:41:42Z"
+      }
+    },
+    "Laboratorio Gluon": {
+      "youtube": {
+        "channelId": "UCnRUp7yghul0Zo7LrEfnxGA",
+        "lastUpload": "2026-10-06T19:32:48+00:00",
+        "lastLive": "2026-10-06T17:19:45Z"
+      },
+      "twitch": {
+        "userId": "239088476",
+        "login": "labgluon",
+        "lastLive": "2026-10-06T17:09:28Z",
+        "lastVideo": "2026-10-06T17:09:28Z"
+      }
+    },
+    "Maxi Programa": {
+      "youtube": {
+        "channelId": "UCRHzElEnj-QzNOL7LoTIqOQ",
+        "lastUpload": "2026-10-06T02:41:55+00:00",
+        "lastLive": "2026-10-06T00:04:14Z"
+      },
+      "twitch": {
+        "userId": "508657100",
+        "login": "maxiprograma",
+        "lastLive": "2026-10-06T01:54:32Z",
+        "lastVideo": "2026-10-06T01:54:32Z"
+      }
+    },
+    "Melenitas Dev": {
+      "youtube": {
+        "channelId": "UClXPveoNbntDRXme1kMvmJg",
+        "lastUpload": "2026-10-06T14:16:57+00:00"
+      },
+      "twitch": {
+        "userId": "838482950",
+        "login": "melenitasdev",
+        "lastLive": "2026-10-07T19:30:41Z",
+        "lastVideo": "2026-10-07T19:30:41Z"
+      }
+    },
+    "Pelado Nerd": {
+      "youtube": {
+        "channelId": "UCrBzBOMcUVV8ryyAU_c6P5g",
+        "lastUpload": "2026-09-29T15:30:27+00:00",
+        "lastLive": "2026-08-17T17:00:45Z"
+      }
+    },
+    "Rafa Laguna (RafaLagoon)": {
+      "youtube": {
+        "channelId": "UCy0t52zT0OA8fPIB1KEtkGg",
+        "lastUpload": "2025-01-14T19:00:25+00:00",
+        "lastLive": "2024-12-29T17:24:44Z"
+      },
+      "twitch": {
+        "userId": "65858228",
+        "login": "rafalagoon",
+        "lastLive": "2026-10-07T13:18:51Z",
+        "lastVideo": "2026-10-07T13:18:51Z"
+      }
+    },
+    "Rocío Tomé (RothioTome)": {
+      "youtube": {
+        "channelId": "UCNjn1OJVHuzSazrB9krOsVQ",
+        "lastUpload": "2023-08-22T20:15:00+00:00"
+      },
+      "twitch": {
+        "userId": "156108906",
+        "login": "rothiotome",
+        "lastLive": "2026-10-07T11:03:21Z",
+        "lastVideo": "2026-10-07T11:03:21Z"
+      }
+    },
+    "s4vitar": {
+      "youtube": {
+        "channelId": "UCNHWpNqiM8yOQcHXtsluD7Q",
+        "lastUpload": "2025-08-25T16:00:06+00:00",
+        "lastLive": "2025-08-25T16:00:06Z"
+      },
+      "twitch": {
+        "userId": "494686511",
+        "login": "s4vitaar",
+        "lastLive": null,
+        "lastVideo": null
+      }
+    },
+    "Sergie Code": {
+      "youtube": {
+        "channelId": "UCrvxjsSrcpInnd4NIGDHt2g",
+        "lastUpload": "2026-09-21T21:00:11+00:00",
+        "lastLive": "2026-09-10T22:00:06Z"
+      }
+    },
+    "TodoCode (Luisina de Paula)": {
+      "youtube": {
+        "channelId": "UCz0EXCSvMwYKruljsZjCOzw",
+        "lastUpload": "2026-10-07T17:00:07+00:00",
+        "lastLive": "2021-12-02T01:39:27Z"
+      },
+      "twitch": {
+        "userId": "565625574",
+        "login": "todocode",
+        "lastLive": "2026-09-09T17:53:54Z",
+        "lastVideo": "2026-09-09T17:53:54Z"
+      }
+    },
+    "Víctor Robles WEB": {
+      "youtube": {
+        "channelId": "UCv85NiROLKddHa0fBATwTzw",
+        "lastUpload": "2026-10-07T14:01:12+00:00",
+        "lastLive": "2022-07-31T02:32:30Z"
       }
     }
   }
