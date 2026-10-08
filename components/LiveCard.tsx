@@ -89,10 +89,18 @@ export function LiveCard({ stream, platforms = [stream], streamerNames = [], foo
             </span>
           )}
         </p>
-        <div className="flex shrink-0 flex-wrap justify-end gap-x-4 gap-y-1">
+        <div className="flex shrink-0 flex-wrap items-baseline justify-end gap-x-4 gap-y-1">
+          {isSimulcast && <span>Ver en</span>}
           {platforms.map((p) => (
-            <a key={p.url} href={p.url} target="_blank" rel="noopener noreferrer" className="group/ver font-bold text-ink">
-              Ver en {PLATFORM_LABELS[p.platform]}{' '}
+            <a
+              key={p.url}
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Ver en ${PLATFORM_LABELS[p.platform]}`}
+              className="group/ver font-bold text-ink"
+            >
+              {isSimulcast ? PLATFORM_LABELS[p.platform] : `Ver en ${PLATFORM_LABELS[p.platform]}`}{' '}
               <span className="inline-block transition-transform duration-200 group-hover/ver:translate-x-1" aria-hidden>
                 →
               </span>
