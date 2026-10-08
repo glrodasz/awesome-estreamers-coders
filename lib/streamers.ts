@@ -1,9 +1,10 @@
+import { lastLiveDate } from './activity.mjs'
 import { loadStreamers, readGenerated, STATUSES_FILE } from './data.mjs'
 import { buildLinks, channelHandle } from './links.mjs'
 import type { Platform } from './types'
 
 type RawStatus = {
-  youtube?: { channelId?: string; lastUpload?: string | null }
+  youtube?: { channelId?: string; lastUpload?: string | null; lastLive?: string | null }
   twitch?: { lastLive?: string | null; lastVideo?: string | null }
 }
 
@@ -17,21 +18,13 @@ export type Streamer = {
   twitchLogin: string | null
   kickSlug: string | null
   youtubeChannelId: string | null
-  /** Most recent known activity (ISO date) across platforms, from generated/statuses.json. */
-  lastActivity: string | null
+  /** Most recent verified live stream (ISO date) across platforms, from generated/statuses.json. */
+  lastLive: string | null
 }
 
 const PLATFORMS: Platform[] = ['twitch', 'youtube', 'kick']
 
 const statuses = readGenerated(STATUSES_FILE).entries as Record<string, RawStatus>
-
-function mostRecent(dates: (string | null | undefined)[]): string | null {
-  const valid = dates.filter((date): date is string => Boolean(date))
-  if (!valid.length) return null
-  return valid.reduce((latest, date) =>
-    Date.parse(date) > Date.parse(latest) ? date : latest,
-  )
-}
 
 export const streamers: Streamer[] = loadStreamers().map((person) => {
   const status = statuses[person.name]
@@ -46,10 +39,6 @@ export const streamers: Streamer[] = loadStreamers().map((person) => {
     twitchLogin: twitch ? channelHandle(twitch) : null,
     kickSlug: kick ? channelHandle(kick) : null,
     youtubeChannelId: status?.youtube?.channelId ?? null,
-    lastActivity: mostRecent([
-      status?.youtube?.lastUpload,
-      status?.twitch?.lastLive,
-      status?.twitch?.lastVideo,
-    ]),
+    lastLive: lastLiveDate(status),
   }
 })

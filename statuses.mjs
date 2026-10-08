@@ -1,4 +1,5 @@
 import { config } from 'dotenv'
+import { latestLiveStart, mostRecent, parseFeedVideoIds } from './lib/activity.mjs'
 import { loadStreamers, readGenerated, STATUSES_FILE, writeGenerated } from './lib/data.mjs'
 import { channelHandle } from './lib/links.mjs'
 
@@ -9,6 +10,7 @@ const previous = readGenerated(STATUSES_FILE).entries
 
 const TWITCH_CLIENT_ID = process.env.TWITCH_CLIENT_ID
 const TWITCH_CLIENT_SECRET = process.env.TWITCH_CLIENT_SECRET
+const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY
 const youtubeCache = new Map()
 let twitchAuth
 
@@ -158,16 +160,31 @@ function findChannelIdInObject(obj) {
   return null
 }
 
-async function fetchYouTubeLastUpload(channelId) {
+async function fetchYouTubeFeed(channelId) {
   const feedUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`
   const response = await fetch(feedUrl)
   if (!response.ok) throw new Error(`Feed request failed with status ${response.status}`)
-  const feed = await response.text()
+  return response.text()
+}
 
+function feedLastUpload(feed) {
   const firstEntryMatch = feed.match(/<entry>.*?<published>(.*?)<\/published>/s)
   if (!firstEntryMatch) throw new Error('No entries found in feed')
 
   return firstEntryMatch[1]
+}
+
+// The feed lists the latest ~15 videos, past live streams included; one videos.list
+// call (1 quota unit) tells which of them were broadcast live and when.
+async function fetchYouTubeLastLive(feed) {
+  const ids = parseFeedVideoIds(feed)
+  if (!ids.length) return null
+
+  const params = new URLSearchParams({ part: 'liveStreamingDetails', id: ids.join(','), key: YOUTUBE_API_KEY })
+  const response = await fetch(`https://www.googleapis.com/youtube/v3/videos?${params}`)
+  if (!response.ok) throw new Error(`videos.list failed with status ${response.status}`)
+  const payload = await response.json()
+  return latestLiveStart(payload.items ?? [])
 }
 
 async function getTwitchAuth() {
@@ -242,8 +259,19 @@ async function buildStatuses() {
         try {
           const channelId = await resolveYouTubeChannelId(youtube)
           if (!channelId) throw new Error('Unable to resolve channel id')
-          const lastUpload = await fetchYouTubeLastUpload(channelId)
-          status.youtube = { channelId, lastUpload }
+          const feed = await fetchYouTubeFeed(channelId)
+          status.youtube = { channelId, lastUpload: feedLastUpload(feed) }
+          // Older lives drop out of the feed, so keep the last known date when none is found.
+          let found = null
+          if (YOUTUBE_API_KEY) {
+            try {
+              found = await fetchYouTubeLastLive(feed)
+            } catch (error) {
+              console.warn(`[YouTube] Error fetching lives for ${person.name}: ${error.message}`)
+            }
+          }
+          const lastLive = mostRecent([last.youtube?.lastLive, found])
+          if (lastLive) status.youtube.lastLive = lastLive
         } catch (error) {
           console.warn(`[YouTube] Error fetching status for ${person.name}: ${error.message}`)
           status.youtube = last.youtube ?? {}
