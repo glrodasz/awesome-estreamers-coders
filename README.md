@@ -4,7 +4,7 @@
 
 ## Argentina
 
-- **Jorge Cano** — #Angular #GDE · Owner de @ngbaires · @ngconf organizer · Principal architect @HeroDevs @scullyIO · @angulareando · #EStreamerCoders.
+- **Jorge Cano** — #Angular & Performance Google Developer Expert
   - [YouTube](https://www.youtube.com/JorgeCano) · [Twitter](https://twitter.com/jorgeucano)
   - Último directo → sin verificar
 - **Gonzalo Pozzo** — Solutions architect @ Vercel, Frontend / React ❤.
@@ -13,7 +13,7 @@
 - **Noe VamoaCodear** — Desarrolladora Frontend 🟣 • Aprendemos tecnologías en Twitch.
   - [YouTube](https://www.youtube.com/c/vamoacodear) · [Twitch](https://www.twitch.tv/vamoacodear) · [Twitter](https://twitter.com/vamoacodear)
   - Último directo → sin verificar
-- **Alan Buscaglia (Gentleman Programming)** — Arquitectura frontend, Angular, React y buenas prácticas de desarrollo, explicadas en vivo.
+- **Alan Buscaglia (Gentleman Programming)** — App Lead @prowler-cloud, Angular GDE and Microsoft MVP. Creates AI-first tools for developers.
   - [YouTube](https://www.youtube.com/@GentlemanProgramming) · [Twitch](https://www.twitch.tv/gentlemanprogramming) · [Kick](https://kick.com/gentleman-programming)
   - Último directo → sin verificar
 - **Germán Rodríguez (PadawansTrainer)** — Desarrollo web con HTML, CSS, JavaScript, PHP y MySQL, poniendo los fundamentos antes que los frameworks.
@@ -43,49 +43,49 @@
 
 ## Colombia
 
-- **Ana Belisa Martínez** — Master Coach at @platzi · Systems Engineer · Web Developer · Mom Bebeloper · Lead at DevC Bogotá · Founder @wcfcolombia · Speaker · Head of #ElCodigoRosa.
+- **Ana Belisa Martínez** — Head of Student Success at Platzi · Web Developer 🇨🇴
   - [YouTube](https://www.youtube.com/anabelisam) · [Twitch](https://www.twitch.tv/anabelisam) · [Twitter](https://twitter.com/anabelisam_) · [Facebook](https://www.facebook.com/anabelisam)
   - Último directo → sin verificar
-- **Guillermo Rodas** — Made in 🇨🇴 Colombia living in Sweden 🇸🇪 — Google Developer Expert en Tecnologías Web.
+- **Guillermo Rodas** — Senior Full-stack AI Engineer building production AI systems and helping developer communities grow.
   - [Sitio web](https://guillermorodas.com/) · [YouTube](https://www.youtube.com/guillermorodas) · [Twitch](https://www.twitch.tv/guillermorodas) · [Twitter](https://twitter.com/glrodasz)
   - Último directo → sin verificar
-- **Julián Duque** — Developer and Educator at MNTD · Community Leader · NodeConf and JSConf Colombia organizer · Sr. Developer Advocate at Salesforce Heroku.
+- **Julián Duque** — Software architect at MuleSoft; Node.js emeritus collaborator. Builds and teaches agentic AI and event-driven systems.
   - [Sitio web](https://www.julianduque.co) · [YouTube](https://www.youtube.com/user/julianduquej) · [Twitch](https://www.twitch.tv/julianduque) · [Twitter](https://twitter.com/julian_duque)
   - Último directo → sin verificar
-- **Daniel Suarez Dev** — Frontend Developer and Educator | Freelancer | JavaScript, HTML, CSS, Figma y todo tema que aporte a la comunidad frontend.
+- **Daniel Suarez Dev** — Full-stack developer and content creator. React, React Native, Node.js, SQL, AWS and Astro.
   - [YouTube](https://www.youtube.com/channel/UC_zzfLSjrYNKrOIGK_js_AA) · [Twitch](https://www.twitch.tv/danielsuarezdev) · [Twitter](https://twitter.com/DanielSuarezDev)
   - Último directo → sin verificar
-- **Nicolas Molina** — GDE in Web Technologies and Angular. Senior Front-end developer and teacher at Platzi.
+- **Nicolas Molina** — Senior Front-end Developer at dotCMS. Angular GDE and Microsoft MVP.
   - [Sitio web](https://nicobytes.com/) · [YouTube](https://www.youtube.com/c/nicobytes) · [Twitter](https://twitter.com/nicobytes)
   - Último directo → sin verificar
-- **Oscar Barajas** — Software AI Engineer, creando mi primera página web en el 2001, Microsoft MVP - #JavaScript #BuildinPublic 🇲🇽🇨🇴
+- **Oscar Barajas** — Software AI Engineer, profesor de Platzi y Microsoft MVP. Especializado en JavaScript. 🇲🇽🇨🇴
   - [Sitio web](https://gndx.dev/) · [YouTube](https://www.youtube.com/c/oscarbarajas) · [Twitter](https://twitter.com/gndx)
   - Último directo → sin verificar
 
 ## España
 
-- **Carlos Azaustre** — Desarrollador web desde hace más de 8 años. Google Developer Expert (GDE) en Tecnologías Web.
+- **Carlos Azaustre** — Ingeniero de software y educador con más de 20 años creando webs. JavaScript, TypeScript, arquitectura e IA.
   - [Sitio web](https://mypublicinbox.com/carlosazaustre) · [YouTube](https://www.youtube.com/CarlosAzaustre) · [Twitch](https://www.twitch.tv/carlosazaustre) · [Twitter](https://twitter.com/carlosazaustre)
   - Último directo → sin verificar
-- **Brais Moure** — Desarrollador de software profesional desde hace más de 10 años. Actualmente trabaja como freelance creando apps para iOS y Android.
+- **Brais Moure** — Divulgador e ingeniero que enseña a principiantes sobre software e IA.
   - [Sitio web](https://moure.dev/) · [YouTube](https://www.youtube.com/MouredevApps) · [Twitch](https://www.twitch.tv/mouredev) · [Twitter](https://twitter.com/MoureDev) · [Facebook](https://www.facebook.com/mouredev)
   - Último directo comprobado → 24 sept 2026
-- **Miguel Ángel Durán** — Javascript ☕️, React ⚛️, CSS🎨, HTML, Node.js, Firebase y mucho más.
+- **Miguel Ángel Durán** — Divulgación y clases de programación, desarrollo web e IA en Twitch y YouTube.
   - [Sitio web](https://midu.dev/) · [YouTube](https://www.youtube.com/midudev) · [Twitch](https://www.twitch.tv/midudev) · [Kick](https://kick.com/midudev) · [Twitter](https://twitter.com/midudev) · [Facebook](https://www.facebook.com/midudev.frontend)
   - Último directo comprobado → 5 oct 2026
 - **Pablo Sirera** — Desarrollador Frontend enfocado con Javascript, Vue 💚, Nuxt, Firebase y más 🔥.
   - [Sitio web](https://pablosirera.com/) · [YouTube](https://www.youtube.com/PabloSirera) · [Twitch](https://www.twitch.tv/pablosirera) · [Twitter](https://twitter.com/pablosirera)
   - Último directo → sin verificar
-- **Santiago Martín** — Software Engineer 🚀 TypeScript, React, NEXT.js, Node, Deno, Google Cloud (+ Firebase)... todo lo necesario para hacer un proyecto desde 0.
+- **Santiago Martín** — Software Engineer. Comunidad en @asturiaswcraft y live coding.
   - [Sitio web](https://www.santiagomartin.dev/) · [Twitch](https://www.twitch.tv/santima10) · [Twitter](https://twitter.com/SantiMA10b)
   - Último directo → sin verificar
-- **Jorge Baumann** — Open Source Developer at #RambitoJS 🐶 · JavaScript · Vue.js · Testing · Firebase · CSS · Node.js.
+- **Jorge Baumann** — Senior Full Stack Developer. Ingeniero, divulgador y speaker sobre desarrollo web.
   - [Sitio web](https://www.baumannzone.dev/) · [YouTube](https://www.youtube.com/channel/UCTTj5ztXnGeDRPFVsBp7VMA) · [Twitch](https://www.twitch.tv/baumannzone) · [Twitter](https://twitter.com/baumannzone)
   - Último directo → sin verificar
 - **Dorian Designs** — Apasionado de las nuevas tecnologías y en especial del ecosistema de javascript.
   - [YouTube](https://www.youtube.com/channel/UCzuwt7Pi_VB8cP5q5UE4u-A) · [Twitch](https://www.twitch.tv/doriandesings) · [Twitter](https://twitter.com/DorianDesings) · [Facebook](https://www.facebook.com/yoaprendocondorian)
   - Último directo → sin verificar
-- **ManzDev** — Divulgador de desarrollo web en español; HTML, CSS, JavaScript y Web Components explicados en directo.
+- **ManzDev** — Profesor, ingeniero informático y divulgador. Programación web, CSS e inteligencia artificial; comparte conocimiento en directo.
   - [Sitio web](https://manz.dev/) · [YouTube](https://www.youtube.com/@ManzDev) · [Twitch](https://www.twitch.tv/manzdev) · [Twitter](https://twitter.com/Manz)
   - Último directo → sin verificar
 - **Afor Digital** — Desarrollo frontend, creación de productos y aprendizaje compartido con la comunidad.
@@ -127,25 +127,25 @@
 
 ## Mexico
 
-- **Héctor De León** — Ingeniero en computación, aficionado a la inteligencia artificial y al desarrollo de sistemas que optimicen procesos. Creador de contenido para Youtube y Udemy. Microsoft Most Valuable Professional 2022 🏆.
+- **Héctor De León** — Ingeniero en computación, aficionado a la IA y autor. Creador de Metal Code; comparte conocimientos de programación.
   - [Sitio web](http://hdeleon.net/) · [YouTube](https://www.youtube.com/c/hdeleonnet) · [Twitch](https://www.twitch.tv/hdeleonnet) · [Twitter](https://twitter.com/powerhdeleon)
   - Último directo → sin verificar
-- **Jose Jesus Guzman Eusebio** — Le encanta enseñar y compartir conocimiento en tecnología como Sherpa Digital de Microsoft y host del podcast "No es Brujería, es Tecnología".
-  - [YouTube](https://www.youtube.com/c/hdeleonnet) · [Twitch](https://www.twitch.tv/brujeriatech) · [Twitter](https://twitter.com/powerhdeleon)
+- **Jose Jesus Guzman Eusebio** — Desarrollador backend y Android, CTO en Envíaje y Sherpa Digital de Innovacción Virtual de @microsoft. @brujeriatech.
+  - [Twitch](https://www.twitch.tv/brujeriatech) · [GitHub](https://github.com/josejesusguzman)
   - Último directo → sin verificar
 
 ## Venezuela
 
-- **Erifranck Nuñez** — Desarrollador frontend en Globant; amante de la ilustración y la animación; entrenador pokemon en tiempos libres.
+- **Erifranck Nuñez** — Software developer training in machine learning.
   - [Sitio web](https://www.erifranck.art/) · [YouTube](https://www.youtube.com/c/erifrancknunez) · [Twitch](https://www.twitch.tv/erifranck) · [Twitter](https://twitter.com/erifranckn)
   - Último directo → sin verificar
 
 ## Perú
 
-- **Leonidas Esteban** — Google Developer Expert, programming teacher, speaker and Frontend professional.
+- **Leonidas Esteban** — Software Engineer, Professor
   - [Sitio web](https://leonidasesteban.com/cursos) · [YouTube](https://www.youtube.com/LeonidasEsteban) · [Twitter](https://twitter.com/LeonidasEsteban) · [Facebook](https://www.facebook.com/LeonidasEsteban)
   - Último directo → sin verificar
-- **Fazttech** — Programador y Desarrollador Web que comparte tutoriales y juega online :).
+- **Fazttech** — Formación práctica en inteligencia artificial y desarrollo web, con proyectos y repositorios para experimentar y desplegar.
   - [Sitio web](https://faztweb.com/) · [YouTube](https://www.youtube.com/fazttech) · [Twitch](https://www.twitch.tv/fazttech) · [Twitter](https://twitter.com/fazttech) · [Facebook](https://www.facebook.com/FaztTech)
   - Último directo → sin verificar
 
