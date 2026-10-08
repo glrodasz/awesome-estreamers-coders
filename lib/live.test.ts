@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { getLiveSnapshot, mixDiscover } from './live'
+import { getLiveSnapshot, mergeSimulcasts, mixDiscover } from './live'
 import type { LiveStream, Platform } from './types'
 
 const stream = (login: string, viewers: number) => ({
@@ -113,5 +113,53 @@ describe('mixDiscover', () => {
 
     const twitchWins = mixDiscover([...streamsOf('twitch', 2), ...simulcast('twitch', 3), ...simulcast('kick', 2)])
     expect(twitchWins.filter((s) => s.channelKey === 'pashoai').map((s) => s.platform)).toEqual(['twitch'])
+  })
+})
+
+describe('mergeSimulcasts', () => {
+  const PLATFORM_ORDER: Platform[] = ['twitch', 'youtube', 'kick']
+  const live = (platform: Platform, viewers: number | null, streamerNames: string[], title = platform) => ({
+    platform,
+    channelKey: `${platform}-${streamerNames.join()}`,
+    channelName: streamerNames.join(),
+    title,
+    category: platform === 'twitch' ? 'Software and Game Development' : null,
+    viewers,
+    startedAt: `2026-10-08T1${PLATFORM_ORDER.indexOf(platform)}:00:00Z`,
+    thumbnail: null,
+    url: `https://example.com/${platform}/${streamerNames.join()}`,
+    streamerNames,
+  })
+
+  it('shows one card per streamer, using Twitch, then YouTube, then Kick as the main stream', () => {
+    const merged = mergeSimulcasts([
+      live('kick', 5, ['ManzDev']),
+      live('youtube', 26, ['ManzDev']),
+      live('twitch', 74, ['ManzDev']),
+      live('kick', 3, ['Solo Kick']),
+      live('youtube', 40, ['Gluon']),
+      live('kick', 2, ['Gluon']),
+    ])
+
+    expect(merged.map((s) => [s.streamerNames, s.platform, s.title, s.startedAt])).toEqual([
+      [['ManzDev'], 'twitch', 'twitch', '2026-10-08T10:00:00Z'],
+      [['Gluon'], 'youtube', 'youtube', '2026-10-08T11:00:00Z'],
+      [['Solo Kick'], 'kick', 'kick', '2026-10-08T12:00:00Z'],
+    ])
+    expect(merged[0].platforms).toEqual([
+      { platform: 'twitch', viewers: 74, url: 'https://example.com/twitch/ManzDev' },
+      { platform: 'youtube', viewers: 26, url: 'https://example.com/youtube/ManzDev' },
+      { platform: 'kick', viewers: 5, url: 'https://example.com/kick/ManzDev' },
+    ])
+  })
+
+  it('sorts cards by viewers across all platforms', () => {
+    const merged = mergeSimulcasts([
+      live('twitch', 50, ['A']),
+      live('twitch', 30, ['B']),
+      live('youtube', 30, ['B']),
+      live('kick', null, ['C']),
+    ])
+    expect(merged.map((s) => s.streamerNames[0])).toEqual(['B', 'A', 'C'])
   })
 })

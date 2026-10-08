@@ -19,7 +19,14 @@ export type LiveStream = {
   url: string
 }
 
-export type CuratedLiveStream = LiveStream & { streamerNames: string[] }
+export type PlatformStream = Pick<LiveStream, 'platform' | 'viewers' | 'url'>
+
+/**
+ * One card per curated streamer. A streamer simulcasting on several platforms is merged:
+ * title, thumbnail, category and start time come from the highest-priority platform,
+ * and `platforms` lists every platform they are live on, in priority order.
+ */
+export type CuratedLiveStream = LiveStream & { streamerNames: string[]; platforms: PlatformStream[] }
 
 export type PlatformIssue = {
   platform: Platform

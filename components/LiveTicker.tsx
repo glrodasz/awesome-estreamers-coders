@@ -13,8 +13,10 @@ function tickerItems({ live, streamerCount, countryCount }: Props): string[] {
   const items = live.length
     ? live.map((stream) => {
         const name = stream.streamerNames.join(' · ') || stream.channelName
-        const viewers = stream.viewers === null ? '' : ` · ${formatViewers(stream.viewers)} viendo`
-        return `${name} en ${PLATFORM_LABELS[stream.platform]}${viewers}`
+        const platforms = stream.platforms.map((p) => PLATFORM_LABELS[p.platform]).join(' + ')
+        const counts = stream.platforms.flatMap((p) => (p.viewers === null ? [] : [formatViewers(p.viewers)]))
+        const viewers = counts.length ? ` · ${counts.join(' + ')} viendo` : ''
+        return `${name} en ${platforms}${viewers}`
       })
     : ['Twitch', 'YouTube', 'Kick', `${streamerCount} streamers`, `${countryCount} países`, 'Programación en español']
 
