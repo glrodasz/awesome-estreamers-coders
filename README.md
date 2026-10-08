@@ -14,7 +14,7 @@
   - [YouTube](https://www.youtube.com/c/vamoacodear) · [Twitch](https://www.twitch.tv/vamoacodear) · [X](https://x.com/vamoacodear)
   - Último directo → sin verificar
 - **Alan Buscaglia (Gentleman Programming)** — App Lead @prowler-cloud, Angular GDE and Microsoft MVP. Creates AI-first tools for developers.
-  - [YouTube](https://www.youtube.com/@GentlemanProgramming) · [Twitch](https://www.twitch.tv/gentlemanprogramming) · [Kick](https://kick.com/gentleman-programming)
+  - [YouTube](https://www.youtube.com/@GentlemanProgramming) · [Twitch](https://www.twitch.tv/gentleman_programming) · [Kick](https://kick.com/gentleman-programming)
   - Último directo → 1 oct 2026
 - **Germán Rodríguez (PadawansTrainer)** — Desarrollo web con HTML, CSS, JavaScript, PHP y MySQL, poniendo los fundamentos antes que los frameworks.
   - [YouTube](https://www.youtube.com/grodriguezDW) · [Twitch](https://www.twitch.tv/padawanstrainer) · [GitHub](https://github.com/padawanstrainer)

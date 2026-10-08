@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T08:09:29.689Z",
+  "generatedAt": "2026-10-08T08:12:52.466Z",
   "entries": {
     "Jorge Cano": {
       "youtube": {
@@ -39,7 +39,12 @@
         "lastUpload": "2026-10-06T15:54:01+00:00",
         "lastLive": "2022-07-09T08:14:10Z"
       },
-      "twitch": {},
+      "twitch": {
+        "userId": "70731924",
+        "login": "gentleman_programming",
+        "lastLive": "2026-10-01T18:53:16Z",
+        "lastVideo": "2026-10-01T18:53:16Z"
+      },
       "kick": {
         "lastLive": "2026-10-01T18:53:16Z"
       }
