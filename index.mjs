@@ -59,7 +59,7 @@ console.log('✅ Successfully generated README.md')
 
 function buildActivityLine(status) {
   const lastLive = lastLiveDate(status)
-  if (!lastLive) return 'Historial de directos · actividad reciente sin verificar'
+  if (!lastLive) return 'Último directo → sin verificar'
   return `Último directo comprobado → ${formatTimestamp(lastLive)}`
 }
 
