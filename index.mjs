@@ -60,7 +60,7 @@ console.log('✅ Successfully generated README.md')
 function buildActivityLine(status) {
   const lastLive = lastLiveDate(status)
   if (!lastLive) return 'Último directo → sin verificar'
-  return `Último directo comprobado → ${formatTimestamp(lastLive)}`
+  return `Último directo → ${formatTimestamp(lastLive)}`
 }
 
 function formatLinks(person) {

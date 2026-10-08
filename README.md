@@ -9,7 +9,7 @@
   - Último directo → sin verificar
 - **Gonzalo Pozzo** — Solutions architect @ Vercel, Frontend / React ❤.
   - [Sitio web](https://goncy.dev) · [YouTube](https://www.youtube.com/c/GonzaloPozzo) · [Twitch](https://www.twitch.tv/goncypozzo) · [X](https://x.com/goncy) · [Facebook](https://www.facebook.com/goncy.pozzo)
-  - Último directo comprobado → 29 sept 2026
+  - Último directo → 29 sept 2026
 - **Noe VamoaCodear** — Desarrolladora Frontend 🟣 • Aprendemos tecnologías en Twitch.
   - [YouTube](https://www.youtube.com/c/vamoacodear) · [Twitch](https://www.twitch.tv/vamoacodear) · [X](https://x.com/vamoacodear)
   - Último directo → sin verificar
@@ -69,10 +69,10 @@
   - Último directo → sin verificar
 - **Brais Moure** — Divulgador e ingeniero que enseña a principiantes sobre software e IA.
   - [Sitio web](https://moure.dev/) · [YouTube](https://www.youtube.com/MouredevApps) · [Twitch](https://www.twitch.tv/mouredev) · [X](https://x.com/MoureDev) · [Facebook](https://www.facebook.com/mouredev)
-  - Último directo comprobado → 24 sept 2026
+  - Último directo → 24 sept 2026
 - **Miguel Ángel Durán** — Divulgación y clases de programación, desarrollo web e IA en Twitch y YouTube.
   - [Sitio web](https://midu.dev/) · [YouTube](https://www.youtube.com/midudev) · [Twitch](https://www.twitch.tv/midudev) · [Kick](https://kick.com/midudev) · [X](https://x.com/midudev) · [Facebook](https://www.facebook.com/midudev.frontend)
-  - Último directo comprobado → 5 oct 2026
+  - Último directo → 5 oct 2026
 - **Pablo Sirera** — Desarrollador Frontend enfocado con Javascript, Vue 💚, Nuxt, Firebase y más 🔥.
   - [Sitio web](https://pablosirera.com/) · [YouTube](https://www.youtube.com/PabloSirera) · [Twitch](https://www.twitch.tv/pablosirera) · [X](https://x.com/pablosirera)
   - Último directo → sin verificar
