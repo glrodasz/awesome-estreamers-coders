@@ -58,8 +58,8 @@
 - **Nicolas Molina** — Senior Front-end Developer at dotCMS. Angular GDE and Microsoft MVP.
   - [Sitio web](https://nicobytes.com/) · [YouTube](https://www.youtube.com/c/nicobytes) · [X](https://x.com/nicobytes)
   - Último directo → 6 ago 2026
-- **Oscar Barajas** — Software AI Engineer, profesor de Platzi y Microsoft MVP. Especializado en JavaScript. 🇲🇽🇨🇴
-  - [Sitio web](https://gndx.dev/) · [YouTube](https://www.youtube.com/c/oscarbarajas) · [X](https://x.com/gndx)
+- **Oscar Barajas** — Software AI Engineer, creando mi primera página web en el 2001. Experto en JavaScript, Profesor en Platzi y Microsoft MVP - 🇨🇴
+  - [Sitio web](https://gndx.dev/) · [YouTube](https://www.youtube.com/@gndx) · [X](https://x.com/gndx) · [GitHub](https://github.com/gndx) · [Twitch](https://www.twitch.tv/gndxdev) · [LinkedIn](https://www.linkedin.com/in/oscarbarajas/) · [Instagram](https://instagram.com/gndx)
   - Último directo → 7 oct 2026
 
 ## España
