@@ -226,3 +226,179 @@
     youtube: "@ManzDev"
     twitch: manzdev
     twitter: Manz
+
+- name: Afor Digital
+  description: Desarrollo frontend, creación de productos y aprendizaje compartido con la comunidad.
+  country: España
+  links:
+    youtube: "@afor_digital"
+    twitch: afor_digital
+    website: https://www.afor.digital
+    twitter: afor_digital
+
+- name: Alva Majo
+  description: "Desarrollo de videojuegos indie: ideas, decisiones y experiencias detrás de crear tus propios juegos."
+  country: España
+  links:
+    youtube: "@alvamajo"
+    twitch: alvamajo
+
+- name: Apple Coding (Julio César Fernández)
+  description: Swift, SwiftUI y desarrollo de aplicaciones nativas para el ecosistema Apple.
+  country: España
+  links:
+    twitch: applecoding
+    website: https://www.applecoding.com
+    github: applecoding
+
+- name: BettaTech
+  description: Ingeniería de software, arquitectura y cloud para ir más allá de aprender a programar.
+  country: España
+  links:
+    youtube: c/BettaTech
+    website: https://www.commitacademy.io
+    twitter: BettaTech
+
+- name: Carlos Coronado (CarlosGameDeveloper)
+  description: Desarrollo de videojuegos con Unreal Engine, tutoriales y experiencias de la industria.
+  country: España
+  links:
+    twitch: carlosgamedeveloper
+
+- name: Codely
+  description: Arquitectura, testing y buenas prácticas para crear software mantenible y escalable.
+  country: España
+  links:
+    youtube: channel/UC9IKtxn9AIGelnYmwYr0Lxw
+    twitch: codelytv
+    website: https://codely.com
+    twitter: CodelyTV
+    github: CodelyTV
+
+- name: Fernando Herrera
+  description: Desarrollo web y móvil, con cursos y proyectos para pasar de los fundamentos a aplicaciones completas.
+  country: Costa Rica
+  links:
+    youtube: channel/UCuaPTYj15JSkETGnEseaFFg
+    website: https://fernando-herrera.com
+    twitter: Fernando_Her85
+    github: Klerith
+
+- name: Freddy Montes
+  description: Frontend y diseño de interfaces, con proyectos prácticos en React, Next.js y CSS.
+  country: Costa Rica
+  links:
+    youtube: channel/UCrv92ZCJjXgI1wK7Ru0rObg
+    website: https://fmontes.com
+    x: fmontes
+    github: fmontes
+
+- name: Germán Rodríguez (PadawansTrainer)
+  description: Desarrollo web con HTML, CSS, JavaScript, PHP y MySQL, poniendo los fundamentos antes que los frameworks.
+  country: Argentina
+  links:
+    youtube: https://www.youtube.com/grodriguezDW
+    twitch: padawanstrainer
+    github: padawanstrainer
+
+- name: HolaMundo (Nicolás Schürmann)
+  description: Programación y desarrollo de aplicaciones con JavaScript, Python y React, desde las bases hasta la práctica.
+  country: Chile
+  links:
+    youtube: "@holamundodev"
+
+- name: Jon MirCha
+  description: Fundamentos del desarrollo web, con énfasis en código sencillo, duradero y sin dependencias innecesarias.
+  country: México
+  links:
+    youtube: "@jonmircha"
+    website: https://jonmircha.com
+    twitter: jonmircha
+
+- name: Laboratorio Gluon
+  description: Electrónica y programación para construir proyectos con Arduino, ESP32 y Raspberry Pi.
+  country: España
+  links:
+    youtube: "@LaboratorioGluon"
+    twitch: labgluon
+    website: https://www.laboratoriogluon.com
+    twitter: LabGluon
+
+- name: Maxi Programa
+  description: Programación desde cero y desarrollo de aplicaciones con C#, .NET y SQL.
+  country: Argentina
+  links:
+    youtube: "@MaxiPrograma"
+    twitch: maxiprograma
+    website: https://maxiprograma.com
+
+- name: Melenitas Dev
+  description: Unity y C# para crear videojuegos, recrear mecánicas y convertir ideas en proyectos jugables.
+  country: España
+  links:
+    youtube: "@MelenitasDev"
+    twitch: melenitasdev
+    website: https://melenitas.dev
+    github: MelenitasDev
+
+- name: Pelado Nerd
+  description: Linux, Docker y Kubernetes para entender la infraestructura, desplegar aplicaciones y automatizar tareas.
+  country: Argentina
+  links:
+    youtube: "@PeladoNerd"
+    website: https://www.peladonerd.com
+    x: PeladoNerd
+    github: pablokbs
+
+- name: Rafa Laguna (RafaLagoon)
+  description: "Godot, Linux y software libre: videojuegos y proyectos para aprender experimentando."
+  country: España
+  links:
+    youtube: "@rafalagoon"
+    twitch: rafalagoon
+    twitter: RafaLagoon
+    github: rafalagoon
+
+- name: Rocío Tomé (RothioTome)
+  description: Desarrollo de videojuegos indie con Godot, creatividad y accesibilidad.
+  country: España
+  links:
+    youtube: "@Rothiotome"
+    twitch: RothioTome
+    website: https://rociotome.com
+    twitter: rothiotome
+
+- name: s4vitar
+  description: Hacking ético y ciberseguridad, con pentesting y análisis de vulnerabilidades.
+  country: España
+  links:
+    youtube: "@s4vitar"
+    twitch: s4vitaar
+    website: https://hack4u.io
+    twitter: s4vitar
+
+- name: Sergie Code
+  description: Desarrollo web e inteligencia artificial, con cursos y proyectos para aprender desde cero.
+  country: Argentina
+  links:
+    youtube: "@SergieCode"
+    website: https://www.sergiecode.com
+    twitter: sergiecode
+    github: sergiecode
+
+- name: TodoCode (Luisina de Paula)
+  description: Java y desarrollo backend, desde la lógica de programación hasta las APIs con Spring Boot.
+  country: Argentina
+  links:
+    youtube: "@TodoCode"
+    twitch: todocode
+    website: https://www.todocodeacademy.com
+    twitter: todo_code
+
+- name: Víctor Robles WEB
+  description: Desarrollo web, formación y proyectos prácticos para aprender a programar y crecer profesionalmente.
+  country: España
+  links:
+    youtube: "@VictorRoblesWEB"
+    website: https://victorroblesweb.es
+    github: victorobs
