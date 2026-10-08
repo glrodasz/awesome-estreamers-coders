@@ -40,6 +40,9 @@
 - **Nicolas Molina** — GDE in Web Technologies and Angular. Senior Front-end developer and teacher at Platzi.
   - [Sitio web](https://nicobytes.com/) · [YouTube](https://www.youtube.com/c/nicobytes) · [Twitter](https://twitter.com/nicobytes)
   - Última actividad → YouTube: 25 sept 2026
+- **Oscar Barajas** — Software AI Engineer, creando mi primera página web en el 2001. Experto en JavaScript, Profesor en Platzi y Microsoft MVP - 🇨🇴
+  - [Sitio web](https://gndx.dev/) · [YouTube](https://www.youtube.com/@gndx) · [Twitter](https://twitter.com/gndx) · [GitHub](https://github.com/gndx) · [Twitch](https://www.twitch.tv/gndxdev) · [LinkedIn](https://www.linkedin.com/in/oscarbarajas/) · [Instagram](https://instagram.com/gndx)
+  - Última actividad → YouTube: 7 oct 2026
 
 ## España
 
@@ -70,9 +73,6 @@
 
 ## Mexico
 
-- **Oscar Barajas** — Frontend & Foundation Layer at @platzi #education · Lead at Developer Circles from Facebook · ReactJS, Speaker & Blogger. I teach ReactJS in @platzi - 🇲🇽🇨🇴
-  - [Sitio web](https://gndx.dev/) · [YouTube](https://www.youtube.com/c/oscarbarajas) · [Twitter](https://twitter.com/gndx)
-  - Última actividad → YouTube: 7 oct 2026
 - **Héctor De León** — Ingeniero en computación, aficionado a la inteligencia artificial y al desarrollo de sistemas que optimicen procesos. Creador de contenido para Youtube y Udemy. Microsoft Most Valuable Professional 2022 🏆.
   - [Sitio web](http://hdeleon.net/) · [YouTube](https://www.youtube.com/c/hdeleonnet) · [Twitch](https://www.twitch.tv/hdeleonnet) · [Twitter](https://twitter.com/powerhdeleon)
   - Última actividad → YouTube: 6 oct 2026 · Twitch: Desconocida
