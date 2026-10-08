@@ -11,6 +11,8 @@ type Source = {
   discover?: () => Promise<LiveStream[]>
 }
 
+type MatchedStream = LiveStream & { streamerNames: string[] }
+
 const streamKey = (platform: Platform, channelKey: string) => `${platform}:${channelKey}`
 
 function curatedKeys(list: Streamer[]): Map<string, string[]> {
@@ -33,6 +35,31 @@ function uniqueValues(values: (string | null)[]): string[] {
 }
 
 const byViewers = (a: LiveStream, b: LiveStream) => (b.viewers ?? -1) - (a.viewers ?? -1)
+
+const PLATFORM_PRIORITY: Platform[] = ['twitch', 'youtube', 'kick']
+
+const byPriority = (a: LiveStream, b: LiveStream) =>
+  PLATFORM_PRIORITY.indexOf(a.platform) - PLATFORM_PRIORITY.indexOf(b.platform) || byViewers(a, b)
+
+const totalViewers = (stream: CuratedLiveStream) =>
+  stream.platforms.reduce((total, { viewers }) => total + (viewers ?? 0), 0)
+
+/**
+ * Merges a curated streamer's simultaneous streams into one card, using the highest-priority
+ * platform (Twitch, YouTube, Kick) for the title, thumbnail and start time. Sorted by total viewers.
+ */
+export function mergeSimulcasts(streams: MatchedStream[]): CuratedLiveStream[] {
+  const groups = new Map<string, MatchedStream[]>()
+  for (const stream of streams) {
+    const key = stream.streamerNames.length ? stream.streamerNames.join('|') : streamKey(stream.platform, stream.channelKey)
+    groups.set(key, [...(groups.get(key) ?? []), stream])
+  }
+  const merged = [...groups.values()].map((group): CuratedLiveStream => {
+    group.sort(byPriority)
+    return { ...group[0], platforms: group.map(({ platform, viewers, url }) => ({ platform, viewers, url })) }
+  })
+  return merged.sort((a, b) => totalViewers(b) - totalViewers(a))
+}
 
 const DISCOVER_QUOTAS: [Platform, number][] = [
   ['twitch', 3],
@@ -86,7 +113,7 @@ export async function getLiveSnapshot(): Promise<LiveSnapshot> {
     },
   ]
 
-  const live: CuratedLiveStream[] = []
+  const live: MatchedStream[] = []
   const discover: LiveStream[] = []
   const issues: PlatformIssue[] = []
 
@@ -125,7 +152,7 @@ export async function getLiveSnapshot(): Promise<LiveSnapshot> {
 
   return {
     generatedAt: new Date().toISOString(),
-    live: live.sort(byViewers),
+    live: mergeSimulcasts(live),
     discover: mixDiscover(discover),
     issues: issues.sort((a, b) => a.platform.localeCompare(b.platform)),
   }

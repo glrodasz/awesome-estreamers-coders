@@ -1,12 +1,14 @@
 import Image from 'next/image'
 import type { ReactNode } from 'react'
 import { formatViewers } from '@/lib/format'
-import type { LiveStream, Platform } from '@/lib/types'
+import { PLATFORM_LABELS, type LiveStream, type Platform, type PlatformStream } from '@/lib/types'
 import { PlatformBadge } from './PlatformBadge'
 import { TimeAgo } from './TimeAgo'
 
 type Props = {
   stream: LiveStream
+  /** Every platform the streamer is live on, in priority order; defaults to the stream's own. */
+  platforms?: PlatformStream[]
   /** Curated streamer names for this channel; falls back to the channel name. */
   streamerNames?: string[]
   footer?: ReactNode
@@ -18,8 +20,16 @@ const HOVER_SHADOW: Record<Platform, string> = {
   kick: '[--hover-shadow:var(--color-kick)]',
 }
 
-export function LiveCard({ stream, streamerNames = [], footer }: Props) {
+const DOT: Record<Platform, string> = {
+  twitch: 'bg-twitch',
+  youtube: 'bg-youtube',
+  kick: 'bg-kick',
+}
+
+export function LiveCard({ stream, platforms = [stream], streamerNames = [], footer }: Props) {
   const name = streamerNames.length ? streamerNames.join(' · ') : stream.channelName
+  const isSimulcast = platforms.length > 1
+  const withViewers = platforms.filter((p): p is PlatformStream & { viewers: number } => p.viewers !== null)
 
   return (
     <article className={`reveal brutal press group flex flex-col overflow-hidden ${HOVER_SHADOW[stream.platform]}`}>
@@ -42,34 +52,52 @@ export function LiveCard({ stream, streamerNames = [], footer }: Props) {
             </span>
             En vivo
           </span>
-          {stream.viewers !== null && (
-            <span className="absolute bottom-3 left-3 rounded-md border-2 border-[#0b0b0b] bg-[#0b0b0b] px-2 py-0.5 font-mono text-xs font-bold text-white">
-              {formatViewers(stream.viewers)} viendo
+          {withViewers.length > 0 && (
+            <span className="absolute bottom-3 left-3 flex items-center gap-2 rounded-md border-2 border-[#0b0b0b] bg-[#0b0b0b] px-2 py-0.5 font-mono text-xs font-bold text-white">
+              {isSimulcast
+                ? withViewers.map((p) => (
+                    <span key={p.url} className="flex items-center gap-1">
+                      <span className={`size-2 rounded-sm ${DOT[p.platform]}`} aria-hidden />
+                      <span className="sr-only">{PLATFORM_LABELS[p.platform]}:</span>
+                      {formatViewers(p.viewers)}
+                    </span>
+                  ))
+                : formatViewers(withViewers[0].viewers)}{' '}
+              viendo
             </span>
           )}
         </div>
-        <div className="flex flex-1 flex-col gap-2 p-4">
-          <div className="flex items-center gap-2">
-            <PlatformBadge platform={stream.platform} />
-            <h3 className="truncate text-lg font-extrabold">{name}</h3>
+        <div className="flex flex-col gap-2 px-4 pt-4">
+          <div className="flex flex-wrap items-center gap-2">
+            {[...new Set(platforms.map((p) => p.platform))].map((platform) => (
+              <PlatformBadge key={platform} platform={platform} />
+            ))}
+            <h3 className="min-w-0 truncate text-lg font-extrabold">{name}</h3>
           </div>
           <p className="line-clamp-2 font-medium">{stream.title || 'Sin título'}</p>
-          <div className="mt-auto flex items-end justify-between gap-3 pt-2 font-mono text-xs text-muted">
-            <p>
-              {stream.category && <span>{stream.category}</span>}
-              {stream.category && stream.startedAt && <span aria-hidden> · </span>}
-              {stream.startedAt && (
-                <span>
-                  Inició <TimeAgo date={stream.startedAt} />
-                </span>
-              )}
-            </p>
-            <span className="shrink-0 font-bold text-ink transition-transform duration-200 group-hover:translate-x-1" aria-hidden>
-              Ver →
-            </span>
-          </div>
         </div>
       </a>
+      <div className="flex items-end justify-between gap-3 px-4 pb-4 pt-4 font-mono text-xs text-muted">
+        <p>
+          {stream.category && <span>{stream.category}</span>}
+          {stream.category && stream.startedAt && <span aria-hidden> · </span>}
+          {stream.startedAt && (
+            <span>
+              Inició <TimeAgo date={stream.startedAt} />
+            </span>
+          )}
+        </p>
+        <div className="flex shrink-0 flex-col items-end gap-1">
+          {platforms.map((p) => (
+            <a key={p.url} href={p.url} target="_blank" rel="noopener noreferrer" className="group/ver font-bold text-ink">
+              Ver en {PLATFORM_LABELS[p.platform]}{' '}
+              <span className="inline-block transition-transform duration-200 group-hover/ver:translate-x-1" aria-hidden>
+                →
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
       {footer && <div className="border-t-3 border-ink bg-accent/40 px-4 py-2.5">{footer}</div>}
     </article>
   )

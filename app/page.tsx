@@ -130,7 +130,7 @@ export default async function Home() {
           {snapshot.live.length > 0 ? (
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {snapshot.live.map((stream) => (
-                <LiveCard key={stream.url} stream={stream} streamerNames={stream.streamerNames} />
+                <LiveCard key={stream.url} stream={stream} platforms={stream.platforms} streamerNames={stream.streamerNames} />
               ))}
             </div>
           ) : (
