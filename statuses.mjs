@@ -11,6 +11,16 @@ const previous = readGenerated(STATUSES_FILE).entries
 const TWITCH_CLIENT_ID = process.env.TWITCH_CLIENT_ID
 const TWITCH_CLIENT_SECRET = process.env.TWITCH_CLIENT_SECRET
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY
+
+// Per-streamer errors only warn, so without credentials CI would pass while nothing updates.
+if (process.env.CI) {
+  const missing = ['TWITCH_CLIENT_ID', 'TWITCH_CLIENT_SECRET', 'YOUTUBE_API_KEY'].filter((name) => !process.env[name])
+  if (missing.length) {
+    console.error(`Missing required secrets in CI: ${missing.join(', ')}`)
+    process.exit(1)
+  }
+}
+
 const youtubeCache = new Map()
 let twitchAuth
 
