@@ -80,15 +80,14 @@ export function LiveCard({ stream, platforms = [stream], streamerNames = [], foo
       <div
         className={`flex gap-3 px-4 pb-4 pt-4 font-mono text-xs text-muted ${isSimulcast ? 'flex-col' : 'items-end justify-between'}`}
       >
-        <p>
-          {stream.category && <span>{stream.category}</span>}
-          {stream.category && stream.startedAt && <span aria-hidden> · </span>}
+        <div className="flex flex-col gap-1">
+          {stream.category && <p>{stream.category}</p>}
           {stream.startedAt && (
-            <span>
+            <p>
               Inició <TimeAgo date={stream.startedAt} />
-            </span>
+            </p>
           )}
-        </p>
+        </div>
         <div className="flex shrink-0 flex-wrap items-baseline justify-end gap-x-4 gap-y-1">
           {isSimulcast && <span>Ver en</span>}
           {platforms.map((p) => (
