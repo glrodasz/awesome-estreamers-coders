@@ -406,3 +406,13 @@
     youtube: "@VictorRoblesWEB"
     website: https://victorroblesweb.es
     github: victorobs
+
+- name: Serudda (Sergio Ruiz)
+  description: Product y UX engineer; construye interfaces y side projects con React, TypeScript, TailwindCSS y Figma.
+  country: Colombia
+  links:
+    twitch: serudda
+    youtube: "@serudda"
+    website: https://serudda.com
+    x: serudda
+    github: serudda

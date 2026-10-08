@@ -61,6 +61,9 @@
 - **Oscar Barajas** — Software AI Engineer, creando mi primera página web en el 2001. Experto en JavaScript, Profesor en Platzi y Microsoft MVP - 🇨🇴
   - [Sitio web](https://gndx.dev/) · [YouTube](https://www.youtube.com/@gndx) · [X](https://x.com/gndx) · [GitHub](https://github.com/gndx) · [Twitch](https://www.twitch.tv/gndxdev) · [LinkedIn](https://www.linkedin.com/in/oscarbarajas/) · [Instagram](https://instagram.com/gndx)
   - Último directo → 7 oct 2026
+- **Serudda (Sergio Ruiz)** — Product y UX engineer; construye interfaces y side projects con React, TypeScript, TailwindCSS y Figma.
+  - [Twitch](https://www.twitch.tv/serudda) · [YouTube](https://www.youtube.com/@serudda) · [Sitio web](https://serudda.com) · [X](https://x.com/serudda) · [GitHub](https://github.com/serudda)
+  - Último directo → sin verificar
 
 ## España
 
