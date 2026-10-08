@@ -2,6 +2,7 @@
 const dateFormat = new Intl.DateTimeFormat('es-ES', { dateStyle: 'medium', timeZone: 'UTC' })
 const numberFormat = new Intl.NumberFormat('es-ES', { notation: 'compact' })
 const relativeFormat = new Intl.RelativeTimeFormat('es', { numeric: 'auto' })
+const shortRelativeFormat = new Intl.RelativeTimeFormat('es', { numeric: 'auto', style: 'short' })
 
 const UNITS: [Intl.RelativeTimeFormatUnit, number][] = [
   ['year', 365 * 24 * 3600],
@@ -19,11 +20,13 @@ export function formatViewers(viewers: number): string {
   return numberFormat.format(viewers)
 }
 
-export function formatRelative(iso: string, now: number): string {
+/** "hace 5 minutos", or "hace 5 min" with `short`. */
+export function formatRelative(iso: string, now: number, short = false): string {
+  const format = short ? shortRelativeFormat : relativeFormat
   const seconds = Math.round((Date.parse(iso) - now) / 1000)
   for (const [unit, unitSeconds] of UNITS) {
     if (Math.abs(seconds) >= unitSeconds) {
-      return relativeFormat.format(Math.round(seconds / unitSeconds), unit)
+      return format.format(Math.round(seconds / unitSeconds), unit)
     }
   }
   return 'hace un momento'
