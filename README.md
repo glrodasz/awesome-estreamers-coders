@@ -40,7 +40,7 @@
 - **Nicolas Molina** — GDE in Web Technologies and Angular. Senior Front-end developer and teacher at Platzi.
   - [Sitio web](https://nicobytes.com/) · [YouTube](https://www.youtube.com/c/nicobytes) · [Twitter](https://twitter.com/nicobytes)
   - Última actividad → YouTube: 25 sept 2026
-- **Oscar Barajas** — Frontend & Foundation Layer at @platzi #education · Lead at Developer Circles from Facebook · ReactJS, Speaker & Blogger. I teach ReactJS in @platzi - 🇲🇽🇨🇴
+- **Oscar Barajas** — Software AI Engineer, creando mi primera página web en el 2001, Microsoft MVP - #JavaScript #BuildinPublic 🇲🇽🇨🇴
   - [Sitio web](https://gndx.dev/) · [YouTube](https://www.youtube.com/c/oscarbarajas) · [Twitter](https://twitter.com/gndx)
   - Última actividad → YouTube: 7 oct 2026
 
