@@ -77,7 +77,9 @@ export function LiveCard({ stream, platforms = [stream], streamerNames = [], foo
           <p className="line-clamp-2 font-medium">{stream.title || 'Sin título'}</p>
         </div>
       </a>
-      <div className="flex items-end justify-between gap-3 px-4 pb-4 pt-4 font-mono text-xs text-muted">
+      <div
+        className={`flex gap-3 px-4 pb-4 pt-4 font-mono text-xs text-muted ${isSimulcast ? 'flex-col' : 'items-end justify-between'}`}
+      >
         <p>
           {stream.category && <span>{stream.category}</span>}
           {stream.category && stream.startedAt && <span aria-hidden> · </span>}
@@ -87,7 +89,7 @@ export function LiveCard({ stream, platforms = [stream], streamerNames = [], foo
             </span>
           )}
         </p>
-        <div className="flex shrink-0 flex-col items-end gap-1">
+        <div className="flex shrink-0 flex-wrap justify-end gap-x-4 gap-y-1">
           {platforms.map((p) => (
             <a key={p.url} href={p.url} target="_blank" rel="noopener noreferrer" className="group/ver font-bold text-ink">
               Ver en {PLATFORM_LABELS[p.platform]}{' '}
