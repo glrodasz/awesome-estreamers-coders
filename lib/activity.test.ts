@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { lastLiveDate, latestLiveStart, parseFeedVideoIds } from './activity.mjs'
+import { kickLastLive, lastLiveDate, latestLiveStart, parseFeedVideoIds, twitchLastLive } from './activity.mjs'
 
 describe('lastLiveDate', () => {
   it('returns null without a verified live stream', () => {
@@ -16,6 +16,33 @@ describe('lastLiveDate', () => {
         youtube: { lastLive: '2026-09-20T00:00:00Z', lastUpload: '2026-10-06T00:00:00Z' },
       }),
     ).toBe('2026-09-20T00:00:00Z')
+    expect(
+      lastLiveDate({ twitch: { lastLive: '2026-09-01T00:00:00Z' }, kick: { lastLive: '2026-09-10T00:00:00Z' } }),
+    ).toBe('2026-09-10T00:00:00Z')
+  })
+})
+
+describe('twitchLastLive', () => {
+  it('uses past broadcasts and highlights, not uploads', () => {
+    expect(
+      twitchLastLive([
+        { type: 'upload', created_at: '2026-10-01T00:00:00Z' },
+        { type: 'highlight', created_at: '2024-03-01T00:00:00Z' },
+        { type: 'archive', created_at: '2026-09-01T00:00:00Z' },
+      ]),
+    ).toBe('2026-09-01T00:00:00Z')
+    expect(twitchLastLive([{ type: 'highlight', created_at: '2024-03-01T00:00:00Z' }])).toBe('2024-03-01T00:00:00Z')
+    expect(twitchLastLive([{ type: 'upload', created_at: '2026-10-01T00:00:00Z' }])).toBeNull()
+  })
+})
+
+describe('kickLastLive', () => {
+  it('reads Kick UTC dates and picks the latest', () => {
+    expect(
+      kickLastLive([{ start_time: '2026-08-01 18:00:00' }, { created_at: '2026-09-02T10:00:00.000000Z' }, {}]),
+    ).toBe('2026-09-02T10:00:00.000000Z')
+    expect(kickLastLive([{ start_time: '2026-08-01 18:00:00' }])).toBe('2026-08-01T18:00:00Z')
+    expect(kickLastLive([])).toBeNull()
   })
 })
 

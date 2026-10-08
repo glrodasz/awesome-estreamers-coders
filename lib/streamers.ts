@@ -6,6 +6,7 @@ import type { Platform } from './types'
 type RawStatus = {
   youtube?: { channelId?: string; lastUpload?: string | null; lastLive?: string | null }
   twitch?: { lastLive?: string | null; lastVideo?: string | null }
+  kick?: { lastLive?: string | null }
 }
 
 export type Streamer = {
