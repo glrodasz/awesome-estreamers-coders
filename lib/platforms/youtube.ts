@@ -1,3 +1,4 @@
+import { parseFeedVideoIds } from '../activity.mjs'
 import type { LiveStream } from '../types'
 import { chunk, fetchOk, NotConfiguredError } from './http'
 
@@ -21,11 +22,7 @@ export type YouTubeVideo = {
   }
 }
 
-export function parseFeedVideoIds(xml: string, limit = RECENT_VIDEOS_PER_CHANNEL): string[] {
-  return [...xml.matchAll(/<yt:videoId>([\w-]+)<\/yt:videoId>/g)]
-    .slice(0, limit)
-    .map((match) => match[1])
-}
+export { parseFeedVideoIds }
 
 export function mapYouTubeVideo(video: YouTubeVideo): LiveStream | null {
   if (video.snippet.liveBroadcastContent !== 'live') return null
@@ -51,7 +48,7 @@ async function recentVideoIds(channelId: string): Promise<string[] | null> {
       `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`,
       { revalidate: REVALIDATE_SECONDS },
     )
-    return parseFeedVideoIds(await response.text())
+    return parseFeedVideoIds(await response.text(), RECENT_VIDEOS_PER_CHANNEL)
   } catch (error) {
     console.warn(`[YouTube] Feed failed for ${channelId}: ${(error as Error).message}`)
     return null

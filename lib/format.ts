@@ -33,6 +33,7 @@ const FLAGS: Record<string, string> = {
   Argentina: '🇦🇷',
   Chile: '🇨🇱',
   Colombia: '🇨🇴',
+  'Costa Rica': '🇨🇷',
   España: '🇪🇸',
   Mexico: '🇲🇽',
   México: '🇲🇽',

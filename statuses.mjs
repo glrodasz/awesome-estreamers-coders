@@ -1,4 +1,5 @@
 import { config } from 'dotenv'
+import { kickLastLive, latestLiveStart, mostRecent, parseFeedVideoIds, twitchLastLive } from './lib/activity.mjs'
 import { loadStreamers, readGenerated, STATUSES_FILE, writeGenerated } from './lib/data.mjs'
 import { channelHandle } from './lib/links.mjs'
 
@@ -9,6 +10,7 @@ const previous = readGenerated(STATUSES_FILE).entries
 
 const TWITCH_CLIENT_ID = process.env.TWITCH_CLIENT_ID
 const TWITCH_CLIENT_SECRET = process.env.TWITCH_CLIENT_SECRET
+const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY
 const youtubeCache = new Map()
 let twitchAuth
 
@@ -158,16 +160,60 @@ function findChannelIdInObject(obj) {
   return null
 }
 
-async function fetchYouTubeLastUpload(channelId) {
+async function fetchYouTubeFeed(channelId) {
   const feedUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`
   const response = await fetch(feedUrl)
   if (!response.ok) throw new Error(`Feed request failed with status ${response.status}`)
-  const feed = await response.text()
+  return response.text()
+}
 
+function feedLastUpload(feed) {
   const firstEntryMatch = feed.match(/<entry>.*?<published>(.*?)<\/published>/s)
   if (!firstEntryMatch) throw new Error('No entries found in feed')
 
   return firstEntryMatch[1]
+}
+
+// The feed lists the latest ~15 videos, past live streams included; one videos.list
+// call (1 quota unit) tells which of them were broadcast live and when.
+async function fetchYouTubeLastLive(feed) {
+  const ids = parseFeedVideoIds(feed)
+  if (!ids.length) return null
+
+  const params = new URLSearchParams({ part: 'liveStreamingDetails', id: ids.join(','), key: YOUTUBE_API_KEY })
+  const response = await fetch(`https://www.googleapis.com/youtube/v3/videos?${params}`)
+  if (!response.ok) throw new Error(`videos.list failed with status ${response.status}`)
+  const payload = await response.json()
+  return latestLiveStart(payload.items ?? [])
+}
+
+// Lives older than the feed. search.list costs 100 quota units, so it only runs
+// while no live date is known for the channel.
+async function searchYouTubeLastLive(channelId) {
+  const params = new URLSearchParams({
+    part: 'snippet',
+    channelId,
+    eventType: 'completed',
+    type: 'video',
+    order: 'date',
+    maxResults: '1',
+    key: YOUTUBE_API_KEY,
+  })
+  const response = await fetch(`https://www.googleapis.com/youtube/v3/search?${params}`)
+  if (!response.ok) throw new Error(`search.list failed with status ${response.status}`)
+  const payload = await response.json()
+  return payload.items?.[0]?.snippet?.publishedAt ?? null
+}
+
+// Unofficial endpoint (the public API only reports the current stream); it may be
+// blocked, in which case the last known date is kept.
+async function fetchKickLastLive(slug) {
+  const response = await fetch(`https://kick.com/api/v2/channels/${encodeURIComponent(slug)}/videos`, {
+    headers: { Accept: 'application/json', 'User-Agent': 'Mozilla/5.0 (awesome-estreamers-coders)' },
+  })
+  if (!response.ok) throw new Error(`Kick videos request failed with status ${response.status}`)
+  const payload = await response.json()
+  return kickLastLive(Array.isArray(payload) ? payload : payload.data ?? [])
 }
 
 async function getTwitchAuth() {
@@ -215,17 +261,10 @@ async function fetchTwitchStatuses(login) {
   if (!user) throw new Error('User not found')
 
   const livePayload = await twitchApi(`streams?user_login=${encodeURIComponent(login)}`)
-  const isLive = livePayload.data?.[0]
-  let liveStatus = isLive ? isLive.started_at : null
-
-  // If not currently live, check archived streams for last live time
-  if (!liveStatus) {
-    const archivedPayload = await twitchApi(`videos?user_id=${user.id}&first=1&sort=time&type=archive`)
-    liveStatus = archivedPayload.data?.[0]?.created_at || null
-  }
-
-  const videosPayload = await twitchApi(`videos?user_id=${user.id}&first=1&sort=time&type=all`)
-  const lastVideo = videosPayload.data?.[0]?.created_at || null
+  const videosPayload = await twitchApi(`videos?user_id=${user.id}&first=100&sort=time&type=all`)
+  const videos = videosPayload.data ?? []
+  const liveStatus = livePayload.data?.[0]?.started_at ?? twitchLastLive(videos)
+  const lastVideo = videos[0]?.created_at || null
 
   return { userId: user.id, login: user.login, lastLive: liveStatus, lastVideo }
 }
@@ -233,7 +272,7 @@ async function fetchTwitchStatuses(login) {
 async function buildStatuses() {
   const entries = await Promise.all(
     data.map(async (person, index) => {
-      const { youtube, twitch } = person.links
+      const { youtube, twitch, kick } = person.links
       // A failed lookup keeps the last known value instead of erasing it.
       const last = previous[person.name] ?? {}
       const status = {}
@@ -242,8 +281,20 @@ async function buildStatuses() {
         try {
           const channelId = await resolveYouTubeChannelId(youtube)
           if (!channelId) throw new Error('Unable to resolve channel id')
-          const lastUpload = await fetchYouTubeLastUpload(channelId)
-          status.youtube = { channelId, lastUpload }
+          const feed = await fetchYouTubeFeed(channelId)
+          status.youtube = { channelId, lastUpload: feedLastUpload(feed) }
+          // Older lives drop out of the feed, so keep the last known date when none is found.
+          let found = null
+          if (YOUTUBE_API_KEY) {
+            try {
+              found = await fetchYouTubeLastLive(feed)
+              if (!found && !last.youtube?.lastLive) found = await searchYouTubeLastLive(channelId)
+            } catch (error) {
+              console.warn(`[YouTube] Error fetching lives for ${person.name}: ${error.message}`)
+            }
+          }
+          const lastLive = mostRecent([last.youtube?.lastLive, found])
+          if (lastLive) status.youtube.lastLive = lastLive
         } catch (error) {
           console.warn(`[YouTube] Error fetching status for ${person.name}: ${error.message}`)
           status.youtube = last.youtube ?? {}
@@ -253,9 +304,21 @@ async function buildStatuses() {
       if (twitch) {
         try {
           status.twitch = await fetchTwitchStatuses(channelHandle(twitch))
+          // Past broadcasts expire on Twitch: keep the last date we saw.
+          status.twitch.lastLive = mostRecent([status.twitch.lastLive, last.twitch?.lastLive])
         } catch (error) {
           console.warn(`[Twitch] Error fetching status for ${person.name}: ${error.message}`)
           status.twitch = last.twitch ?? {}
+        }
+      }
+
+      if (kick) {
+        try {
+          const lastLive = mostRecent([await fetchKickLastLive(channelHandle(kick)), last.kick?.lastLive])
+          status.kick = lastLive ? { lastLive } : {}
+        } catch (error) {
+          console.warn(`[Kick] Error fetching status for ${person.name}: ${error.message}`)
+          status.kick = last.kick ?? {}
         }
       }
 
