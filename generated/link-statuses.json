@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T08:09:50.968Z",
+  "generatedAt": "2026-10-08T13:24:39.558Z",
   "entries": {
     "Jorge Cano": [
       {
@@ -89,7 +89,7 @@
       {
         "type": "twitch",
         "label": "Twitch",
-        "url": "https://www.twitch.tv/gentlemanprogramming",
+        "url": "https://www.twitch.tv/gentleman_programming",
         "status": "ok",
         "httpStatus": 200
       },
@@ -510,7 +510,7 @@
       {
         "type": "youtube",
         "label": "YouTube",
-        "url": "https://www.youtube.com/c/oscarbarajas",
+        "url": "https://www.youtube.com/@gndx",
         "status": "ok",
         "httpStatus": 200
       },
@@ -518,6 +518,34 @@
         "type": "x",
         "label": "X",
         "url": "https://x.com/gndx",
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "type": "github",
+        "label": "GitHub",
+        "url": "https://github.com/gndx",
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "type": "twitch",
+        "label": "Twitch",
+        "url": "https://www.twitch.tv/gndxdev",
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "type": "linkedin",
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/oscarbarajas/",
+        "status": "ok",
+        "httpStatus": 200
+      },
+      {
+        "type": "instagram",
+        "label": "Instagram",
+        "url": "https://instagram.com/gndx",
         "status": "ok",
         "httpStatus": 200
       }
