@@ -155,7 +155,7 @@ export function Directory({ streamers, liveNames }: Props) {
                       {isLive
                         ? '● Transmitiendo ahora'
                         : s.lastLive
-                          ? `Último directo comprobado: ${formatDate(s.lastLive)}`
+                          ? `Último directo: ${formatDate(s.lastLive)}`
                           : 'Último directo: sin verificar'}
                     </p>
                   </li>
