@@ -11,7 +11,7 @@
 #     kick: tu_usuario
 #     website: https://tusitio.dev
 #
-# youtube, twitch, kick, twitter, x, facebook y github aceptan el usuario;
+# youtube, twitch, kick, x, facebook y github aceptan el usuario;
 # cualquier otro enlace (website, linkedin, instagram, …) necesita la URL completa.
 # El estado de los enlaces y la última actividad se generan solos en generated/.
 
@@ -20,7 +20,7 @@
   country: Argentina
   links:
     youtube: JorgeCano
-    twitter: jorgeucano
+    x: jorgeucano
 
 - name: Gonzalo Pozzo
   description: Solutions architect @ Vercel, Frontend / React ❤.
@@ -29,7 +29,7 @@
     website: https://goncy.dev
     youtube: c/GonzaloPozzo
     twitch: goncypozzo
-    twitter: goncy
+    x: goncy
     facebook: goncy.pozzo
 
 - name: Noe VamoaCodear
@@ -38,7 +38,7 @@
   links:
     youtube: c/vamoacodear
     twitch: vamoacodear
-    twitter: vamoacodear
+    x: vamoacodear
 
 - name: Alan Buscaglia (Gentleman Programming)
   description: App Lead @prowler-cloud, Angular GDE and Microsoft MVP. Creates AI-first tools for developers.
@@ -55,7 +55,7 @@
     website: https://bluuweb.github.io/
     youtube: bluuweb
     twitch: bluuweb
-    twitter: bluuweb
+    x: bluuweb
     facebook: bluuweb
 
 - name: Ana Belisa Martínez
@@ -64,7 +64,7 @@
   links:
     youtube: anabelisam
     twitch: anabelisam
-    twitter: anabelisam_
+    x: anabelisam_
     facebook: anabelisam
 
 - name: Guillermo Rodas
@@ -74,7 +74,7 @@
     website: https://guillermorodas.com/
     youtube: guillermorodas
     twitch: guillermorodas
-    twitter: glrodasz
+    x: glrodasz
 
 - name: Julián Duque
   description: Software architect at MuleSoft; Node.js emeritus collaborator. Builds and teaches agentic AI and event-driven systems.
@@ -83,7 +83,7 @@
     website: https://www.julianduque.co
     youtube: user/julianduquej
     twitch: julianduque
-    twitter: julian_duque
+    x: julian_duque
 
 - name: Daniel Suarez Dev
   description: Full-stack developer and content creator. React, React Native, Node.js, SQL, AWS and Astro.
@@ -91,7 +91,7 @@
   links:
     youtube: channel/UC_zzfLSjrYNKrOIGK_js_AA
     twitch: danielsuarezdev
-    twitter: DanielSuarezDev
+    x: DanielSuarezDev
 
 - name: Nicolas Molina
   description: Senior Front-end Developer at dotCMS. Angular GDE and Microsoft MVP.
@@ -99,7 +99,7 @@
   links:
     website: https://nicobytes.com/
     youtube: c/nicobytes
-    twitter: nicobytes
+    x: nicobytes
 
 - name: Carlos Azaustre
   description: Ingeniero de software y educador con más de 20 años creando webs. JavaScript, TypeScript, arquitectura e IA.
@@ -108,7 +108,7 @@
     website: https://mypublicinbox.com/carlosazaustre
     youtube: CarlosAzaustre
     twitch: carlosazaustre
-    twitter: carlosazaustre
+    x: carlosazaustre
 
 - name: Brais Moure
   description: Divulgador e ingeniero que enseña a principiantes sobre software e IA.
@@ -117,7 +117,7 @@
     website: https://moure.dev/
     youtube: MouredevApps
     twitch: mouredev
-    twitter: MoureDev
+    x: MoureDev
     facebook: mouredev
 
 - name: Miguel Ángel Durán
@@ -128,7 +128,7 @@
     youtube: midudev
     twitch: midudev
     kick: midudev
-    twitter: midudev
+    x: midudev
     facebook: midudev.frontend
 
 - name: Pablo Sirera
@@ -138,7 +138,7 @@
     website: https://pablosirera.com/
     youtube: PabloSirera
     twitch: pablosirera
-    twitter: pablosirera
+    x: pablosirera
 
 - name: Santiago Martín
   description: Software Engineer. Comunidad en @asturiaswcraft y live coding.
@@ -146,7 +146,7 @@
   links:
     website: https://www.santiagomartin.dev/
     twitch: santima10
-    twitter: SantiMA10b
+    x: SantiMA10b
 
 - name: Jorge Baumann
   description: Senior Full Stack Developer. Ingeniero, divulgador y speaker sobre desarrollo web.
@@ -155,7 +155,7 @@
     website: https://www.baumannzone.dev/
     youtube: channel/UCTTj5ztXnGeDRPFVsBp7VMA
     twitch: baumannzone
-    twitter: baumannzone
+    x: baumannzone
 
 - name: Dorian Designs
   description: Apasionado de las nuevas tecnologías y en especial del ecosistema de javascript.
@@ -163,7 +163,7 @@
   links:
     youtube: channel/UCzuwt7Pi_VB8cP5q5UE4u-A
     twitch: doriandesings
-    twitter: DorianDesings
+    x: DorianDesings
     facebook: yoaprendocondorian
 
 - name: Oscar Barajas
@@ -172,7 +172,7 @@
   links:
     website: https://gndx.dev/
     youtube: c/oscarbarajas
-    twitter: gndx
+    x: gndx
 
 - name: Héctor De León
   description: Ingeniero en computación, aficionado a la IA y autor. Creador de Metal Code; comparte conocimientos de programación.
@@ -181,7 +181,7 @@
     website: http://hdeleon.net/
     youtube: c/hdeleonnet
     twitch: hdeleonnet
-    twitter: powerhdeleon
+    x: powerhdeleon
 
 - name: Jose Jesus Guzman Eusebio
   description: Desarrollador backend y Android, CTO en Envíaje y Sherpa Digital de Innovacción Virtual de @microsoft. @brujeriatech.
@@ -197,7 +197,7 @@
     website: https://www.erifranck.art/
     youtube: c/erifrancknunez
     twitch: erifranck
-    twitter: erifranckn
+    x: erifranckn
 
 - name: Leonidas Esteban
   description: Software Engineer, Professor
@@ -205,7 +205,7 @@
   links:
     website: https://leonidasesteban.com/cursos
     youtube: LeonidasEsteban
-    twitter: LeonidasEsteban
+    x: LeonidasEsteban
     facebook: LeonidasEsteban
 
 - name: Fazttech
@@ -215,7 +215,7 @@
     website: https://faztweb.com/
     youtube: fazttech
     twitch: fazttech
-    twitter: fazttech
+    x: fazttech
     facebook: FaztTech
 
 - name: ManzDev
@@ -225,7 +225,7 @@
     website: https://manz.dev/
     youtube: "@ManzDev"
     twitch: manzdev
-    twitter: Manz
+    x: Manz
 
 - name: Afor Digital
   description: Desarrollo frontend, creación de productos y aprendizaje compartido con la comunidad.
@@ -234,7 +234,7 @@
     youtube: "@afor_digital"
     twitch: afor_digital
     website: https://www.afor.digital
-    twitter: afor_digital
+    x: afor_digital
 
 - name: Alva Majo
   description: "Desarrollo de videojuegos indie: ideas, decisiones y experiencias detrás de crear tus propios juegos."
@@ -257,7 +257,7 @@
   links:
     youtube: c/BettaTech
     website: https://www.commitacademy.io
-    twitter: BettaTech
+    x: BettaTech
 
 - name: Carlos Coronado (CarlosGameDeveloper)
   description: Desarrollo de videojuegos con Unreal Engine, tutoriales y experiencias de la industria.
@@ -272,7 +272,7 @@
     youtube: channel/UC9IKtxn9AIGelnYmwYr0Lxw
     twitch: codelytv
     website: https://codely.com
-    twitter: CodelyTV
+    x: CodelyTV
     github: CodelyTV
 
 - name: Fernando Herrera
@@ -281,7 +281,7 @@
   links:
     youtube: channel/UCuaPTYj15JSkETGnEseaFFg
     website: https://fernando-herrera.com
-    twitter: Fernando_Her85
+    x: Fernando_Her85
     github: Klerith
 
 - name: Freddy Montes
@@ -313,7 +313,7 @@
   links:
     youtube: "@jonmircha"
     website: https://jonmircha.com
-    twitter: jonmircha
+    x: jonmircha
 
 - name: Laboratorio Gluon
   description: Electrónica y programación para construir proyectos con Arduino, ESP32 y Raspberry Pi.
@@ -322,7 +322,7 @@
     youtube: "@LaboratorioGluon"
     twitch: labgluon
     website: https://www.laboratoriogluon.com
-    twitter: LabGluon
+    x: LabGluon
 
 - name: Maxi Programa
   description: Programación desde cero y desarrollo de aplicaciones con C#, .NET y SQL.
@@ -356,7 +356,7 @@
   links:
     youtube: "@rafalagoon"
     twitch: rafalagoon
-    twitter: RafaLagoon
+    x: RafaLagoon
     github: rafalagoon
 
 - name: Rocío Tomé (RothioTome)
@@ -366,7 +366,7 @@
     youtube: "@Rothiotome"
     twitch: RothioTome
     website: https://rociotome.com
-    twitter: rothiotome
+    x: rothiotome
 
 - name: s4vitar
   description: Hacking ético y ciberseguridad, con pentesting y análisis de vulnerabilidades.
@@ -375,7 +375,7 @@
     youtube: "@s4vitar"
     twitch: s4vitaar
     website: https://hack4u.io
-    twitter: s4vitar
+    x: s4vitar
 
 - name: Sergie Code
   description: Desarrollo web e inteligencia artificial, con cursos y proyectos para aprender desde cero.
@@ -383,7 +383,7 @@
   links:
     youtube: "@SergieCode"
     website: https://www.sergiecode.com
-    twitter: sergiecode
+    x: sergiecode
     github: sergiecode
 
 - name: TodoCode (Luisina de Paula)
@@ -393,7 +393,7 @@
     youtube: "@TodoCode"
     twitch: todocode
     website: https://www.todocodeacademy.com
-    twitter: todo_code
+    x: todo_code
 
 - name: Víctor Robles WEB
   description: Desarrollo web, formación y proyectos prácticos para aprender a programar y crecer profesionalmente.

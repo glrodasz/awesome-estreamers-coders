@@ -19,7 +19,6 @@ const LINK_STYLES: Record<string, string> = {
   youtube: 'bg-youtube text-white',
   twitch: 'bg-twitch text-white',
   kick: 'bg-kick text-black',
-  twitter: 'bg-[#1d9bf0] text-white',
   x: 'bg-black text-white',
   facebook: 'bg-[#1877f2] text-white',
   github: 'bg-[#24292f] text-white',

@@ -25,7 +25,7 @@ Edita [\`${STREAMERS_FILE}\`](${STREAMERS_FILE}), agrega tu entrada al final y a
     website: https://tusitio.dev
 \`\`\`
 
-- \`youtube\`, \`twitch\`, \`kick\`, \`twitter\`, \`x\`, \`facebook\` y \`github\` aceptan tu usuario o la URL completa.
+- \`youtube\`, \`twitch\`, \`kick\`, \`x\`, \`facebook\` y \`github\` aceptan tu usuario o la URL completa.
 - Cualquier otro enlace (\`website\`, \`linkedin\`, \`instagram\`, …) necesita la URL completa.
 - Puedes validar tu cambio con \`npm run validate\`. No edites \`README.md\` ni \`generated/\`: se generan solos.
 `

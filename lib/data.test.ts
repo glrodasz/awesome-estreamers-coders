@@ -24,6 +24,7 @@ describe('validateStreamers', () => {
       { ...valid, description: '' },
       { name: 'Bob', descripton: 'typo', country: 'Chile', links: {} },
       { name: 'Eve', description: 'x', country: 'Perú', links: { linkedin: 'eve', twitch: '' } },
+      { name: 'Max', description: 'x', country: 'Chile', links: { twitter: 'max' } },
     ])
     expect(errors).toEqual([
       'Entrada #2 (Ada): falta "description".',
@@ -33,6 +34,7 @@ describe('validateStreamers', () => {
       'Entrada #3 (Bob): "links" debe tener al menos un enlace, por ejemplo "twitch: tu_usuario".',
       'Entrada #4 (Eve): el enlace "linkedin" debe ser una URL completa (https://…).',
       'Entrada #4 (Eve): el enlace "twitch" está vacío.',
+      'Entrada #5 (Max): usa "x" en lugar de "twitter".',
     ])
   })
 
