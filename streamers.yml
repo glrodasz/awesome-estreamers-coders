@@ -15,6 +15,13 @@
 # cualquier otro enlace (website, linkedin, instagram, …) necesita la URL completa.
 # El estado de los enlaces y la última actividad se generan solos en generated/.
 
+- name: Juan Debenedetti
+  description: Desarrollo de un MMORPG en 2D y diseño web
+  country: Argentina
+  links:
+    twitch: rusocode
+    website: https://el-meson-hostigado.punkipunk.com/
+
 - name: Jorge Cano
   description: "#Angular & Performance Google Developer Expert"
   country: Argentina
