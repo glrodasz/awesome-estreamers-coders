@@ -7,17 +7,17 @@ import { SectionHeading } from '@/components/SectionHeading'
 import { getLiveSnapshot } from '@/lib/live'
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from '@/lib/site'
 import { streamers } from '@/lib/streamers'
-import { PLATFORM_LABELS, type LiveStream } from '@/lib/types'
+import { PLATFORM_LABELS, type CuratedLiveStream } from '@/lib/types'
 
 export const revalidate = 60
 
 const REPO_URL = 'https://github.com/glrodasz/awesome-estreamers-coders'
 const ADD_CHANNEL_URL = `${REPO_URL}/edit/master/streamers.yml`
 
-function proposeUrl(stream: LiveStream) {
+function proposeUrl(stream: CuratedLiveStream) {
   const params = new URLSearchParams({
-    title: `Proponer: ${stream.channelName} (${PLATFORM_LABELS[stream.platform]})`,
-    body: `Canal: ${stream.url}\n\nLo vi en vivo en la sección "Descubre" de la landing.`,
+    title: `Proponer: ${stream.channelName} (${stream.platforms.map((p) => PLATFORM_LABELS[p.platform]).join(', ')})`,
+    body: `Canal: ${stream.platforms.map((p) => p.url).join(', ')}\n\nLo vi en vivo en la sección "Descubre" de la landing.`,
   })
   return `${REPO_URL}/issues/new?${params}`
 }
@@ -151,6 +151,7 @@ export default async function Home() {
                 <LiveCard
                   key={stream.url}
                   stream={stream}
+                  platforms={stream.platforms}
                   footer={
                     <a
                       href={proposeUrl(stream)}

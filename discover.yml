@@ -1,10 +1,11 @@
-# Canales que no se muestran en la sección "Descubre" de la web.
+# Canales de la sección "Descubre" que son de la misma persona en distintas plataformas.
 #
-# Agrega el usuario (o la URL completa) bajo su plataforma: twitch, kick o youtube.
-# Para YouTube usa el id del canal (UC…).
+# Cada entrada se muestra en una sola tarjeta, con los viewers de cada plataforma,
+# igual que los streamers de la lista que transmiten en varias plataformas a la vez:
+#
+# - twitch: usuario_en_twitch       # usuario o URL completa
+#   kick: usuario_en_kick
+#   youtube: UC…                    # id del canal de YouTube
 
-hidden:
-  twitch:
-    - mestisexo
-  kick:
-    - mestizosartoriale
+- twitch: mestisexo
+  kick: mestizosartoriale
