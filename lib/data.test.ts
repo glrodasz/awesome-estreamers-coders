@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { loadStreamers, validateStreamers } from './data.mjs'
+import { loadDiscoverHidden, loadStreamers, validateDiscover, validateStreamers } from './data.mjs'
 import { buildLinks } from './links.mjs'
 
 const valid = {
@@ -40,6 +40,21 @@ describe('validateStreamers', () => {
 
   it('rejects a file that is not a list', () => {
     expect(validateStreamers({ name: 'Ada' })).toEqual(['streamers.yml debe ser una lista de streamers.'])
+  })
+})
+
+describe('validateDiscover', () => {
+  it('loads the real file as platform:channel keys', () => {
+    expect(loadDiscoverHidden()).toContain('twitch:mestisexo')
+  })
+
+  it('reports unknown keys, platforms and bad channel lists', () => {
+    expect(validateDiscover({ hidden: { twitch: ['ok'] } })).toEqual([])
+    expect(validateDiscover({ hiden: {}, hidden: { tiktok: ['x'], kick: 'solo' } })).toEqual([
+      'discover.yml: campo desconocido "hiden". Campos válidos: hidden.',
+      'discover.yml: plataforma desconocida "tiktok". Plataformas válidas: twitch, kick, youtube.',
+      'discover.yml: "hidden.kick" debe ser una lista de usuarios.',
+    ])
   })
 })
 

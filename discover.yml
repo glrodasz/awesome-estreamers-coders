@@ -1,0 +1,10 @@
+# Canales que no se muestran en la sección "Descubre" de la web.
+#
+# Agrega el usuario (o la URL completa) bajo su plataforma: twitch, kick o youtube.
+# Para YouTube usa el id del canal (UC…).
+
+hidden:
+  twitch:
+    - mestisexo
+  kick:
+    - mestizosartoriale

@@ -1,3 +1,4 @@
+import { loadDiscoverHidden } from './data.mjs'
 import { getKickDiscover, getKickLive } from './platforms/kick'
 import { NotConfiguredError } from './platforms/http'
 import { getTwitchDiscover, getTwitchLive } from './platforms/twitch'
@@ -96,6 +97,7 @@ export function mixDiscover(streams: LiveStream[]): LiveStream[] {
 
 export async function getLiveSnapshot(): Promise<LiveSnapshot> {
   const namesByKey = curatedKeys(streamers)
+  const hidden = loadDiscoverHidden()
   const sources: Source[] = [
     {
       platform: 'twitch',
@@ -142,7 +144,7 @@ export async function getLiveSnapshot(): Promise<LiveSnapshot> {
         const seen = new Set<string>()
         for (const stream of discoverResult.value) {
           const key = streamKey(stream.platform, stream.channelKey)
-          if (namesByKey.has(key) || seen.has(key)) continue
+          if (namesByKey.has(key) || hidden.has(key) || seen.has(key)) continue
           seen.add(key)
           discover.push(stream)
         }

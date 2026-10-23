@@ -20,7 +20,7 @@ function twitchOnlyFetch(url: string) {
     return Response.json({ data: [stream('midudev', 10), stream('mouredev', 300)] })
   }
   if (pathname === '/helix/streams') {
-    return Response.json({ data: [stream('midudev', 10), stream('nuevo_coder', 50)] })
+    return Response.json({ data: [stream('midudev', 10), stream('nuevo_coder', 50), stream('mestisexo', 900)] })
   }
   return new Response('unexpected', { status: 500 })
 }
@@ -41,7 +41,7 @@ describe('getLiveSnapshot', () => {
     vi.restoreAllMocks()
   })
 
-  it('matches curated streamers, excludes them from discover and reports missing platforms', async () => {
+  it('matches curated streamers, excludes them and hidden channels from discover and reports missing platforms', async () => {
     const snapshot = await getLiveSnapshot()
 
     expect(snapshot.live.map((s) => [s.channelKey, s.streamerNames])).toEqual([
