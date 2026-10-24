@@ -36,6 +36,6 @@ export type PlatformIssue = {
 export type LiveSnapshot = {
   generatedAt: string
   live: CuratedLiveStream[]
-  discover: LiveStream[]
+  discover: CuratedLiveStream[]
   issues: PlatformIssue[]
 }

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { loadStreamers, validateStreamers } from './data.mjs'
+import { loadDiscoverGroups, loadStreamers, validateDiscover, validateStreamers } from './data.mjs'
 import { buildLinks } from './links.mjs'
 
 const valid = {
@@ -40,6 +40,33 @@ describe('validateStreamers', () => {
 
   it('rejects a file that is not a list', () => {
     expect(validateStreamers({ name: 'Ada' })).toEqual(['streamers.yml debe ser una lista de streamers.'])
+  })
+})
+
+describe('validateDiscover', () => {
+  it('groups the real channels by person', () => {
+    const groups = loadDiscoverGroups()
+    expect(groups.get('twitch:mestisexo')).toBe(groups.get('kick:mestizosartoriale'))
+  })
+
+  it('reports unknown platforms, single channels, empty and repeated channels', () => {
+    expect(validateDiscover([{ twitch: 'ada', kick: 'https://kick.com/Ada' }])).toEqual([])
+    expect(
+      validateDiscover([
+        { twitch: 'ada', tiktok: 'ada' },
+        { kick: 'solo' },
+        { twitch: 'ADA', kick: '' },
+      ]),
+    ).toEqual([
+      'Entrada #1: plataforma desconocida "tiktok". Plataformas válidas: twitch, kick, youtube.',
+      'Entrada #2: debe tener al menos dos plataformas.',
+      'Entrada #3: el canal "twitch:ada" está repetido.',
+      'Entrada #3: el canal de "kick" está vacío.',
+    ])
+  })
+
+  it('rejects a file that is not a list', () => {
+    expect(validateDiscover({ twitch: 'ada' })).toEqual(['discover.yml debe ser una lista de canales agrupados por plataforma.'])
   })
 })
 

@@ -1,3 +1,4 @@
+import { loadDiscoverGroups } from './data.mjs'
 import { getKickDiscover, getKickLive } from './platforms/kick'
 import { NotConfiguredError } from './platforms/http'
 import { getTwitchDiscover, getTwitchLive } from './platforms/twitch'
@@ -44,14 +45,10 @@ const byPriority = (a: LiveStream, b: LiveStream) =>
 const totalViewers = (stream: CuratedLiveStream) =>
   stream.platforms.reduce((total, { viewers }) => total + (viewers ?? 0), 0)
 
-/**
- * Merges a curated streamer's simultaneous streams into one card, using the highest-priority
- * platform (Twitch, YouTube, Kick) for the title, thumbnail and start time. Sorted by total viewers.
- */
-export function mergeSimulcasts(streams: MatchedStream[]): CuratedLiveStream[] {
+function mergeBy(streams: MatchedStream[], groupKey: (stream: MatchedStream) => string): CuratedLiveStream[] {
   const groups = new Map<string, MatchedStream[]>()
   for (const stream of streams) {
-    const key = stream.streamerNames.length ? stream.streamerNames.join('|') : streamKey(stream.platform, stream.channelKey)
+    const key = groupKey(stream)
     groups.set(key, [...(groups.get(key) ?? []), stream])
   }
   const merged = [...groups.values()].map((group): CuratedLiveStream => {
@@ -59,6 +56,16 @@ export function mergeSimulcasts(streams: MatchedStream[]): CuratedLiveStream[] {
     return { ...group[0], platforms: group.map(({ platform, viewers, url }) => ({ platform, viewers, url })) }
   })
   return merged.sort((a, b) => totalViewers(b) - totalViewers(a))
+}
+
+/**
+ * Merges a curated streamer's simultaneous streams into one card, using the highest-priority
+ * platform (Twitch, YouTube, Kick) for the title, thumbnail and start time. Sorted by total viewers.
+ */
+export function mergeSimulcasts(streams: MatchedStream[]): CuratedLiveStream[] {
+  return mergeBy(streams, (stream) =>
+    stream.streamerNames.length ? stream.streamerNames.join('|') : streamKey(stream.platform, stream.channelKey),
+  )
 }
 
 const DISCOVER_QUOTAS: [Platform, number][] = [
@@ -73,16 +80,15 @@ const DISCOVER_LIMIT = DISCOVER_QUOTAS.reduce((total, [, count]) => total + coun
 
 /**
  * Picks a platform mix (3 Twitch, 2 Kick, 1 YouTube), backfilling missing slots from other platforms.
- * A channel simulcasting on several platforms is shown once, on the platform with the most viewers.
+ * Channels simulcasting on several platforms — same channel name, or grouped in discover.yml —
+ * are merged into one card like curated simulcasts, counted under their main platform.
  */
-export function mixDiscover(streams: LiveStream[]): LiveStream[] {
-  const seenChannels = new Set<string>()
-  const remaining = [...streams].sort(byViewers).filter((stream) => {
-    if (seenChannels.has(stream.channelKey)) return false
-    seenChannels.add(stream.channelKey)
-    return true
-  })
-  const picked: LiveStream[] = []
+export function mixDiscover(streams: LiveStream[], groups = new Map<string, string>()): CuratedLiveStream[] {
+  const remaining = mergeBy(
+    streams.map((stream) => ({ ...stream, streamerNames: [] })),
+    (stream) => groups.get(streamKey(stream.platform, stream.channelKey)) ?? stream.channelKey,
+  )
+  const picked: CuratedLiveStream[] = []
   const take = (platform: Platform, count: number) => {
     const taken = remaining.filter((stream) => stream.platform === platform).slice(0, Math.max(count, 0))
     for (const stream of taken) remaining.splice(remaining.indexOf(stream), 1)
@@ -91,7 +97,7 @@ export function mixDiscover(streams: LiveStream[]): LiveStream[] {
 
   for (const [platform, quota] of DISCOVER_QUOTAS) take(platform, quota)
   for (const platform of DISCOVER_BACKFILL) take(platform, DISCOVER_LIMIT - picked.length)
-  return picked.sort(byViewers)
+  return picked.sort((a, b) => totalViewers(b) - totalViewers(a))
 }
 
 export async function getLiveSnapshot(): Promise<LiveSnapshot> {
@@ -153,7 +159,7 @@ export async function getLiveSnapshot(): Promise<LiveSnapshot> {
   return {
     generatedAt: new Date().toISOString(),
     live: mergeSimulcasts(live),
-    discover: mixDiscover(discover),
+    discover: mixDiscover(discover, loadDiscoverGroups()),
     issues: issues.sort((a, b) => a.platform.localeCompare(b.platform)),
   }
 }
