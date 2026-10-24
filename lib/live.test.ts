@@ -104,15 +104,42 @@ describe('mixDiscover', () => {
     expect(mixed.map((s) => s.channelKey)).toEqual(['twitch0', 'twitch1', 'twitch2', 'kick0', 'kick1', 'kick2'])
   })
 
-  it('shows a simulcast channel once, on the platform with more viewers', () => {
+  it('merges a simulcast channel into one card with the viewers of each platform', () => {
     const simulcast = (platform: Platform, viewers: number) =>
       streamsOf(platform, 1).map((s) => ({ ...s, channelKey: 'pashoai', viewers }))
 
-    const kickWins = mixDiscover([...streamsOf('twitch', 10), ...simulcast('twitch', 2), ...simulcast('kick', 3)])
-    expect(kickWins.filter((s) => s.channelKey === 'pashoai').map((s) => s.platform)).toEqual(['kick'])
+    const mixed = mixDiscover([...streamsOf('twitch', 2), ...simulcast('kick', 3), ...simulcast('twitch', 2)])
+    const cards = mixed.filter((s) => s.channelKey === 'pashoai')
+    expect(cards.map((s) => s.platforms.map((p) => [p.platform, p.viewers]))).toEqual([
+      [
+        ['twitch', 2],
+        ['kick', 3],
+      ],
+    ])
+  })
 
-    const twitchWins = mixDiscover([...streamsOf('twitch', 2), ...simulcast('twitch', 3), ...simulcast('kick', 2)])
-    expect(twitchWins.filter((s) => s.channelKey === 'pashoai').map((s) => s.platform)).toEqual(['twitch'])
+  it('merges channels grouped in discover.yml even when their names differ', () => {
+    const groups = new Map([
+      ['twitch:mestisexo', 'group:0'],
+      ['kick:mestizosartoriale', 'group:0'],
+    ])
+    const channel = (platform: Platform, channelKey: string, viewers: number) =>
+      streamsOf(platform, 1).map((s) => ({ ...s, channelKey, channelName: channelKey, viewers, url: `https://example.com/${channelKey}` }))
+
+    const mixed = mixDiscover(
+      [...channel('kick', 'mestizosartoriale', 40), ...channel('twitch', 'mestisexo', 25), ...channel('kick', 'otro', 50)],
+      groups,
+    )
+    expect(mixed.map((s) => [s.channelName, s.platforms.map((p) => [p.platform, p.viewers])])).toEqual([
+      [
+        'mestisexo',
+        [
+          ['twitch', 25],
+          ['kick', 40],
+        ],
+      ],
+      ['otro', [['kick', 50]]],
+    ])
   })
 })
 
