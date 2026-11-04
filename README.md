@@ -4,6 +4,9 @@
 
 ## Argentina
 
+- **Juan Debenedetti** — Desarrollo de un MMORPG en 2D y diseño web
+  - [Twitch](https://www.twitch.tv/rusocode) · [Sitio web](https://el-meson-hostigado.punkipunk.com/)
+  - Último directo → sin verificar
 - **Jorge Cano** — #Angular & Performance Google Developer Expert
   - [YouTube](https://www.youtube.com/JorgeCano) · [X](https://x.com/jorgeucano)
   - Último directo → 18 jun 2026
