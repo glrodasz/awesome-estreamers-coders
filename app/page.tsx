@@ -12,7 +12,7 @@ import { PLATFORM_LABELS, type CuratedLiveStream } from '@/lib/types'
 export const revalidate = 60
 
 const REPO_URL = 'https://github.com/glrodasz/awesome-estreamers-coders'
-const ADD_CHANNEL_URL = `${REPO_URL}/edit/master/streamers.yml`
+const ADD_CHANNEL_URL = `${REPO_URL}/edit/main/streamers.yml`
 
 function proposeUrl(stream: CuratedLiveStream) {
   const params = new URLSearchParams({
