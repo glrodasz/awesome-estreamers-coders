@@ -12,10 +12,12 @@ const CATCH_UP_DELAY_MS = 3_000
 // The regenerated page can still carry stale upstream data from the Data Cache, so allow one more try.
 const MAX_CATCH_UP_REFRESHES = 2
 
+const snapshotAgeMs = (generatedAt: string) => Date.now() - new Date(generatedAt).getTime()
+
 /**
  * Re-fetches the server-rendered page every minute while the tab is visible,
- * catches up right after load when the cached page is stale,
- * and lets people refresh by hand with a spinner while it loads.
+ * catches up after any refresh (on load, back to the tab, the timer or the button)
+ * that still returns a stale cached page, and lets people refresh by hand.
  */
 export function RefreshStatus({ generatedAt }: { generatedAt: string }) {
   const router = useRouter()
@@ -23,15 +25,23 @@ export function RefreshStatus({ generatedAt }: { generatedAt: string }) {
   const refresh = useCallback(() => startTransition(() => router.refresh()), [router])
   const catchUpRefreshes = useRef(0)
 
+  // Runs on load and whenever a refresh finishes, even when it returns the same stale snapshot.
   useEffect(() => {
-    const isStale = Date.now() - new Date(generatedAt).getTime() > STALE_MS
-    if (!isStale || catchUpRefreshes.current >= MAX_CATCH_UP_REFRESHES) return
+    if (isPending) return
+    const ageMs = snapshotAgeMs(generatedAt)
+    const isStale = ageMs > STALE_MS
+    console.debug(`[RefreshStatus] snapshot ${Math.round(ageMs / 1000)}s old (${generatedAt})${isStale ? ', stale' : ''}`)
+    if (!isStale) {
+      catchUpRefreshes.current = 0
+      return
+    }
+    if (catchUpRefreshes.current >= MAX_CATCH_UP_REFRESHES) return
     const id = setTimeout(() => {
       catchUpRefreshes.current += 1
       refresh()
     }, CATCH_UP_DELAY_MS)
     return () => clearTimeout(id)
-  }, [generatedAt, refresh])
+  }, [generatedAt, isPending, refresh])
 
   useEffect(() => {
     const refreshIfVisible = () => {
@@ -46,7 +56,7 @@ export function RefreshStatus({ generatedAt }: { generatedAt: string }) {
   }, [refresh])
 
   return (
-    <div className="flex items-center gap-3 font-mono text-xs text-muted" aria-live="polite">
+    <div className="flex items-center gap-3 font-mono text-xs text-muted" aria-live="polite" data-generated-at={generatedAt}>
       <span>{isPending ? 'Actualizando…' : <>Actualizado <TimeAgo date={generatedAt} /></>}</span>
       <button
         type="button"
