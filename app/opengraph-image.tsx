@@ -16,14 +16,33 @@ const STICKERS = [
   { label: 'Kick', background: '#53fc18', color: INK, rotate: -3 },
 ]
 
-/** Fetches a TTF subset (Google serves TTF to non-browser user agents); Satori can't read woff2. */
+// TrueType, OpenType (CFF) and Apple TrueType signatures: the formats Satori can read.
+const FONT_SIGNATURES = ['00010000', '4f54544f', '74727565']
+
+function isFont(data: ArrayBuffer) {
+  const signature = [...new Uint8Array(data.slice(0, 4))].map((byte) => byte.toString(16).padStart(2, '0')).join('')
+  return FONT_SIGNATURES.includes(signature)
+}
+
+/**
+ * Fetches a TTF subset (Google serves TTF to non-browser user agents); Satori can't read woff2.
+ * Returns null on any failure, including an error page instead of a font, so the image falls
+ * back to the default font instead of failing the build.
+ */
 async function loadGoogleFont(family: string, weight: number, text: string) {
   try {
     const params = new URLSearchParams({ family: `${family}:wght@${weight}`, text })
-    const css = await (await fetch(`https://fonts.googleapis.com/css2?${params}`)).text()
-    const url = css.match(/src: url\((.+?)\) format\('(?:opentype|truetype)'\)/)?.[1]
-    return url ? await (await fetch(url)).arrayBuffer() : null
-  } catch {
+    const cssResponse = await fetch(`https://fonts.googleapis.com/css2?${params}`)
+    if (!cssResponse.ok) throw new Error(`CSS request failed with status ${cssResponse.status}`)
+    const url = (await cssResponse.text()).match(/src: url\((.+?)\) format\('(?:opentype|truetype)'\)/)?.[1]
+    if (!url) throw new Error('no TTF/OTF source in the CSS')
+    const fontResponse = await fetch(url)
+    if (!fontResponse.ok) throw new Error(`font request failed with status ${fontResponse.status}`)
+    const data = await fontResponse.arrayBuffer()
+    if (!isFont(data)) throw new Error('response is not a TTF/OTF font')
+    return data
+  } catch (error) {
+    console.warn(`[opengraph-image] ${family} ${weight} unavailable, using the default font: ${(error as Error).message}`)
     return null
   }
 }
@@ -107,6 +126,7 @@ export default async function Image() {
         <div style={{ display: 'flex', justifyContent: 'flex-end', fontFamily: 'Mono', fontSize: 26, fontWeight: 700 }}>{host}</div>
       </div>
     ),
-    { ...size, fonts },
+    // An empty list would also drop the built-in default font.
+    { ...size, ...(fonts.length > 0 && { fonts }) },
   )
 }
