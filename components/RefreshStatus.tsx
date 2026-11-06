@@ -4,7 +4,10 @@ import { useRouter } from 'next/navigation'
 import { useCallback, useEffect, useRef, useTransition } from 'react'
 import { TimeAgo } from './TimeAgo'
 
-const REFRESH_MS = 60_000
+// While the tab stays open, ask for fresh data at most this often (on top of the catch-up below).
+const REFRESH_MS = 5 * 60_000
+// How often to check whether the tab is due for that refresh; the check itself makes no request.
+const CHECK_MS = 30_000
 // Matches the page's `revalidate`: older than this, the HTML came from the ISR cache while it regenerates.
 const STALE_MS = 60_000
 // Gives the background regeneration time to finish before asking for the page again.
@@ -15,14 +18,18 @@ const MAX_CATCH_UP_REFRESHES = 2
 const snapshotAgeMs = (generatedAt: string) => Date.now() - new Date(generatedAt).getTime()
 
 /**
- * Re-fetches the server-rendered page every minute while the tab is visible,
- * catches up after any refresh (on load, back to the tab, the timer or the button)
+ * Re-fetches the server-rendered page every five minutes while the tab is visible
+ * (and on return to the tab once that long has passed), catches up after any refresh
  * that still returns a stale cached page, and lets people refresh by hand.
  */
 export function RefreshStatus({ generatedAt }: { generatedAt: string }) {
   const router = useRouter()
   const [isPending, startTransition] = useTransition()
-  const refresh = useCallback(() => startTransition(() => router.refresh()), [router])
+  const lastRefreshAt = useRef(0)
+  const refresh = useCallback(() => {
+    lastRefreshAt.current = Date.now()
+    startTransition(() => router.refresh())
+  }, [router])
   const catchUpRefreshes = useRef(0)
 
   // Runs on load and whenever a refresh finishes, even when it returns the same stale snapshot.
@@ -44,14 +51,17 @@ export function RefreshStatus({ generatedAt }: { generatedAt: string }) {
   }, [generatedAt, isPending, refresh])
 
   useEffect(() => {
-    const refreshIfVisible = () => {
-      if (document.visibilityState === 'visible') refresh()
+    // The page load counts as the first refresh.
+    lastRefreshAt.current = Date.now()
+    const refreshIfDue = () => {
+      if (document.visibilityState !== 'visible') return
+      if (Date.now() - lastRefreshAt.current >= REFRESH_MS) refresh()
     }
-    const id = setInterval(refreshIfVisible, REFRESH_MS)
-    document.addEventListener('visibilitychange', refreshIfVisible)
+    const id = setInterval(refreshIfDue, CHECK_MS)
+    document.addEventListener('visibilitychange', refreshIfDue)
     return () => {
       clearInterval(id)
-      document.removeEventListener('visibilitychange', refreshIfVisible)
+      document.removeEventListener('visibilitychange', refreshIfDue)
     }
   }, [refresh])
 
